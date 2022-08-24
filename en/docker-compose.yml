@@ -38,4 +38,7 @@ services:
 #      - actions
 #      - -vv
 
-networks: {rasa-network: {}}
+# networks: {rasa-network: {}}
+networks:
+  tabot:
+    name: tabot
