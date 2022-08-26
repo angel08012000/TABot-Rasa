@@ -6,7 +6,7 @@ services:
     image: tabot/ch-rasa:v0.1
     container_name: tabot-rasa-ch
   #  restart: always
-    networks: ['rasa-network']
+    networks: ['tabot']
     user: root
     ports:
       - "5005:5005"
@@ -27,7 +27,7 @@ services:
     image: tabot/ch-action:v0.1
     container_name: tabot-action
 #    restart: always
-    networks: ['rasa-network']
+    networks: ['tabot']
     ports:
       - "5055:5055"
     volumes:
