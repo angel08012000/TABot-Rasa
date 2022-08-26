@@ -15,11 +15,13 @@ services:
     depends_on:
       - action_server
     command:
-      - /bin/sh
-      - -c
-      - |
-        sh buildNewModel.sh
-        run --model /app/models/tabot-ch.tar.gz --endpoints /app/endpoints.yml -vv --enable-api
+      - run 
+      - --model 
+      - /app/models/tabot-ch.tar.gz 
+      - --endpoints 
+      - /app/endpoints.yml 
+      - -vv 
+      - --enable-api
   
   rasa-en:
     image: rasa/rasa:2.8.5-full
@@ -34,11 +36,13 @@ services:
     depends_on:
       - action_server
     command:
-      - /bin/bash
-      - -c
-      - |
-        sh buildNewModel.sh
-        run --model /app/models/tabot-en.tar.gz --endpoints /app/endpoints.yml -vv --enable-api
+      - run 
+      - --model 
+      - /app/models/tabot-en.tar.gz 
+      - --endpoints 
+      - /app/endpoints.yml 
+      - -vv 
+      - --enable-api
 
   action_server:
     image: tabot/ch-action:v0.1
