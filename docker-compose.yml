@@ -1,7 +1,7 @@
 version: '3.0'
 
 services:
-  rasa-zh:
+  rasa-ch:
     # image: rasa/rasa:2.8.5-full
     image: tabot/ch-rasa:v0.1
     container_name: tabot-rasa-ch
@@ -15,13 +15,11 @@ services:
     depends_on:
       - action_server
     command:
-      - run
-      - --model
-      - /app/models/tabot-ch.tar.gz
-      - --endpoints
-      - /app/endpoints.yml
-      - -vv
-      - --enable-api
+      - /bin/sh
+      - -c
+      - |
+        sh buildNewModel.sh
+        run --model /app/models/tabot-ch.tar.gz --endpoints /app/endpoints.yml -vv --enable-api
   
   rasa-en:
     image: rasa/rasa:2.8.5-full
@@ -36,13 +34,11 @@ services:
     depends_on:
       - action_server
     command:
-      - run
-      - --model
-      - /app/models/tabot-en.tar.gz
-      - --endpoints
-      - /app/endpoints.yml
-      - -vv
-      - --enable-api
+      - /bin/bash
+      - -c
+      - |
+        sh buildNewModel.sh
+        run --model /app/models/tabot-en.tar.gz --endpoints /app/endpoints.yml -vv --enable-api
 
   action_server:
     image: tabot/ch-action:v0.1

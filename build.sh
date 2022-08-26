@@ -2,5 +2,5 @@
 
 cd ch
 sh buildActionServer.sh
-sh buildZhRasa.sh
+sh buildChRasa.sh
 cd ..
