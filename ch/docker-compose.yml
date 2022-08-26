@@ -24,8 +24,8 @@ services:
       - --enable-api
 
   action_server:
-    image: tabot/ch-action:v0.1
-    container_name: tabot-action
+    image: tabot/ch-rasa-action:v0.1
+    container_name: tabot-rasa-action
 #    restart: always
     networks: ['tabot']
     ports:

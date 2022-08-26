@@ -1,1 +1,1 @@
-sudo docker build . -f Dockerfile.action -t tabot/ch-action:v0.1
+sudo docker build . -f Dockerfile.action -t tabot/ch-rasa-action:v0.1
