@@ -2,7 +2,7 @@ version: '3.0'
 
 services:
   tabot-rasa-en:
-    image: rasa/rasa:2.8.5-full
+    image: rasa/rasa:3.2.6-full
     # image: tabot/ch-rasa:v0.1
     container_name: tabot-rasa-en
   #  restart: always
