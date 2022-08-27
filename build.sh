@@ -1,4 +1,4 @@
-#!/bin/bash
+# !/bin/sh
 
 cd ch
 sh buildActionServer.sh
