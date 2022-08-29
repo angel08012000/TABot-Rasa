@@ -12,8 +12,9 @@ intents:
 - personal_score_query
 - personal_score_object
 - classmap_suggest
-- suggest_review_pass
-- suggest_review_fail
+- read_user_requirements
+# - suggest_review_pass
+# - suggest_review_fail
 - personal_quiz_query
 - personal_textbook_query
 - supplement_search_all
@@ -58,10 +59,14 @@ responses:
       intent: confirm_classmap_search
       responseMessage: okay, what can i help you?
       endOfChat: False
-  utter_classmap_suggest:
+#   utter_classmap_suggest:
+#   - custom:
+#       intent: classmap_suggest
+#       responseMessage: nice, what is it
+#       endOfChat: True
+  utter_read_user_requirements:
   - custom:
-      intent: classmap_suggest
-      responseMessage: nice, what is it
+      intent: read_user_requirements
       endOfChat: True
   utter_personal_quiz_query:
   - custom:

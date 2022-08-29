@@ -1331,6 +1331,16 @@ nlu:
     - suggest textbook material
     - how about add this into textbook
 
+- intent: read_user_requirements
+  examples: |
+    - I want to check the requirements document
+    - Requirements document
+    - Group requirements document
+    - Team user requirements
+    - Thematic user requirements
+    - What are the user requirements of our group?
+    - What is the requirements document for our group?
+    
 - intent: personal_score_query
   examples: |
     - i want to search my personal score

@@ -252,7 +252,7 @@ nlu:
       - design issue
       - 設計議題
 
-# manual review suggest for now
+  # manual review suggest for now
   # - intent: suggest_review_pass
   #   examples: |
   #     - 通過
@@ -922,6 +922,16 @@ nlu:
       - 我覺得可以增加新教材
       - 推薦教材
       - 新增教材
+
+  - intent: read_user_requirements
+    examples: |
+      - 我想查需求文件
+      - 需求文件
+      - 小組需求文件
+      - 團隊使用者需求
+      - 專題使用者需求
+      - 我們這組的使用者需求是什麼？
+      - 我們這組的需求文件是什麼？
 
   - intent: personal_score_query
     examples: |
