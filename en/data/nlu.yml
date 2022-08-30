@@ -1323,13 +1323,13 @@ nlu:
     - what is [Microsoft Office Project](search_target)
 
 
-- intent: classmap_suggest
-  examples: |
-    - i want to recommand some textbook material
-    - i think i find something useful as textbook
-    - suggest textbook
-    - suggest textbook material
-    - how about add this into textbook
+# - intent: classmap_suggest
+#   examples: |
+#     - i want to recommand some textbook material
+#     - i think i find something useful as textbook
+#     - suggest textbook
+#     - suggest textbook material
+#     - how about add this into textbook
 
 - intent: read_user_requirements
   examples: |
@@ -1340,7 +1340,7 @@ nlu:
     - Thematic user requirements
     - What are the user requirements of our group?
     - What is the requirements document for our group?
-    
+
 - intent: personal_score_query
   examples: |
     - i want to search my personal score

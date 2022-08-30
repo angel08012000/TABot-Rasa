@@ -34,10 +34,10 @@ stories:
    - intent: classmap_search_content
    - action: action_classmap_search
 
- - story: classmap suggest
-   steps:
-   - intent: classmap_suggest
-   - action: utter_classmap_suggest
+#  - story: classmap suggest
+#    steps:
+#    - intent: classmap_suggest
+#    - action: utter_classmap_suggest
 
  - story: query personal score 1
    steps:

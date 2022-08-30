@@ -916,12 +916,12 @@ nlu:
       - [價值導向](search_target)是什麼
       - [迭代式](search_target)是什麼
 
-  - intent: classmap_suggest
-    examples: |
-      - 我想推薦教材
-      - 我覺得可以增加新教材
-      - 推薦教材
-      - 新增教材
+  # - intent: classmap_suggest
+  #   examples: |
+  #     - 我想推薦教材
+  #     - 我覺得可以增加新教材
+  #     - 推薦教材
+  #     - 新增教材
 
   - intent: read_user_requirements
     examples: |

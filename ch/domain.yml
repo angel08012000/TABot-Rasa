@@ -14,7 +14,7 @@ intents:
 - classmap_ppt_content
 - personal_score_query
 - personal_score_object
-- classmap_suggest
+# - classmap_suggest
 - read_user_requirements
 # - suggest_review_pass
 # - suggest_review_fail

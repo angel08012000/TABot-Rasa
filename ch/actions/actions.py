@@ -46,36 +46,36 @@ class ActionGreet(Action):
             dispatcher.utter_custom_json(format(msg))
             return []
 
-class ActionSuggestionPass(Action):
-    def name(self) -> Text:
-        return "action_suggest_review_pass"
+# class ActionSuggestionPass(Action):
+#     def name(self) -> Text:
+#         return "action_suggest_review_pass"
     
-    def run(self, dispatcher: "CollectingDispatcher", 
-            tracker: Tracker, 
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-            msg = {
-                "intent": "suggest_review_pass",
-                "reviewResult": True,
-                "endOfChat": True
-            }
-            # dispatcher.utter_message(format(msg))
-            dispatcher.utter_custom_json(format(msg))
-            return []
+#     def run(self, dispatcher: "CollectingDispatcher", 
+#             tracker: Tracker, 
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+#             msg = {
+#                 "intent": "suggest_review_pass",
+#                 "reviewResult": True,
+#                 "endOfChat": True
+#             }
+#             # dispatcher.utter_message(format(msg))
+#             dispatcher.utter_custom_json(format(msg))
+#             return []
 
-class ActionSuggestionFail(Action):
-    def name(self) -> Text:
-        return "action_suggest_review_fail"
-    def run(self, dispatcher: "CollectingDispatcher", 
-        tracker: Tracker, 
-        domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        msg = {
-            "intent": "suggest_review_fail",
-            "reviewResult": False,
-            "endOfChat": True
-        }
-        # dispatcher.utter_message(format(msg))
-        dispatcher.utter_custom_json(format(msg))
-        return []
+# class ActionSuggestionFail(Action):
+#     def name(self) -> Text:
+#         return "action_suggest_review_fail"
+#     def run(self, dispatcher: "CollectingDispatcher", 
+#         tracker: Tracker, 
+#         domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+#         msg = {
+#             "intent": "suggest_review_fail",
+#             "reviewResult": False,
+#             "endOfChat": True
+#         }
+#         # dispatcher.utter_message(format(msg))
+#         dispatcher.utter_custom_json(format(msg))
+#         return []
 
 class ActionPersonalScoreQuery(Action):
     def name(self) -> Text:

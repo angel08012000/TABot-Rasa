@@ -36,10 +36,10 @@ stories:
    - intent: classmap_ppt_content
    - action: action_classmap_ppt
 
- - story: classmap suggest
-   steps:
-   - intent: classmap_suggest
-   - action: utter_classmap_suggest
+#  - story: classmap suggest
+#    steps:
+#    - intent: classmap_suggest
+#    - action: utter_classmap_suggest
 
  - story: query personal score 1
    steps:
