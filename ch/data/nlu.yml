@@ -263,6 +263,7 @@ nlu:
       - 使用者故事是甚麼？
       - 使用者故事的定義
       - 何謂使用者故事
+      - 使用者故事
 
   - intent: faq/user_stroy_example
     examples: |
