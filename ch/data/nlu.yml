@@ -30,7 +30,7 @@ nlu:
   - intent: faq/software_engineering
     examples: |
       - 軟體開發包含哪些主要活動？
-      - 軟體開發要做哪些事情。
+      - 軟體開發要做哪些事情
       - 軟體開發的步驟
       - 軟體開發的流程
 
@@ -111,7 +111,9 @@ nlu:
   - intent: faq/uml
     examples: |
       - UML是甚麼？
+      - UML的定義？
       - UML
+      - 何謂UML
 
   - intent: faq/use_case
     examples: |
@@ -167,24 +169,28 @@ nlu:
   - intent: faq/abstraction
     examples: |
       - 抽象化是甚麼？
+      - 抽象化的定義
       - 何謂抽象化
       - 抽象化
 
   - intent: faq/modularity
     examples: |
       - 模組化是甚麼？
+      - 模組化的定義
       - 何謂模組化
       - 模組化
 
   - intent: faq/cohesion
     examples: |
-      - 凝聚力是甚麼？ 
-      - 何謂凝聚力 
+      - 凝聚力是甚麼？
+      - 凝聚力的定義
+      - 何謂凝聚力
       - 凝聚力
 
   - intent: faq/coupling
     examples: |
       - 耦合力是甚麼？
+      - 耦合力的定義
       - 何謂耦合力
       - 耦合力
 
@@ -193,6 +199,7 @@ nlu:
       - 為什麼要High Cohesion, Low Coupling是好的？
       - High Cohesion, Low Coupling是甚麼意思？
       - High Cohesion, Low Coupling
+      - 高凝聚低耦合
 
   - intent: faq/system_design
     examples: |
@@ -204,6 +211,7 @@ nlu:
   - intent: faq/architecture_design
     examples: |
       - 甚麼是架構設計？
+      - 架構設計的定義
       - 何謂架構設計
       - 架構設計
 
@@ -251,6 +259,177 @@ nlu:
       - 設計議題(design issue)是甚麼？
       - design issue
       - 設計議題
+
+  - intent: faq/user_story
+    examples: |
+      - 使用者故事是甚麼？
+      - 使用者故事的定義
+      - 何謂使用者故事
+      - 使用者故事
+
+  - intent: faq/user_stroy_example
+    examples: |
+      - 是否有使用者故事的範例？
+      - 有沒有使用者故事的範例？
+      - 使用者故事的範例
+
+  - intent: faq/user_stroy_feature
+    examples: |
+      - 好的使用者故事有那些屬性？
+      - 使用者故事的屬性是什麼？
+      - 使用者故事的屬性
+      - INVEST是什麼？
+
+  - intent: faq/story_point
+    examples: |
+      - 甚麼是故事點？
+      - 故事點是什麼
+      - 故事點的定義
+      - 何謂故事點
+      - 故事點
+
+  - intent: faq/user_story_mapping
+    examples: |
+      - 甚麼是使用者故事對照？
+      - 使用者故事對照是什麼
+      - 使用者故事對照的定義
+      - 何謂使用者故事對照
+      - 使用者故事對照
+
+  - intent: faq/narative_flow
+    examples: |
+      - 甚麼是敘事流？
+      - 敘事流是什麼
+      - 敘事流的定義
+      - 何謂敘事流
+      - 敘事流
+
+  - intent: faq/version
+    examples: |
+      - 甚麼是版本？
+      - 版本是什麼
+      - 版本的定義
+      - 何謂版本
+      - 版本
+
+  - intent: faq/staging_area&repository
+    examples: |
+      - 工作目錄、暫存區、儲存庫的關係為何？
+      - 工作目錄、暫存區、儲存庫的關係
+      - git 會把檔案放在哪裡？
+
+  - intent: faq/wbs
+    examples: |
+      - 甚麼是工作分解結構？
+      - 工作分解結構是什麼
+      - 工作分解結構的定義
+      - 何謂工作分解結構
+      - 工作分解結構
+
+  - intent: faq/kanban
+    examples: |
+      - 甚麼是看板？
+      - 看板是什麼
+      - 看板的定義
+      - 何謂看板
+      - 看板
+
+  - intent: faq/scrum_event
+    examples: |
+      - Scrum包含哪些事件？
+      - Scrum的事件有哪些？
+
+  - intent: faq/scrum_pillar
+    examples: |
+      - Scrum有哪三個支柱?
+      - Scrum有哪些支柱?
+      - Scrum的支柱
+
+  - intent: faq/scrum_value
+    examples: |
+      - Scrum有哪五個價值觀？
+      - Scrum有哪些價值觀？
+      - Scrum 的價值觀有哪些？
+      - Scrum的價值觀
+
+  - intent: faq/scrum_accountability
+    examples: |
+      - Scrum有哪三個權責？
+      - Scrum有哪些權責？
+      - Scrum 的權責有哪些？
+      - Scrum的權責
+
+  - intent: faq/blackbox_test
+    examples: |
+      - 甚麼是黑箱測試？
+      - 黑箱測試是什麼
+      - 黑箱測試的定義
+      - 何謂黑箱測試
+      - 黑箱測試
+
+  - intent: faq/whitebox_test
+    examples: |
+      - 甚麼是白箱測試？
+      - 白箱測試是什麼
+      - 白箱測試的定義
+      - 何謂白箱測試
+      - 白箱測試
+
+  - intent: faq/unit_test
+    examples: |
+      - 甚麼是單元測試？
+      - 單元測試是什麼
+      - 單元測試的定義
+      - 何謂單元測試
+      - 單元測試
+
+  - intent: faq/test_double
+    examples: |
+      - 甚麼是測試替身？
+      - 測試替身是什麼
+      - 測試替身的定義
+      - 何謂測試替身
+      - 測試替身
+
+  - intent: faq/integration_testing
+    examples: |
+      - 甚麼是整合測試？
+      - 整合測試是什麼
+      - 整合測試的定義
+      - 何謂整合測試
+      - 整合測試
+
+  - intent: faq/system_integration
+    examples: |
+      - 甚麼是系統測試？
+      - 系統測試是什麼
+      - 系統測試的定義
+      - 何謂系統測試
+      - 系統測試
+
+  - intent: faq/acceptance_testing
+    examples: |
+      - 甚麼是驗收測試？
+      - 驗收測試是什麼
+      - 驗收測試的定義
+      - 何謂驗收測試
+      - 驗收測試
+
+  - intent: faq/test_case
+    examples: |
+      - 系統測試案例包含哪些內容？
+      - 系統測試案例的內容是什麼？
+      - 系統測試案例包含什麼？
+      - 系統測試的內容有哪些?
+      - 系統測試的內容
+
+  - intent: faq/regression_testing
+    examples: |
+      - 何時會進行迴歸測試？
+      - 什麼時候需要進行迴歸測試？
+      - 什麼時候需要迴歸測試？
+      - 什麼時候要做迴歸測試？
+      - 迴歸測試
 
   # manual review suggest for now
   # - intent: suggest_review_pass
