@@ -30,85 +30,124 @@ nlu:
   - intent: faq/software_engineering
     examples: |
       - 軟體開發包含哪些主要活動？
-      - 軟體開發要做哪些事情。
+      - 軟體開發要做哪些事情
+      - 軟體開發的步驟
+      - 軟體開發的流程
 
   - intent: faq/user_requirement
     examples: |
       - 使用者需求是甚麼？
       - 使用者需求的定義？
+      - 使用者需求
+      - 何謂使用者需求
 
   - intent: faq/system_requirement
     examples: |
       - 系統需求是甚麼？
       - 系統需求的定義？
+      - 系統需求
+      - 何謂系統需求
 
   - intent: faq/functional_requirement
     examples: |
       - 功能需求是甚麼？
       - 功能需求的定義？
+      - 功能需求
+      - 何謂功能需求
 
   - intent: faq/functional_requirement_2
     examples: |
       - 有功能需求的案例嗎？
+      - 功能需求的案例
+      - 舉例功能需求
 
   - intent: faq/non_functional_requirement
     examples: |
       - 非功能需求是甚麼？
-      - 非功能需求的定義？
+      - 非功能需求的定義？ 
+      - 非功能需求 
+      - 何謂非功能需求
 
   - intent: faq/non_functional_requirement_2
     examples: |
       - 有非功能需求的案例嗎？
+      - 非功能需求的案例
+      - 舉例非功能需求
 
   - intent: faq/concept_of_operation
     examples: |
       - 怎麼寫操作概念？
       - 操作概念是甚麼？
+      - 操作概念
+      - 操作概念如何寫？
 
   - intent: faq/MVP
     examples: |
       - MVP是甚麼？
-      - MVP的定義？
+      - MVP的定義？ 
+      - MVP
 
   - intent: faq/wireframe
     examples: |
       - 線框圖是甚麼？
+      - 線框圖
       - Wireframe是甚麼？
+      - Wireframe
+      - 何謂Wireframe
 
   - intent: faq/wireframe_1
     examples: |
       - 線框圖怎麼畫？
+      - 線框圖如何畫？
+      - 如何畫線框圖
       - 有沒有畫線框圖的準則？
 
   - intent: faq/requirement_analyze
     examples: |
       - 需求分析有哪些準則？
+      - 需求分析的準則？
+      - 需求分析
 
   - intent: faq/uml
     examples: |
       - UML是甚麼？
+      - UML的定義？
+      - UML
+      - 何謂UML
 
   - intent: faq/use_case
     examples: |
       - 使用案例規格是甚麼？
+      - 使用案例規格
+      - 使用案例的規格
+      - use case
 
   - intent: faq/PM
     examples: |
       - 專案管理會做甚麼？
+      - 專案管理的工作
+      - 專案管理
+      - PM
 
   - intent: faq/WBS
     examples: |
       - 甚麼是WBS？
+      - WBS
       - 甚麼是工作分解結構？
+      - 工作分解結構？
 
   - intent: faq/project_forecast
     examples: |
       - 如何進行專案預估？
+      - 專案預估
       - 如何進行工作預估？
+      - 工作預估
 
   - intent: faq/risk
     examples: |
       - 風險是甚麼？
+      - 風險
+      - risk
 
   - intent: faq/board
     examples: |
@@ -118,181 +157,277 @@ nlu:
   - intent: faq/dependency_and_association
     examples: |
       - 相依與關聯不一樣在哪裡？
+      - 相依與關聯
 
   - intent: faq/aggregation_and_composition
     examples: |
       - 組合與聚合不一樣在哪裡？
+      - 組合與聚合
 
   - intent: faq/abstraction
     examples: |
       - 抽象化是甚麼？
+      - 抽象化的定義
+      - 何謂抽象化
+      - 抽象化
 
   - intent: faq/modularity
     examples: |
       - 模組化是甚麼？
+      - 模組化的定義
+      - 何謂模組化
+      - 模組化
 
   - intent: faq/cohesion
     examples: |
       - 凝聚力是甚麼？
+      - 凝聚力的定義
+      - 何謂凝聚力
+      - 凝聚力
 
   - intent: faq/coupling
     examples: |
       - 耦合力是甚麼？
+      - 耦合力的定義
+      - 何謂耦合力
+      - 耦合力
 
   - intent: faq/cohesion_and_coupling_rate
     examples: |
       - 為什麼要High Cohesion, Low Coupling是好的？
       - High Cohesion, Low Coupling是甚麼意思？
+      - High Cohesion, Low Coupling
+      - 高凝聚低耦合
 
   - intent: faq/system_design
     examples: |
       - 系統設計包含哪些工作?
+      - 系統設計的工作內容
+      - 何謂系統設計
+      - 系統設計
 
   - intent: faq/architecture_design
     examples: |
       - 甚麼是架構設計？
+      - 架構設計的定義
+      - 何謂架構設計
+      - 架構設計
 
   - intent: faq/architecture_design_2
     examples: |
       - 一般Web前後端分離架構分為哪幾層？
+      - Web前後端如何分層
+      - Web前後端的分層
 
   - intent: faq/architecture_design_3
     examples: |
       - 有沒有建議的架構設計方法？
+      - 架構設計方法
+      - 架構如何設計
 
   - intent: faq/interface
     examples: |
       - 甚麼是介面？
       - 介面是甚麼？
       - 介面要怎麼設計？
+      - interface
+      - 介面
 
   - intent: faq/interface_2
     examples: |
       - 介面跟系統整合有甚麼關係？
       - 介面設計跟整合的關聯性是甚麼？
+      - 介面設計跟整合的關聯性
+      - 介面跟系統整合的關係
+      - 介面跟系統整合
 
   - intent: faq/interface_3
     examples: |
       - 介面設計是設計使用者介面(User Interface)嗎?
+      - 介面設計與設計使用者介面
+      - 介面設計與UI
 
   - intent: faq/interface_4
     examples: |
       - 有沒有介面設計的案例？
+      - 介面設計的案例
 
   - intent: faq/design_issue
     examples: |
       - 設計議題(design issue)是甚麼？
+      - design issue
+      - 設計議題
 
   - intent: faq/user_story
     examples: |
-      - 什麼是使用者故事？
+      - 使用者故事是甚麼？
+      - 使用者故事的定義
+      - 何謂使用者故事
 
   - intent: faq/user_stroy_example
     examples: |
+      - 是否有使用者故事的範例？
       - 有沒有使用者故事的範例？
+      - 使用者故事的範例
 
   - intent: faq/user_stroy_feature
     examples: |
-      - 好的使用者故事有哪些屬性？
-      - INVEST是什麼？
+      - 好的使用者故事有那些屬性？
       - 使用者故事的屬性是什麼？
+      - 使用者故事的屬性
+      - INVEST是什麼？
 
   - intent: faq/story_point
     examples: |
-      - 什麼是故事點？
-      - 故事點可以幹嘛？
-      - 故事點的作用是什麼？
+      - 甚麼是故事點？
+      - 故事點是什麼
+      - 故事點的定義
+      - 何謂故事點
+      - 故事點
 
   - intent: faq/user_story_mapping
     examples: |
-      - 什麼是使用者故事對照？
-      - 使用者故事對照可以幹嘛？
+      - 甚麼是使用者故事對照？
+      - 使用者故事對照是什麼
+      - 使用者故事對照的定義
+      - 何謂使用者故事對照
+      - 使用者故事對照
 
   - intent: faq/narative_flow
     examples: |
-      - 什麼是敘事流？
-
-  - intent: faq/mvp
-    examples: |
-      - 什麼是 MVP？
+      - 甚麼是敘事流？
+      - 敘事流是什麼
+      - 敘事流的定義
+      - 何謂敘事流
+      - 敘事流
 
   - intent: faq/version
     examples: |
-      - 什麼是版本？
+      - 甚麼是版本？
+      - 版本是什麼
+      - 版本的定義
+      - 何謂版本
+      - 版本
 
   - intent: faq/staging_area&repository
     examples: |
       - 工作目錄、暫存區、儲存庫的關係為何？
+      - 工作目錄、暫存區、儲存庫的關係
       - git 會把檔案放在哪裡？
 
   - intent: faq/wbs
     examples: |
-      - 什麼是工作分解結構？
+      - 甚麼是工作分解結構？
+      - 工作分解結構是什麼
+      - 工作分解結構的定義
+      - 何謂工作分解結構
+      - 工作分解結構
 
   - intent: faq/kanban
     examples: |
-      - 什麼是看板？
+      - 甚麼是看板？
+      - 看板是什麼
+      - 看板的定義
+      - 何謂看板
+      - 看板
 
   - intent: faq/scrum_event
     examples: |
-      - Scrum 包含哪些事件？
+      - Scrum包含哪些事件？
+      - Scrum的事件有哪些？
 
   - intent: faq/scrum_pillar
     examples: |
-      - Scrum 有哪些支柱？
+      - Scrum有哪三個支柱?
+      - Scrum有哪些支柱?
+      - Scrum的支柱
 
   - intent: faq/scrum_value
     examples: |
+      - Scrum有哪五個價值觀？
+      - Scrum有哪些價值觀？
       - Scrum 的價值觀有哪些？
+      - Scrum的價值觀
 
   - intent: faq/scrum_accountability
     examples: |
+      - Scrum有哪三個權責？
+      - Scrum有哪些權責？
       - Scrum 的權責有哪些？
+      - Scrum的權責
 
   - intent: faq/blackbox_test
     examples: |
-      - 什麼是黑箱測試？
-      - 黑箱測試是什麼？
+      - 甚麼是黑箱測試？
+      - 黑箱測試是什麼
+      - 黑箱測試的定義
+      - 何謂黑箱測試
+      - 黑箱測試
 
   - intent: faq/whitebox_test
     examples: |
-      - 什麼是白箱測試？
-      - 白箱測試是什麼？
+      - 甚麼是白箱測試？
+      - 白箱測試是什麼
+      - 白箱測試的定義
+      - 何謂白箱測試
+      - 白箱測試
 
   - intent: faq/unit_test
     examples: |
-      - 什麼是單元測試？
-      - 單元測試是什麼？
+      - 甚麼是單元測試？
+      - 單元測試是什麼
+      - 單元測試的定義
+      - 何謂單元測試
+      - 單元測試
 
   - intent: faq/test_double
     examples: |
-      - 什麼是測試替身？
-      - 測試替身是什麼？
+      - 甚麼是測試替身？
+      - 測試替身是什麼
+      - 測試替身的定義
+      - 何謂測試替身
+      - 測試替身
 
   - intent: faq/integration_testing
     examples: |
-      - 什麼是整合測試？
-      - 整合測試是什麼？
+      - 甚麼是整合測試？
+      - 整合測試是什麼
+      - 整合測試的定義
+      - 何謂整合測試
+      - 整合測試
 
   - intent: faq/system_integration
     examples: |
-      - 什麼是系統測試？
-      - 系統測試是什麼？
+      - 甚麼是系統測試？
+      - 系統測試是什麼
+      - 系統測試的定義
+      - 何謂系統測試
+      - 系統測試
 
   - intent: faq/acceptance_testing
     examples: |
-      - 什麼是驗收測試？
-      - 驗收測試是什麼？
+      - 甚麼是驗收測試？
+      - 驗收測試是什麼
+      - 驗收測試的定義
+      - 何謂驗收測試
+      - 驗收測試
 
   - intent: faq/test_case
     examples: |
+      - 系統測試案例包含哪些內容？
       - 系統測試案例的內容是什麼？
       - 系統測試案例包含什麼？
+      - 系統測試的內容有哪些?
+      - 系統測試的內容
 
   - intent: faq/regression_testing
     examples: |
+      - 何時會進行迴歸測試？
       - 什麼時候需要進行迴歸測試？
       - 什麼時候需要迴歸測試？
+      - 什麼時候要做迴歸測試？
+      - 迴歸測試
+
 
   # manual review suggest for now
   # - intent: suggest_review_pass
