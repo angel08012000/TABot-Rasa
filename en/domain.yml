@@ -5,7 +5,7 @@ intents:
 # - help
 - faq:
     use_entities: []
-# - classmap_search
+- classmap_search
 - classmap_search_content
 # - classmap_ppt
 # - classmap_ppt_content
@@ -54,11 +54,11 @@ responses:
 #       intent: confirm_classmap_ppt_query
 #       responseMessage: got it, which chapter are you looking for?
 #       endOfChat: False
-#   utter_confirm_classmap_search:
-#   - custom:
-#       intent: confirm_classmap_search
-#       responseMessage: okay, what can i help you?
-#       endOfChat: False
+  utter_confirm_classmap_search:
+  - custom:
+      intent: confirm_classmap_search
+      responseMessage: okay, what can i help you?
+      endOfChat: False
 #   utter_classmap_suggest:
 #   - custom:
 #       intent: classmap_suggest
