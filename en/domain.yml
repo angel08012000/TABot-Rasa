@@ -5,25 +5,25 @@ intents:
 # - help
 - faq:
     use_entities: []
-- classmap_search
+# - classmap_search
 - classmap_search_content
-- classmap_ppt
-- classmap_ppt_content
-- personal_score_query
-- personal_score_object
+# - classmap_ppt
+# - classmap_ppt_content
+# - personal_score_query
+# - personal_score_object
 # - classmap_suggest
 - read_user_requirements
 # - suggest_review_pass
 # - suggest_review_fail
-- personal_quiz_query
-- personal_textbook_query
+# - personal_quiz_query
+# - personal_textbook_query
 # - supplement_search_all
 # - supplement_search_single
 # - supplement_search_single_content
 
 entities:
-- score_query_target
-- ppt_query_target
+# - score_query_target
+# - ppt_query_target
 - search_target
 # - supplement_target
 
@@ -44,21 +44,21 @@ responses:
 #   utter_happy:
 #   - text: "Great, carry on!"
 
-  utter_confirm_personal_score_query:
-  - custom:
-      intent: confirm_personal_score_query
-      responseMessage: okay, which kind of score would you like to query?
-      endOfChat: False
-  utter_confirm_classmap_ppt_query:
-  - custom:
-      intent: confirm_classmap_ppt_query
-      responseMessage: got it, which chapter are you looking for?
-      endOfChat: False
-  utter_confirm_classmap_search:
-  - custom:
-      intent: confirm_classmap_search
-      responseMessage: okay, what can i help you?
-      endOfChat: False
+#   utter_confirm_personal_score_query:
+#   - custom:
+#       intent: confirm_personal_score_query
+#       responseMessage: okay, which kind of score would you like to query?
+#       endOfChat: False
+#   utter_confirm_classmap_ppt_query:
+#   - custom:
+#       intent: confirm_classmap_ppt_query
+#       responseMessage: got it, which chapter are you looking for?
+#       endOfChat: False
+#   utter_confirm_classmap_search:
+#   - custom:
+#       intent: confirm_classmap_search
+#       responseMessage: okay, what can i help you?
+#       endOfChat: False
 #   utter_classmap_suggest:
 #   - custom:
 #       intent: classmap_suggest
@@ -68,14 +68,14 @@ responses:
   - custom:
       intent: read_user_requirements
       endOfChat: True
-  utter_personal_quiz_query:
-  - custom:
-      intent: personal_quiz_query
-      endOfChat: True
-  utter_personal_textbook_query:
-  - custom:
-      intent: personal_textbook_query
-      endOfChat: True
+#   utter_personal_quiz_query:
+#   - custom:
+#       intent: personal_quiz_query
+#       endOfChat: True
+#   utter_personal_textbook_query:
+#   - custom:
+#       intent: personal_textbook_query
+#       endOfChat: True
 #   utter_supplement_search_all:
 #   - custom:
 #       intent: supplement_search_all
@@ -382,8 +382,8 @@ actions:
 # - action_suggest_review_fail
 # - action_suggest_review_pass
 - action_classmap_search
-- action_classmap_ppt
-- action_personal_score_query
+# - action_classmap_ppt
+# - action_personal_score_query
 # - action_supplement_single
 
 session_config:

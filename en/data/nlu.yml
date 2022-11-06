@@ -467,68 +467,68 @@ nlu:
     - When to do regression testing?
     - Regression Testing
 
-- intent: classmap_ppt
-  examples: |
-    - search power point
-    - search ppt
-    - ppt information
-    - I'd like to query ppt
-    - class ppt
-    - query power point
-    - query ppt
-    - I want to inquire about the slideshow information
-    - Query slide information
-    - Slideshow information
-    - Course slides
-    - Course slide materials
+# - intent: classmap_ppt
+#   examples: |
+#     - search power point
+#     - search ppt
+#     - ppt information
+#     - I'd like to query ppt
+#     - class ppt
+#     - query power point
+#     - query ppt
+#     - I want to inquire about the slideshow information
+#     - Query slide information
+#     - Slideshow information
+#     - Course slides
+#     - Course slide materials
 
-- intent: classmap_ppt_content
-  examples: |
-    - i want to checkout slides of [chapter one](ppt_query_target)
-    - i want to checkout slides of [chapter two](ppt_query_target)
-    - i want to checkout slides of [chapter three](ppt_query_target)
-    - i want to checkout slides of [chapter four](ppt_query_target)
-    - i want to checkout slides of [chapter five](ppt_query_target)
-    - i want to checkout slides of [chapter six](ppt_query_target)
-    - i want to checkout slides of [chapter seven](ppt_query_target)
-    - i want to checkout slides of [chapter eight](ppt_query_target)
-    - i want to checkout slides of [chapter nine](ppt_query_target)
-    - i want to checkout slides of [chapter ten](ppt_query_target)
-    - i want to checkout slides of [chapter eleven](ppt_query_target)
-    - i want to checkout slides of [chapter twelve](ppt_query_target)
-    - i want to checkout slides of [chapter thirteen](ppt_query_target)
-    - i want to checkout slides of [chapter fourteen](ppt_query_target)
-    - i want to checkout slides of [chapter fifteen](ppt_query_target)
-    - slides of [chapter1](ppt_query_target)
-    - slides of [chapter2](ppt_query_target)
-    - slides of [chapter3](ppt_query_target)
-    - slides of [chapter4](ppt_query_target)
-    - slides of [chapter5](ppt_query_target)
-    - slides of [chapter6](ppt_query_target)
-    - slides of [chapter7](ppt_query_target)
-    - slides of [chapter8](ppt_query_target)
-    - slides of [chapter9](ppt_query_target)
-    - slides of [chapter10](ppt_query_target)
-    - slides of [chapter11](ppt_query_target)
-    - slides of [chapter12](ppt_query_target)
-    - slides of [chapter13](ppt_query_target)
-    - slides of [chapter14](ppt_query_target)
-    - slides of [chapter15](ppt_query_target)
-    - [chp one](ppt_query_target) power point
-    - [chp two](ppt_query_target) power point
-    - [chp three](ppt_query_target) power point
-    - [chp four](ppt_query_target) power point
-    - [chp five](ppt_query_target) power point
-    - [chp six](ppt_query_target) power point
-    - [chp seven](ppt_query_target) power point
-    - [chp eight](ppt_query_target) power point
-    - [chp nine](ppt_query_target) power point
-    - [chp ten](ppt_query_target) power point
-    - [chp eleven](ppt_query_target) power point
-    - [chp twelve](ppt_query_target) power point
-    - [chp thirteen](ppt_query_target) power point
-    - [chp fourteen](ppt_query_target) power point
-    - [chp fifteen](ppt_query_target) power point
+# - intent: classmap_ppt_content
+#   examples: |
+#     - i want to checkout slides of [chapter one](ppt_query_target)
+#     - i want to checkout slides of [chapter two](ppt_query_target)
+#     - i want to checkout slides of [chapter three](ppt_query_target)
+#     - i want to checkout slides of [chapter four](ppt_query_target)
+#     - i want to checkout slides of [chapter five](ppt_query_target)
+#     - i want to checkout slides of [chapter six](ppt_query_target)
+#     - i want to checkout slides of [chapter seven](ppt_query_target)
+#     - i want to checkout slides of [chapter eight](ppt_query_target)
+#     - i want to checkout slides of [chapter nine](ppt_query_target)
+#     - i want to checkout slides of [chapter ten](ppt_query_target)
+#     - i want to checkout slides of [chapter eleven](ppt_query_target)
+#     - i want to checkout slides of [chapter twelve](ppt_query_target)
+#     - i want to checkout slides of [chapter thirteen](ppt_query_target)
+#     - i want to checkout slides of [chapter fourteen](ppt_query_target)
+#     - i want to checkout slides of [chapter fifteen](ppt_query_target)
+#     - slides of [chapter1](ppt_query_target)
+#     - slides of [chapter2](ppt_query_target)
+#     - slides of [chapter3](ppt_query_target)
+#     - slides of [chapter4](ppt_query_target)
+#     - slides of [chapter5](ppt_query_target)
+#     - slides of [chapter6](ppt_query_target)
+#     - slides of [chapter7](ppt_query_target)
+#     - slides of [chapter8](ppt_query_target)
+#     - slides of [chapter9](ppt_query_target)
+#     - slides of [chapter10](ppt_query_target)
+#     - slides of [chapter11](ppt_query_target)
+#     - slides of [chapter12](ppt_query_target)
+#     - slides of [chapter13](ppt_query_target)
+#     - slides of [chapter14](ppt_query_target)
+#     - slides of [chapter15](ppt_query_target)
+#     - [chp one](ppt_query_target) power point
+#     - [chp two](ppt_query_target) power point
+#     - [chp three](ppt_query_target) power point
+#     - [chp four](ppt_query_target) power point
+#     - [chp five](ppt_query_target) power point
+#     - [chp six](ppt_query_target) power point
+#     - [chp seven](ppt_query_target) power point
+#     - [chp eight](ppt_query_target) power point
+#     - [chp nine](ppt_query_target) power point
+#     - [chp ten](ppt_query_target) power point
+#     - [chp eleven](ppt_query_target) power point
+#     - [chp twelve](ppt_query_target) power point
+#     - [chp thirteen](ppt_query_target) power point
+#     - [chp fourteen](ppt_query_target) power point
+#     - [chp fifteen](ppt_query_target) power point
 
 # - intent: supplement_search_all
 #   examples: |
@@ -586,22 +586,22 @@ nlu:
 #     - [DevOps Light Talk](supplement_target)
 #     - [design pattern](supplement_target)
 
-- intent: classmap_search
-  examples: |
-    - i want to query about classmap
-    - i want to query classmap
-    - query classmap
-    - search classmap
-    - classmap query
-    - classmap search
-    - I want to find the course map
-    - Check the course map
-    - Course map query
-    - Course map
-    - Check the course map
-    - Check course knowledge
-    - Query course knowledge
-    - Inquire about course related knowledge
+# - intent: classmap_search
+#   examples: |
+#     - i want to query about classmap
+#     - i want to query classmap
+#     - query classmap
+#     - search classmap
+#     - classmap query
+#     - classmap search
+#     - I want to find the course map
+#     - Check the course map
+#     - Course map query
+#     - Course map
+#     - Check the course map
+#     - Check course knowledge
+#     - Query course knowledge
+#     - Inquire about course related knowledge
 
 - intent: classmap_search_content
   examples: |
@@ -2764,386 +2764,386 @@ nlu:
     - What are the user requirements of our group?
     - What is the requirements document for our group?
 
-- intent: personal_score_query
-  examples: |
-    - i want to search my personal score
-    - i want to check my personal score
-    - i want to check my personal grade
-    - search personal score
-    - search my personal grade
-    - search my personal score
-    - query my personal score
-    - search my score
-    - query my score
-    - check my score
-    - check my grade
+# - intent: personal_score_query
+#   examples: |
+#     - i want to search my personal score
+#     - i want to check my personal score
+#     - i want to check my personal grade
+#     - search personal score
+#     - search my personal grade
+#     - search my personal score
+#     - query my personal score
+#     - search my score
+#     - query my score
+#     - check my score
+#     - check my grade
 
-- intent: personal_score_object
-  examples: |
-    - i want to query my grade of [homework 1](score_query_target)
-    - i want to query my grade of [homework 2](score_query_target)
-    - i want to query my grade of [homework 3](score_query_target)
-    - i want to query my grade of [homework 4](score_query_target)
-    - i want to query my grade of [homework 5](score_query_target)
-    - i want to query my grade of [homework 6](score_query_target)
-    - i want to query my grade of [homework 7](score_query_target)
-    - i want to query my grade of [homework 8](score_query_target)
-    - i want to query my grade of [homework 9](score_query_target)
-    - i want to query my grade of [homework 10](score_query_target)
-    - i want to query my grade of [midterm exam](score_query_target)
-    - i want to query my grade of [final exam](score_query_target)
-    - i want to query my grade of [quiz 1](score_query_target)
-    - i want to query my grade of [quiz 2](score_query_target)
-    - i want to query my grade of [quiz 3](score_query_target)
-    - i want to query my grade of [quiz 4](score_query_target)
-    - i want to query my grade of [quiz 5](score_query_target)
-    - i want to query my grade of [quiz 6](score_query_target)
-    - i want to query my grade of [quiz 7](score_query_target)
-    - i want to query my grade of [quiz 8](score_query_target)
-    - i want to query my grade of [quiz 9](score_query_target)
-    - i want to query my grade of [quiz 10](score_query_target)
-    - query my grade of [homework 1](score_query_target)
-    - query my grade of [homework 2](score_query_target)
-    - query my grade of [homework 3](score_query_target)
-    - query my grade of [homework 4](score_query_target)
-    - query my grade of [homework 5](score_query_target)
-    - query my grade of [homework 6](score_query_target)
-    - query my grade of [homework 7](score_query_target)
-    - query my grade of [homework 8](score_query_target)
-    - query my grade of [homework 9](score_query_target)
-    - query my grade of [homework 10](score_query_target)
-    - query my grade of [midterm exam](score_query_target)
-    - query my grade of [final exam](score_query_target)
-    - query my grade of [quiz 1](score_query_target)
-    - query my grade of [quiz 2](score_query_target)
-    - query my grade of [quiz 3](score_query_target)
-    - query my grade of [quiz 4](score_query_target)
-    - query my grade of [quiz 5](score_query_target)
-    - query my grade of [quiz 6](score_query_target)
-    - query my grade of [quiz 7](score_query_target)
-    - query my grade of [quiz 8](score_query_target)
-    - query my grade of [quiz 9](score_query_target)
-    - query my grade of [quiz 10](score_query_target)
-    - query my grade of [peer assessment](score_query_target)
-    - query my grade of [project evaluation](score_query_target)
-    - [homework 1](score_query_target)
-    - [homework 2](score_query_target)
-    - [homework 3](score_query_target)
-    - [homework 4](score_query_target)
-    - [homework 5](score_query_target)
-    - [homework 6](score_query_target)
-    - [homework 7](score_query_target)
-    - [homework 8](score_query_target)
-    - [homework 9](score_query_target)
-    - [homework 10](score_query_target)
-    - [midterm exam](score_query_target)
-    - [final exam](score_query_target)
-    - [quiz 1](score_query_target)
-    - [quiz 2](score_query_target)
-    - [quiz 3](score_query_target)
-    - [quiz 4](score_query_target)
-    - [quiz 5](score_query_target)
-    - [quiz 6](score_query_target)
-    - [quiz 7](score_query_target)
-    - [quiz 8](score_query_target)
-    - [quiz 9](score_query_target)
-    - [quiz 10](score_query_target)
-    - [peer assessment](score_query_target)
-    - [project evaluation](score_query_target)
+# - intent: personal_score_object
+#   examples: |
+#     - i want to query my grade of [homework 1](score_query_target)
+#     - i want to query my grade of [homework 2](score_query_target)
+#     - i want to query my grade of [homework 3](score_query_target)
+#     - i want to query my grade of [homework 4](score_query_target)
+#     - i want to query my grade of [homework 5](score_query_target)
+#     - i want to query my grade of [homework 6](score_query_target)
+#     - i want to query my grade of [homework 7](score_query_target)
+#     - i want to query my grade of [homework 8](score_query_target)
+#     - i want to query my grade of [homework 9](score_query_target)
+#     - i want to query my grade of [homework 10](score_query_target)
+#     - i want to query my grade of [midterm exam](score_query_target)
+#     - i want to query my grade of [final exam](score_query_target)
+#     - i want to query my grade of [quiz 1](score_query_target)
+#     - i want to query my grade of [quiz 2](score_query_target)
+#     - i want to query my grade of [quiz 3](score_query_target)
+#     - i want to query my grade of [quiz 4](score_query_target)
+#     - i want to query my grade of [quiz 5](score_query_target)
+#     - i want to query my grade of [quiz 6](score_query_target)
+#     - i want to query my grade of [quiz 7](score_query_target)
+#     - i want to query my grade of [quiz 8](score_query_target)
+#     - i want to query my grade of [quiz 9](score_query_target)
+#     - i want to query my grade of [quiz 10](score_query_target)
+#     - query my grade of [homework 1](score_query_target)
+#     - query my grade of [homework 2](score_query_target)
+#     - query my grade of [homework 3](score_query_target)
+#     - query my grade of [homework 4](score_query_target)
+#     - query my grade of [homework 5](score_query_target)
+#     - query my grade of [homework 6](score_query_target)
+#     - query my grade of [homework 7](score_query_target)
+#     - query my grade of [homework 8](score_query_target)
+#     - query my grade of [homework 9](score_query_target)
+#     - query my grade of [homework 10](score_query_target)
+#     - query my grade of [midterm exam](score_query_target)
+#     - query my grade of [final exam](score_query_target)
+#     - query my grade of [quiz 1](score_query_target)
+#     - query my grade of [quiz 2](score_query_target)
+#     - query my grade of [quiz 3](score_query_target)
+#     - query my grade of [quiz 4](score_query_target)
+#     - query my grade of [quiz 5](score_query_target)
+#     - query my grade of [quiz 6](score_query_target)
+#     - query my grade of [quiz 7](score_query_target)
+#     - query my grade of [quiz 8](score_query_target)
+#     - query my grade of [quiz 9](score_query_target)
+#     - query my grade of [quiz 10](score_query_target)
+#     - query my grade of [peer assessment](score_query_target)
+#     - query my grade of [project evaluation](score_query_target)
+#     - [homework 1](score_query_target)
+#     - [homework 2](score_query_target)
+#     - [homework 3](score_query_target)
+#     - [homework 4](score_query_target)
+#     - [homework 5](score_query_target)
+#     - [homework 6](score_query_target)
+#     - [homework 7](score_query_target)
+#     - [homework 8](score_query_target)
+#     - [homework 9](score_query_target)
+#     - [homework 10](score_query_target)
+#     - [midterm exam](score_query_target)
+#     - [final exam](score_query_target)
+#     - [quiz 1](score_query_target)
+#     - [quiz 2](score_query_target)
+#     - [quiz 3](score_query_target)
+#     - [quiz 4](score_query_target)
+#     - [quiz 5](score_query_target)
+#     - [quiz 6](score_query_target)
+#     - [quiz 7](score_query_target)
+#     - [quiz 8](score_query_target)
+#     - [quiz 9](score_query_target)
+#     - [quiz 10](score_query_target)
+#     - [peer assessment](score_query_target)
+#     - [project evaluation](score_query_target)
 
-- intent: personal_quiz_query
-  examples: |
-    - query personal quiz
-    - personal quiz query
-    - personal quiz
-    - search personal quiz
-    - Personal examination question inquiry
-    - Query individual exam questions
-    - Individual exam questions
-    - Recommend personalized exam questions
-    - Practice personalized exam questions
-    - Personalized exam review
-    - Practice personalized questions
-    - Practice questions
-    - Practice exam questions
-    - Exam Questions Review
+# - intent: personal_quiz_query
+#   examples: |
+#     - query personal quiz
+#     - personal quiz query
+#     - personal quiz
+#     - search personal quiz
+#     - Personal examination question inquiry
+#     - Query individual exam questions
+#     - Individual exam questions
+#     - Recommend personalized exam questions
+#     - Practice personalized exam questions
+#     - Personalized exam review
+#     - Practice personalized questions
+#     - Practice questions
+#     - Practice exam questions
+#     - Exam Questions Review
 
-- intent: personal_textbook_query
-  examples: |
-    - query personal textbook
-    - search personal textbook
-    - personal textbook
-    - Query personal teaching materials
-    - Personal teaching materials
-    - View personal textbooks
-    - Recommend personalized teaching materials
-    - Practice personalized textbooks
-    - Personalized textbook review
-    - Practice personalized textbooks
-    - Practice materials
-    - Textbook review
+# - intent: personal_textbook_query
+#   examples: |
+#     - query personal textbook
+#     - search personal textbook
+#     - personal textbook
+#     - Query personal teaching materials
+#     - Personal teaching materials
+#     - View personal textbooks
+#     - Recommend personalized teaching materials
+#     - Practice personalized textbooks
+#     - Personalized textbook review
+#     - Practice personalized textbooks
+#     - Practice materials
+#     - Textbook review
 
-- synonym: homework_1
-  examples: |
-    - homework 1
-    - homework1
-    - homework one
+# - synonym: homework_1
+#   examples: |
+#     - homework 1
+#     - homework1
+#     - homework one
 
-- synonym: homework_2
-  examples: |
-    - homework two
-    - homework 2
-    - homework2
+# - synonym: homework_2
+#   examples: |
+#     - homework two
+#     - homework 2
+#     - homework2
 
-- synonym: homework_3
-  examples: |
-    - homework3
-    - homework 3
-    - homework three
+# - synonym: homework_3
+#   examples: |
+#     - homework3
+#     - homework 3
+#     - homework three
 
-- synonym: homework_4
-  examples: |
-    - homework four
-    - homework4
-    - homework 4
+# - synonym: homework_4
+#   examples: |
+#     - homework four
+#     - homework4
+#     - homework 4
 
-- synonym: homework_5
-  examples: |
-    - homework five
-    - homework5
-    - homework 5
+# - synonym: homework_5
+#   examples: |
+#     - homework five
+#     - homework5
+#     - homework 5
 
-- synonym: homework_6
-  examples: |
-    - homework six
-    - homework6
-    - homework 6
+# - synonym: homework_6
+#   examples: |
+#     - homework six
+#     - homework6
+#     - homework 6
 
-- synonym: homework_7
-  examples: |
-    - homework seven
-    - homework7
-    - homework 7
+# - synonym: homework_7
+#   examples: |
+#     - homework seven
+#     - homework7
+#     - homework 7
 
-- synonym: homework_8
-  examples: |
-    - homework eight
-    - homework8
-    - homework 8
+# - synonym: homework_8
+#   examples: |
+#     - homework eight
+#     - homework8
+#     - homework 8
 
-- synonym: homework_9
-  examples: |
-    - homework nine
-    - homework9
-    - homework 9
+# - synonym: homework_9
+#   examples: |
+#     - homework nine
+#     - homework9
+#     - homework 9
 
-- synonym: homework_10
-  examples: |
-    - homework ten
-    - homework10
-    - homework 10
+# - synonym: homework_10
+#   examples: |
+#     - homework ten
+#     - homework10
+#     - homework 10
 
-- synonym: midterm_exam
-  examples: |
-    - midterm exam
-    - midterm
-    - mid
+# - synonym: midterm_exam
+#   examples: |
+#     - midterm exam
+#     - midterm
+#     - mid
 
-- synonym: final_exam
-  examples: |
-    - final exam
-    - final
-    - fin
+# - synonym: final_exam
+#   examples: |
+#     - final exam
+#     - final
+#     - fin
 
-- synonym: quiz_1
-  examples: |
-    - quiz one
-    - quiz 1
-    - quiz1
+# - synonym: quiz_1
+#   examples: |
+#     - quiz one
+#     - quiz 1
+#     - quiz1
 
-- synonym: quiz_2
-  examples: |
-    - quiz two
-    - quiz 2
-    - quiz2
+# - synonym: quiz_2
+#   examples: |
+#     - quiz two
+#     - quiz 2
+#     - quiz2
 
-- synonym: quiz_3
-  examples: |
-    - quiz three
-    - quiz 3
-    - quiz3
+# - synonym: quiz_3
+#   examples: |
+#     - quiz three
+#     - quiz 3
+#     - quiz3
 
-- synonym: quiz_4
-  examples: |
-    - quiz four
-    - quiz 4
-    - quiz4
+# - synonym: quiz_4
+#   examples: |
+#     - quiz four
+#     - quiz 4
+#     - quiz4
 
-- synonym: quiz_5
-  examples: |
-    - quiz five
-    - quiz 5
-    - quiz5
+# - synonym: quiz_5
+#   examples: |
+#     - quiz five
+#     - quiz 5
+#     - quiz5
 
-- synonym: quiz_6
-  examples: |
-    - quiz six
-    - quiz 6
-    - quiz6
+# - synonym: quiz_6
+#   examples: |
+#     - quiz six
+#     - quiz 6
+#     - quiz6
 
-- synonym: quiz_7
-  examples: |
-    - quiz seven
-    - quiz 7
-    - quiz7
+# - synonym: quiz_7
+#   examples: |
+#     - quiz seven
+#     - quiz 7
+#     - quiz7
 
-- synonym: quiz_8
-  examples: |
-    - quiz eight
-    - quiz 8
-    - quiz8
+# - synonym: quiz_8
+#   examples: |
+#     - quiz eight
+#     - quiz 8
+#     - quiz8
 
-- synonym: quiz_9
-  examples: |
-    - quiz nine
-    - quiz 9
-    - quiz9
+# - synonym: quiz_9
+#   examples: |
+#     - quiz nine
+#     - quiz 9
+#     - quiz9
 
-- synonym: quiz_10
-  examples: |
-    - quiz ten
-    - quiz 10
-    - quiz10
+# - synonym: quiz_10
+#   examples: |
+#     - quiz ten
+#     - quiz 10
+#     - quiz10
 
-- synonym: chapter_1
-  examples: |
-    - chapter1
-    - chapter 1
-    - chapter one
-    - chp one
-    - chp1
+# - synonym: chapter_1
+#   examples: |
+#     - chapter1
+#     - chapter 1
+#     - chapter one
+#     - chp one
+#     - chp1
 
-- synonym: chapter_2
-  examples: |
-    - chapter2
-    - chapter 2
-    - chapter two
-    - chp2
-    - chp two
+# - synonym: chapter_2
+#   examples: |
+#     - chapter2
+#     - chapter 2
+#     - chapter two
+#     - chp2
+#     - chp two
 
-- synonym: chapter_3
-  examples: |
-    - chapter3
-    - chapter 3
-    - chapter three
-    - chp three
-    - chp3
+# - synonym: chapter_3
+#   examples: |
+#     - chapter3
+#     - chapter 3
+#     - chapter three
+#     - chp three
+#     - chp3
 
-- synonym: chapter_4
-  examples: |
-    - chapter4
-    - chapter 4
-    - chapter four
-    - chp four
-    - chp4
+# - synonym: chapter_4
+#   examples: |
+#     - chapter4
+#     - chapter 4
+#     - chapter four
+#     - chp four
+#     - chp4
 
-- synonym: chapter_5
-  examples: |
-    - chapter5
-    - chapter 5
-    - chp five
-    - chp5
-    - chapter five
+# - synonym: chapter_5
+#   examples: |
+#     - chapter5
+#     - chapter 5
+#     - chp five
+#     - chp5
+#     - chapter five
 
-- synonym: chapter_6
-  examples: |
-    - chapter6
-    - chapter 6
-    - chapter six
-    - chp six
-    - chp6
+# - synonym: chapter_6
+#   examples: |
+#     - chapter6
+#     - chapter 6
+#     - chapter six
+#     - chp six
+#     - chp6
 
-- synonym: chapter_7
-  examples: |
-    - chapter7
-    - chapter 7
-    - chapter seven
-    - chp7
-    - chp seven
+# - synonym: chapter_7
+#   examples: |
+#     - chapter7
+#     - chapter 7
+#     - chapter seven
+#     - chp7
+#     - chp seven
 
-- synonym: chapter_8
-  examples: |
-    - chapter8
-    - chapter 8
-    - chp8
-    - chapter eight
-    - chp eight
+# - synonym: chapter_8
+#   examples: |
+#     - chapter8
+#     - chapter 8
+#     - chp8
+#     - chapter eight
+#     - chp eight
 
-- synonym: chapter_9
-  examples: |
-    - chapter9
-    - chapter 9
-    - chp nine
-    - chapter nine
-    - chp9
+# - synonym: chapter_9
+#   examples: |
+#     - chapter9
+#     - chapter 9
+#     - chp nine
+#     - chapter nine
+#     - chp9
 
-- synonym: chapter_10
-  examples: |
-    - chapter10
-    - chapter 10
-    - chapter ten
-    - chp ten
-    - chp10
+# - synonym: chapter_10
+#   examples: |
+#     - chapter10
+#     - chapter 10
+#     - chapter ten
+#     - chp ten
+#     - chp10
 
-- synonym: chapter_11
-  examples: |
-    - chapter11
-    - chapter 11
-    - chaper eleven
-    - chp11
-    - chp eleven
+# - synonym: chapter_11
+#   examples: |
+#     - chapter11
+#     - chapter 11
+#     - chaper eleven
+#     - chp11
+#     - chp eleven
 
-- synonym: chapter_12
-  examples: |
-    - chapter12
-    - chapter 12
-    - chapter twelve
-    - chp12
-    - chp twelve
+# - synonym: chapter_12
+#   examples: |
+#     - chapter12
+#     - chapter 12
+#     - chapter twelve
+#     - chp12
+#     - chp twelve
 
-- synonym: chapter_13
-  examples: |
-    - chapter13
-    - chapter 13
-    - chapter thirteen
-    - chp13
-    - chp thirteen
+# - synonym: chapter_13
+#   examples: |
+#     - chapter13
+#     - chapter 13
+#     - chapter thirteen
+#     - chp13
+#     - chp thirteen
 
-- synonym: chapter_14
-  examples: |
-    - chapter14
-    - chapter 14
-    - chp14
-    - chapter fourteen
-    - chp fourteen
+# - synonym: chapter_14
+#   examples: |
+#     - chapter14
+#     - chapter 14
+#     - chp14
+#     - chapter fourteen
+#     - chp fourteen
 
-- synonym: chapter_15
-  examples: |
-    - chapter15
-    - chapter 15
-    - chp15
-    - chp fifteen
-    - chapter fifteen
+# - synonym: chapter_15
+#   examples: |
+#     - chapter15
+#     - chapter 15
+#     - chp15
+#     - chp fifteen
+#     - chapter fifteen
 
-- synonym: project
-  examples: |
-    - peer assessment
-    - project evaluation
-    - project score
-    - project grade
-    - evaluation grade
-    - evaluation score
-    - peer assessment grade
-    - peer assessment score
-    - project evaluation grade
-    - project evaluation score
+# - synonym: project
+#   examples: |
+#     - peer assessment
+#     - project evaluation
+#     - project score
+#     - project grade
+#     - evaluation grade
+#     - evaluation score
+#     - peer assessment grade
+#     - peer assessment score
+#     - project evaluation grade
+#     - project evaluation score
