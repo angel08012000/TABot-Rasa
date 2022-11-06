@@ -8,7 +8,7 @@ intents:
 # - help
 - faq:
     use_entities: []
-- classmap_search
+# - classmap_search
 - classmap_search_content
 # - classmap_ppt
 # - classmap_ppt_content
@@ -50,11 +50,11 @@ responses:
 #       intent: confirm_classmap_ppt_query
 #       responseMessage: "好的, 你想查詢哪個章節的投影片"
 #       endOfChat: False
-  utter_confirm_classmap_search:
-  - custom:
-      intent: confirm_classmap_search
-      responseMessage: "ok, 你想查詢什麼"
-      endOfChat: False
+#   utter_confirm_classmap_search:
+#   - custom:
+#       intent: confirm_classmap_search
+#       responseMessage: "ok, 你想查詢什麼"
+#       endOfChat: False
 #   utter_classmap_suggest:
 #   - custom:
 #       intent: classmap_suggest
