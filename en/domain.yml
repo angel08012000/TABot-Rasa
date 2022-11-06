@@ -17,15 +17,15 @@ intents:
 # - suggest_review_fail
 - personal_quiz_query
 - personal_textbook_query
-- supplement_search_all
-- supplement_search_single
-- supplement_search_single_content
+# - supplement_search_all
+# - supplement_search_single
+# - supplement_search_single_content
 
 entities:
 - score_query_target
 - ppt_query_target
 - search_target
-- supplement_target
+# - supplement_target
 
 responses:
   utter_greet:
@@ -33,16 +33,16 @@ responses:
       intent: greet
       endOfChat: True
 
-  utter_help:
-  - custom:
-      intent: help
-      endOfChat: True
+#   utter_help:
+#   - custom:
+#       intent: help
+#       endOfChat: True
 
-  utter_did_that_help:
-  - text: "Did that help you?"
+#   utter_did_that_help:
+#   - text: "Did that help you?"
 
-  utter_happy:
-  - text: "Great, carry on!"
+#   utter_happy:
+#   - text: "Great, carry on!"
 
   utter_confirm_personal_score_query:
   - custom:
@@ -76,15 +76,15 @@ responses:
   - custom:
       intent: personal_textbook_query
       endOfChat: True
-  utter_supplement_search_all:
-  - custom:
-      intent: supplement_search_all
-      endOfChat: True
-  utter_supplement_search_single:
-  - custom:
-      intent: supplement_search_single
-      responseMessage: "ok, what supplementary information do you want to search?"
-      endOfChat: False
+#   utter_supplement_search_all:
+#   - custom:
+#       intent: supplement_search_all
+#       endOfChat: True
+#   utter_supplement_search_single:
+#   - custom:
+#       intent: supplement_search_single
+#       responseMessage: "ok, what supplementary information do you want to search?"
+#       endOfChat: False
   
 # faq response
   utter_faq/software_engineering:
@@ -262,6 +262,121 @@ responses:
       intent: faq/design_issue
       endOfChat: True
 
+  utter_faq/user_story:
+  - custom:
+      intent: faq/user_story
+      endOfChat: True
+      
+  utter_faq/user_stroy_example:
+  - custom:
+      intent: faq/user_stroy_example
+      endOfChat: True
+      
+  utter_faq/user_stroy_feature:
+  - custom:
+      intent: faq/user_stroy_feature
+      endOfChat: True
+      
+  utter_faq/story_point:
+  - custom:
+      intent: faq/story_point
+      endOfChat: True
+      
+  utter_faq/user_story_mapping:
+  - custom:
+      intent: faq/user_story_mapping
+      endOfChat: True
+      
+  utter_faq/narative_flow:
+  - custom:
+      intent: faq/narative_flow
+      endOfChat: True
+      
+  utter_faq/version:
+  - custom:
+      intent: faq/version
+      endOfChat: True
+      
+  utter_faq/staging_area&repository:
+  - custom:
+      intent: faq/staging_area&repository
+      endOfChat: True
+      
+  utter_faq/wbs:
+  - custom:
+      intent: faq/wbs
+      endOfChat: True
+      
+  utter_faq/kanban:
+  - custom:
+      intent: faq/kanban
+      endOfChat: True
+      
+  utter_faq/scrum_event:
+  - custom:
+      intent: faq/scrum_event
+      endOfChat: True
+      
+  utter_faq/scrum_pillar:
+  - custom:
+      intent: faq/scrum_pillar
+      endOfChat: True
+      
+  utter_faq/scrum_value:
+  - custom:
+      intent: faq/scrum_value
+      endOfChat: True
+      
+  utter_faq/scrum_accountability:
+  - custom:
+      intent: faq/scrum_accountability
+      endOfChat: True
+      
+  utter_faq/blackbox_test:
+  - custom:
+      intent: faq/blackbox_test
+      endOfChat: True
+      
+  utter_faq/whitebox_test:
+  - custom:
+      intent: faq/whitebox_test
+      endOfChat: True
+      
+  utter_faq/unit_test:
+  - custom:
+      intent: faq/unit_test
+      endOfChat: True
+      
+  utter_faq/test_double:
+  - custom:
+      intent: faq/test_double
+      endOfChat: True
+      
+  utter_faq/integration_testing:
+  - custom:
+      intent: faq/integration_testing
+      endOfChat: True
+      
+  utter_faq/system_integration:
+  - custom:
+      intent: faq/system_integration
+      endOfChat: True
+      
+  utter_faq/acceptance_testing:
+  - custom:
+      intent: faq/acceptance_testing
+      endOfChat: True
+
+  utter_faq/test_case:
+  - custom:
+      intent: faq/test_case
+      endOfChat: True
+
+  utter_faq/regression_testing:
+  - custom:
+      intent: faq/regression_testing
+      endOfChat: True
+
 actions:
 # - action_greet
 # - action_suggest_review_fail
@@ -269,7 +384,7 @@ actions:
 - action_classmap_search
 - action_classmap_ppt
 - action_personal_score_query
-- action_supplement_single
+# - action_supplement_single
 
 session_config:
   session_expiration_time: 60
