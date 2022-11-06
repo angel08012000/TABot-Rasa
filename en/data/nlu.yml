@@ -1,21 +1,21 @@
 version: "3.0"
 
 nlu:
-- intent: greet
-  examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
 
 # - intent: help
 #   examples: |
@@ -66,406 +66,406 @@ nlu:
 #     - not really
 #     - NO
 
-- intent: faq/software_engineering
-  examples: |
-    - What are the main activities involved in software development?
-    - What to do in software development
-    - software development steps
-    - software development process
+  - intent: faq/software_engineering
+    examples: |
+      - What are the main activities involved in software development?
+      - What to do in software development
+      - software development steps
+      - software development process
 
-- intent: faq/user_requirement
-  examples: |
-    - What are the user requirements?
-    - Definition of user requirements?
-    - user requirements
-    - What are user requirements
+  - intent: faq/user_requirement
+    examples: |
+      - What are the user requirements?
+      - Definition of user requirements?
+      - user requirements
+      - What are user requirements
 
-- intent: faq/system_requirement
-  examples: |
-    - What are the system requirements?
-    - Definition of system requirements?
-    - system requirement
-    - What are system requirements
+  - intent: faq/system_requirement
+    examples: |
+      - What are the system requirements?
+      - Definition of system requirements?
+      - system requirement
+      - What are system requirements
 
-- intent: faq/functional_requirement
-  examples: |
-    - What are the functional requirements?
-    - Definition of functional requirements?
-    - Functional Requirements
-    - What are functional requirements
+  - intent: faq/functional_requirement
+    examples: |
+      - What are the functional requirements?
+      - Definition of functional requirements?
+      - Functional Requirements
+      - What are functional requirements
 
-- intent: faq/functional_requirement_2
-  examples: |
-    - Is there a case for functional requirements?
-    - The case for functional requirements
-    - Example functional requirements
+  - intent: faq/functional_requirement_2
+    examples: |
+      - Is there a case for functional requirements?
+      - The case for functional requirements
+      - Example functional requirements
 
-- intent: faq/non_functional_requirement
-  examples: |
-    - What are non-functional requirements?
-    - Definition of non-functional requirements?
-    - non-functional requirements
-    - What are non-functional requirements
+  - intent: faq/non_functional_requirement
+    examples: |
+      - What are non-functional requirements?
+      - Definition of non-functional requirements?
+      - non-functional requirements
+      - What are non-functional requirements
 
-- intent: faq/non_functional_requirement_2
-  examples: |
-    - Are there cases of non-functional requirements?
-    - The case for non-functional requirements
-    - Examples of non-functional requirements
+  - intent: faq/non_functional_requirement_2
+    examples: |
+      - Are there cases of non-functional requirements?
+      - The case for non-functional requirements
+      - Examples of non-functional requirements
 
-- intent: faq/concept_of_operation
-  examples: |
-    - How to write operation concept?
-    - What is the operating concept?
-    - Operational Concept
-    - How to write operational concepts?
+  - intent: faq/concept_of_operation
+    examples: |
+      - How to write operation concept?
+      - What is the operating concept?
+      - Operational Concept
+      - How to write operational concepts?
 
-- intent: faq/MVP
-  examples: |
-    - What is an MVP?
-    - Definition of MVP?
-    - MVP
+  - intent: faq/MVP
+    examples: |
+      - What is an MVP?
+      - Definition of MVP?
+      - MVP
 
-- intent: faq/wireframe
-  examples: |
-    - What is a wireframe?
-    - Wireframes
-    - What is wireframe?
-    - wireframe
-    - What is Wireframe
+  - intent: faq/wireframe
+    examples: |
+      - What is a wireframe?
+      - Wireframes
+      - What is wireframe?
+      - wireframe
+      - What is Wireframe
 
-- intent: faq/wireframe_1
-  examples: |
-    - How to draw wireframes?
-    - How to draw wireframes?
-    - How to draw wireframes
-    - Are there any guidelines for drawing wireframes?
+  - intent: faq/wireframe_1
+    examples: |
+      - How to draw wireframes?
+      - How to draw wireframes?
+      - How to draw wireframes
+      - Are there any guidelines for drawing wireframes?
 
-- intent: faq/requirement_analyze
-  examples: |
-    - What are the criteria for needs analysis?
-    - Requirements analysis criteria?
-    - demand analysis
+  - intent: faq/requirement_analyze
+    examples: |
+      - What are the criteria for needs analysis?
+      - Requirements analysis criteria?
+      - demand analysis
 
-- intent: faq/uml
-  examples: |
-    - What is UML?
-    - Definition of UML?
-    - UML
-    - What is UML
+  - intent: faq/uml
+    examples: |
+      - What is UML?
+      - Definition of UML?
+      - UML
+      - What is UML
 
-- intent: faq/use_case
-  examples: |
-    - What are the use case specifications?
-    - Use Case Specifications
-    - Specifications for use cases
-    - use case
+  - intent: faq/use_case
+    examples: |
+      - What are the use case specifications?
+      - Use Case Specifications
+      - Specifications for use cases
+      - use case
 
-- intent: faq/PM
-  examples: |
-    - What does project management do?
-    - Project Management Jobs
-    - Project management
-    - PM
+  - intent: faq/PM
+    examples: |
+      - What does project management do?
+      - Project Management Jobs
+      - Project management
+      - PM
 
-- intent: faq/WBS
-  examples: |
-    - What is WBS?
-    - WBS
-    - What is a work breakdown structure?
-    - Work breakdown structure?
+  - intent: faq/WBS
+    examples: |
+      - What is WBS?
+      - WBS
+      - What is a work breakdown structure?
+      - Work breakdown structure?
 
-- intent: faq/project_forecast
-  examples: |
-    - How to make project estimates?
-    - Project Estimate
-    - How to make job estimates?
-    - Job Estimate
+  - intent: faq/project_forecast
+    examples: |
+      - How to make project estimates?
+      - Project Estimate
+      - How to make job estimates?
+      - Job Estimate
 
-- intent: faq/risk
-  examples: |
-    - What are the risks?
-    - risk
-    - risk risk
+  - intent: faq/risk
+    examples: |
+      - What are the risks?
+      - risk
+      - risk risk
 
-- intent: faq/board
-  examples: |
-    - How to use Kanban?
-    - Basic usage of Kanban?
+  - intent: faq/board
+    examples: |
+      - How to use Kanban?
+      - Basic usage of Kanban?
 
-- intent: faq/dependency_and_association
-  examples: |
-    - What is the difference between interdependence and association?
-    - interdependence and association
+  - intent: faq/dependency_and_association
+    examples: |
+      - What is the difference between interdependence and association?
+      - interdependence and association
 
-- intent: faq/aggregation_and_composition
-  examples: |
-    - What is the difference between composition and aggregation?
-    - Combination and Aggregation
+  - intent: faq/aggregation_and_composition
+    examples: |
+      - What is the difference between composition and aggregation?
+      - Combination and Aggregation
 
-- intent: faq/abstraction
-  examples: |
-    - What is abstraction?
-    - abstract definition
-    - What is abstraction
-    - abstract
+  - intent: faq/abstraction
+    examples: |
+      - What is abstraction?
+      - abstract definition
+      - What is abstraction
+      - abstract
 
-- intent: faq/modularity
-  examples: |
-    - What is Modularization?
-    - Modular Definition
-    - What is Modularization
-    - modular
+  - intent: faq/modularity
+    examples: |
+      - What is Modularization?
+      - Modular Definition
+      - What is Modularization
+      - modular
 
-- intent: faq/cohesion
-  examples: |
-    - What is cohesion?
-    - Definition of Cohesion
-    - what is cohesion
-    - cohesion
+  - intent: faq/cohesion
+    examples: |
+      - What is cohesion?
+      - Definition of Cohesion
+      - what is cohesion
+      - cohesion
 
-- intent: faq/coupling
-  examples: |
-    - What is the coupling force?
-    - Definition of Coupling Force
-    - What is Coupling Force
-    - coupling force
+  - intent: faq/coupling
+    examples: |
+      - What is the coupling force?
+      - Definition of Coupling Force
+      - What is Coupling Force
+      - coupling force
 
-- intent: faq/cohesion_and_coupling_rate
-  examples: |
-    - Why High Cohesion, Low Coupling is good?
-    - What does High Cohesion, Low Coupling mean?
-    - High Cohesion, Low Coupling
-    - High cohesion and low coupling
+  - intent: faq/cohesion_and_coupling_rate
+    examples: |
+      - Why High Cohesion, Low Coupling is good?
+      - What does High Cohesion, Low Coupling mean?
+      - High Cohesion, Low Coupling
+      - High cohesion and low coupling
 
-- intent: faq/system_design
-  examples: |
-    - What does the system design include?
-    - System design work content
-    - What is System Design
-    - system design
+  - intent: faq/system_design
+    examples: |
+      - What does the system design include?
+      - System design work content
+      - What is System Design
+      - system design
 
-- intent: faq/architecture_design
-  examples: |
-    - What is architectural design?
-    - Definition of Architecture Design
-    - What is Architecture Design
-    - Architecture design
+  - intent: faq/architecture_design
+    examples: |
+      - What is architectural design?
+      - Definition of Architecture Design
+      - What is Architecture Design
+      - Architecture design
 
-- intent: faq/architecture_design_2
-  examples: |
-    - What are the layers of the general Web front-end and back-end separation architecture?
-    - How to layer the front and back ends of the web
-    - Layering of the front and back ends of the web
+  - intent: faq/architecture_design_2
+    examples: |
+      - What are the layers of the general Web front-end and back-end separation architecture?
+      - How to layer the front and back ends of the web
+      - Layering of the front and back ends of the web
 
-- intent: faq/architecture_design_3
-  examples: |
-    - Is there a suggested approach to architectural design?
-    - Architecture Design Method
-    - how the architecture is designed
+  - intent: faq/architecture_design_3
+    examples: |
+      - Is there a suggested approach to architectural design?
+      - Architecture Design Method
+      - how the architecture is designed
 
-- intent: faq/interface
-  examples: |
-    - What is an interface?
-    - What is the interface?
-    - How to design the interface?
-    - interface
+  - intent: faq/interface
+    examples: |
+      - What is an interface?
+      - What is the interface?
+      - How to design the interface?
+      - interface
 
-- intent: faq/interface_2
-  examples: |
-    - What does interface have to do with system integration?
-    - What is the relationship between interface design and integration?
-    - Interface design and integration
-    - The relationship between interface and system integration
-    - interface and system integration
+  - intent: faq/interface_2
+    examples: |
+      - What does interface have to do with system integration?
+      - What is the relationship between interface design and integration?
+      - Interface design and integration
+      - The relationship between interface and system integration
+      - interface and system integration
 
-- intent: faq/interface_3
-  examples: |
-    - Does interface design design a user interface?
-    - Interface Design and Designing User Interfaces
-    - Interface Design and UI
+  - intent: faq/interface_3
+    examples: |
+      - Does interface design design a user interface?
+      - Interface Design and Designing User Interfaces
+      - Interface Design and UI
 
-- intent: faq/interface_4
-  examples: |
-    - Is there a case for interface design?
-    - The case for interface design
+  - intent: faq/interface_4
+    examples: |
+      - Is there a case for interface design?
+      - The case for interface design
 
-- intent: faq/design_issue
-  examples: |
-    - What is a design issue?
-    - design issue
-    - design issues
+  - intent: faq/design_issue
+    examples: |
+      - What is a design issue?
+      - design issue
+      - design issues
 
-- intent: faq/user_story
-  examples: |
-    - What is a user story?
-    - Definition of User Story
-    - What is a user story
-    - user story
+  - intent: faq/user_story
+    examples: |
+      - What is a user story?
+      - Definition of User Story
+      - What is a user story
+      - user story
 
-- intent: faq/user_stroy_example
-  examples: |
-    - Are there examples of user stories?
-    - Are there any examples of user stories?
-    - Example of a user story
+  - intent: faq/user_stroy_example
+    examples: |
+      - Are there examples of user stories?
+      - Are there any examples of user stories?
+      - Example of a user story
 
-- intent: faq/user_stroy_feature
-  examples: |
-    - What are the attributes of a good user story?
-    - What are the properties of a user story?
-    - User Story Properties
-    - What is INVEST?
+  - intent: faq/user_stroy_feature
+    examples: |
+      - What are the attributes of a good user story?
+      - What are the properties of a user story?
+      - User Story Properties
+      - What is INVEST?
 
-- intent: faq/story_point
-  examples: |
-    - What are story points?
-    - what is the story point
-    - Definition of Story Point
-    - What is a story point
-    - story point
+  - intent: faq/story_point
+    examples: |
+      - What are story points?
+      - what is the story point
+      - Definition of Story Point
+      - What is a story point
+      - story point
 
-- intent: faq/user_story_mapping
-  examples: |
-    - What is user story comparison?
-    - What is User Story Control?
-    - Definition of User Story Comparison
-    - What is User Story Comparison
-    - user story comparison
+  - intent: faq/user_story_mapping
+    examples: |
+      - What is user story comparison?
+      - What is User Story Control?
+      - Definition of User Story Comparison
+      - What is User Story Comparison
+      - user story comparison
 
-- intent: faq/narative_flow
-  examples: |
-    - What is narrative flow?
-    - what is narrative flow
-    - Definition of narrative flow
-    - What is narrative flow
-    - narrative flow
+  - intent: faq/narative_flow
+    examples: |
+      - What is narrative flow?
+      - what is narrative flow
+      - Definition of narrative flow
+      - What is narrative flow
+      - narrative flow
 
-- intent: faq/version
-  examples: |
-    - What is version?
-    - what is the version
-    - Definition of version
-    - What is a version
-    - Version
+  - intent: faq/version
+    examples: |
+      - What is version?
+      - what is the version
+      - Definition of version
+      - What is a version
+      - Version
 
-- intent: faq/staging_area&repository
-  examples: |
-    - What is the relationship between working directory, staging area, and repository?
-    - Relationship between working directory, staging area, and repository
-    - Where will git put archives?
+  - intent: faq/staging_area&repository
+    examples: |
+      - What is the relationship between working directory, staging area, and repository?
+      - Relationship between working directory, staging area, and repository
+      - Where will git put archives?
 
-- intent: faq/wbs
-  examples: |
-    - What is a work breakdown structure?
-    - What is a work breakdown structure
-    - Definition of Work Breakdown Structure
-    - What is a work breakdown structure
-    - work breakdown structure
+  - intent: faq/wbs
+    examples: |
+      - What is a work breakdown structure?
+      - What is a work breakdown structure
+      - Definition of Work Breakdown Structure
+      - What is a work breakdown structure
+      - work breakdown structure
 
-- intent: faq/kanban
-  examples: |
-    - What is Kanban?
-    - What is Kanban
-    - Definition of Kanban
-    - What is Kanban
-    - Kanban
+  - intent: faq/kanban
+    examples: |
+      - What is Kanban?
+      - What is Kanban
+      - Definition of Kanban
+      - What is Kanban
+      - Kanban
 
-- intent: faq/scrum_event
-  examples: |
-    - What events are included in Scrum?
-    - What are the events of Scrum?
+  - intent: faq/scrum_event
+    examples: |
+      - What events are included in Scrum?
+      - What are the events of Scrum?
 
-- intent: faq/scrum_pillar
-  examples: |
-    - What are the three pillars of Scrum?
-    - What are the pillars of Scrum?
-    - Pillars of Scrum
+  - intent: faq/scrum_pillar
+    examples: |
+      - What are the three pillars of Scrum?
+      - What are the pillars of Scrum?
+      - Pillars of Scrum
 
-- intent: faq/scrum_value
-  examples: |
-    - What are the five values of Scrum?
-    - What are the values of Scrum?
-    - What are the values of Scrum?
-    - Scrum values
+  - intent: faq/scrum_value
+    examples: |
+      - What are the five values of Scrum?
+      - What are the values of Scrum?
+      - What are the values of Scrum?
+      - Scrum values
 
-- intent: faq/scrum_accountability
-  examples: |
-    - What are the three responsibilities of Scrum?
-    - What are the responsibilities of Scrum?
-    - What are the responsibilities of Scrum?
-    - Scrum's Responsibilities
+  - intent: faq/scrum_accountability
+    examples: |
+      - What are the three responsibilities of Scrum?
+      - What are the responsibilities of Scrum?
+      - What are the responsibilities of Scrum?
+      - Scrum's Responsibilities
 
-- intent: faq/blackbox_test
-  examples: |
-    - What is black box testing?
-    - What is black box testing
-    - Definition of Black Box Testing
-    - What is black box testing
-    - black box testing
+  - intent: faq/blackbox_test
+    examples: |
+      - What is black box testing?
+      - What is black box testing
+      - Definition of Black Box Testing
+      - What is black box testing
+      - black box testing
 
-- intent: faq/whitebox_test
-  examples: |
-    - What is white box testing?
-    - What is White Box Testing
-    - Definition of White Box Testing
-    - What is White Box Testing
-    - white box testing
+  - intent: faq/whitebox_test
+    examples: |
+      - What is white box testing?
+      - What is White Box Testing
+      - Definition of White Box Testing
+      - What is White Box Testing
+      - white box testing
 
-- intent: faq/unit_test
-  examples: |
-    - What is unit testing?
-    - What is unit testing
-    - Definition of Unit Testing
-    - What is unit testing
-    - unit test
+  - intent: faq/unit_test
+    examples: |
+      - What is unit testing?
+      - What is unit testing
+      - Definition of Unit Testing
+      - What is unit testing
+      - unit test
 
-- intent: faq/test_double
-  examples: |
-    - What is a test double?
-    - What is a test double
-    - Definition of Test Doubles
-    - What is a test double
-    - test double
+  - intent: faq/test_double
+    examples: |
+      - What is a test double?
+      - What is a test double
+      - Definition of Test Doubles
+      - What is a test double
+      - test double
 
-- intent: faq/integration_testing
-  examples: |
-    - What is integration testing?
-    - What is integration testing
-    - Definition of Integration Testing
-    - What is integration testing
-    - Integration testing
+  - intent: faq/integration_testing
+    examples: |
+      - What is integration testing?
+      - What is integration testing
+      - Definition of Integration Testing
+      - What is integration testing
+      - Integration testing
 
-- intent: faq/system_integration
-  examples: |
-    - What is system testing?
-    - What is system testing
-    - Definition of System Testing
-    - What is System Testing
-    - System test
+  - intent: faq/system_integration
+    examples: |
+      - What is system testing?
+      - What is system testing
+      - Definition of System Testing
+      - What is System Testing
+      - System test
 
-- intent: faq/acceptance_testing
-  examples: |
-    - What is an acceptance test?
-    - What is acceptance testing
-    - Definition of Acceptance Testing
-    - What is an acceptance test
-    - Acceptance Test
+  - intent: faq/acceptance_testing
+    examples: |
+      - What is an acceptance test?
+      - What is acceptance testing
+      - Definition of Acceptance Testing
+      - What is an acceptance test
+      - Acceptance Test
 
-- intent: faq/test_case
-  examples: |
-    - What is included in the system test case?
-    - What is the content of the system test case?
-    - What does a system test case contain?
-    - What are the contents of system testing?
-    - The content of the system test
+  - intent: faq/test_case
+    examples: |
+      - What is included in the system test case?
+      - What is the content of the system test case?
+      - What does a system test case contain?
+      - What are the contents of system testing?
+      - The content of the system test
 
-- intent: faq/regression_testing
-  examples: |
-    - When will regression testing be performed?
-    - When is regression testing required?
-    - When is regression testing required?
-    - When to do regression testing?
-    - Regression Testing
+  - intent: faq/regression_testing
+    examples: |
+      - When will regression testing be performed?
+      - When is regression testing required?
+      - When is regression testing required?
+      - When to do regression testing?
+      - Regression Testing
 
 # - intent: classmap_ppt
 #   examples: |
@@ -2754,15 +2754,15 @@ nlu:
 #     - suggest textbook material
 #     - how about add this into textbook
 
-- intent: read_user_requirements
-  examples: |
-    - I want to check the requirements document
-    - Requirements document
-    - Group requirements document
-    - Team user requirements
-    - Thematic user requirements
-    - What are the user requirements of our group?
-    - What is the requirements document for our group?
+  - intent: read_user_requirements
+    examples: |
+      - I want to check the requirements document
+      - Requirements document
+      - Group requirements document
+      - Team user requirements
+      - Thematic user requirements
+      - What are the user requirements of our group?
+      - What is the requirements document for our group?
 
 # - intent: personal_score_query
 #   examples: |
