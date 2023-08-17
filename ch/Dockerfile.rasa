@@ -1,4 +1,4 @@
-FROM rasa/rasa:2.8.5-full
+FROM rasa/rasa:3.2.6-full
 
 # use root user to install dependency
 USER root

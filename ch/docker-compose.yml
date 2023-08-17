@@ -1,19 +1,19 @@
 version: '3.0'
 
 services:
-  rasa:
+  tabot-rasa-ch:
     # image: rasa/rasa:2.8.5-full
     image: tabot/ch-rasa:v0.1
     container_name: tabot-rasa-ch
   #  restart: always
-    networks: ['rasa-network']
+    networks: ['tabot']
     user: root
     ports:
       - "5005:5005"
     volumes:
       - "./:/app/"
     depends_on:
-      - action_server
+      - tabot-rasa-action
     command:
       - run
       - --model
@@ -23,11 +23,11 @@ services:
       - -vv
       - --enable-api
 
-  action_server:
-    image: tabot/ch-action:v0.1
-    container_name: tabot-action
+  tabot-rasa-action:
+    image: tabot/ch-rasa-action:v0.1
+    container_name: tabot-rasa-action
 #    restart: always
-    networks: ['rasa-network']
+    networks: ['tabot']
     ports:
       - "5055:5055"
     volumes:
@@ -38,4 +38,7 @@ services:
       - actions
       - -vv
 
-networks: {rasa-network: {}}
+# networks: {rasa-network: {}}
+networks:
+  tabot:
+    name: tabot

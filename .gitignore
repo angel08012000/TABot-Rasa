@@ -1,8 +1,14 @@
 ch/todo.md
 ch/.config/
 ch/.keras/
+ch/.rasa/
 ch/models/dump/
-en/models/dump/
+ch/models/*
+ch/models/
 en/tests/
 en/.config/
 en/.keras/
+en/.rasa/
+en/models/dump/
+en/models/*
+en/models/

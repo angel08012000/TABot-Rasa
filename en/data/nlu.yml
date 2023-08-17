@@ -1,33 +1,33 @@
-version: "2.0"
+version: "3.0"
 
 nlu:
-- intent: greet
-  examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
 
-- intent: help
-  examples: |
-    - I need query function
-    - What's the function?
-    - What are the functions?
-    - What can you do?
-    - Tutorial
-    - how to use?
-    - Instructions
-    - illustrate
-    - getting Started
+# - intent: help
+#   examples: |
+#     - I need query function
+#     - What's the function?
+#     - What are the functions?
+#     - What can you do?
+#     - Tutorial
+#     - how to use?
+#     - Instructions
+#     - illustrate
+#     - getting Started
 
 # - intent: goodbye
 #   examples: |
@@ -43,28 +43,30 @@ nlu:
 #     - bye bye
 #     - see you later
 
-- intent: suggest_review_pass
-  examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
-    - ok
-    - OK
+# manual review suggest for now
+# - intent: suggest_review_pass
+#   examples: |
+#     - yes
+#     - y
+#     - indeed
+#     - of course
+#     - that sounds good
+#     - correct
+#     - ok
+#     - OK
 
-- intent: suggest_review_fail
-  examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
-    - NO
+# - intent: suggest_review_fail
+#   examples: |
+#     - no
+#     - n
+#     - never
+#     - I don't think so
+#     - don't like that
+#     - no way
+#     - not really
+#     - NO
 
+<<<<<<< HEAD
 - intent: faq/java_garbled_code
   examples: |
     - Why do garbled code pop out when i compile java program?
@@ -233,424 +235,84 @@ nlu:
     - What's new in jdk1.8
     - Features of jdk1.8
     - jdk1.8
+=======
+  - intent: faq/software_engineering
+    examples: |
+      - What are the main activities involved in software development?
+      - What to do in software development
+      - software development steps
+      - software development process
 
-- intent: classmap_ppt
-  examples: |
-    - search power point
-    - search ppt
-    - ppt information
-    - I'd like to query ppt
-    - class ppt
-    - query power point
-    - query ppt
-    - I want to inquire about the slideshow information
-    - Query slide information
-    - Slideshow information
-    - Course slides
-    - Course slide materials
+  - intent: faq/user_requirement
+    examples: |
+      - What are the user requirements?
+      - Definition of user requirements?
+      - user requirements
+      - What are user requirements
 
-- intent: classmap_ppt_content
-  examples: |
-    - i want to checkout slides of [chapter one](ppt_query_target)
-    - i want to checkout slides of [chapter two](ppt_query_target)
-    - i want to checkout slides of [chapter three](ppt_query_target)
-    - i want to checkout slides of [chapter four](ppt_query_target)
-    - i want to checkout slides of [chapter five](ppt_query_target)
-    - i want to checkout slides of [chapter six](ppt_query_target)
-    - i want to checkout slides of [chapter seven](ppt_query_target)
-    - i want to checkout slides of [chapter eight](ppt_query_target)
-    - i want to checkout slides of [chapter nine](ppt_query_target)
-    - i want to checkout slides of [chapter ten](ppt_query_target)
-    - i want to checkout slides of [chapter eleven](ppt_query_target)
-    - i want to checkout slides of [chapter twelve](ppt_query_target)
-    - i want to checkout slides of [chapter thirteen](ppt_query_target)
-    - i want to checkout slides of [chapter fourteen](ppt_query_target)
-    - i want to checkout slides of [chapter fifteen](ppt_query_target)
-    - slides of [chapter1](ppt_query_target)
-    - slides of [chapter2](ppt_query_target)
-    - slides of [chapter3](ppt_query_target)
-    - slides of [chapter4](ppt_query_target)
-    - slides of [chapter5](ppt_query_target)
-    - slides of [chapter6](ppt_query_target)
-    - slides of [chapter7](ppt_query_target)
-    - slides of [chapter8](ppt_query_target)
-    - slides of [chapter9](ppt_query_target)
-    - slides of [chapter10](ppt_query_target)
-    - slides of [chapter11](ppt_query_target)
-    - slides of [chapter12](ppt_query_target)
-    - slides of [chapter13](ppt_query_target)
-    - slides of [chapter14](ppt_query_target)
-    - slides of [chapter15](ppt_query_target)
-    - [chp one](ppt_query_target) power point
-    - [chp two](ppt_query_target) power point
-    - [chp three](ppt_query_target) power point
-    - [chp four](ppt_query_target) power point
-    - [chp five](ppt_query_target) power point
-    - [chp six](ppt_query_target) power point
-    - [chp seven](ppt_query_target) power point
-    - [chp eight](ppt_query_target) power point
-    - [chp nine](ppt_query_target) power point
-    - [chp ten](ppt_query_target) power point
-    - [chp eleven](ppt_query_target) power point
-    - [chp twelve](ppt_query_target) power point
-    - [chp thirteen](ppt_query_target) power point
-    - [chp fourteen](ppt_query_target) power point
-    - [chp fifteen](ppt_query_target) power point
+  - intent: faq/system_requirement
+    examples: |
+      - What are the system requirements?
+      - Definition of system requirements?
+      - system requirement
+      - What are system requirements
 
-- intent: classmap_search
-  examples: |
-    - i want to query about classmap
-    - i want to query classmap
-    - query classmap
-    - search classmap
-    - classmap query
-    - classmap search
-    - I want to find the course map
-    - Check the course map
-    - Course map query
-    - Course map
-    - Check the course map
-    - Check course knowledge
-    - Query course knowledge
-    - Inquire about course related knowledge
+  - intent: faq/functional_requirement
+    examples: |
+      - What are the functional requirements?
+      - Definition of functional requirements?
+      - Functional Requirements
+      - What are functional requirements
+>>>>>>> se_1111
 
-- intent: classmap_search_content
-  examples: |
-    - what does [closure](search_target) means
-    - i want to search about [closure](search_target)
-    - what is [closure](search_target)
-    - what is [html](search_target)
-    - what is [css](search_target)
-    - i want to search what [css](search_target) means
-    - i want to know about [Arrays](search_target)
-    - what is [Introduction](search_target)
-    - what is [Introduction to Java Applications](search_target)
-    - what is [First Program in Java](search_target)
-    - what is [Modifying Your First Java Program](search_target)
-    - what is [printf](search_target)
-    - what is [print text](search_target)
-    - what is [Displaying Text with printf](search_target)
-    - what is [Another Application](search_target)
-    - what is [Memory Concepts](search_target)
-    - what is [Arithmetic](search_target)
-    - what is [Decision Making](search_target)
-    - what is [Instance Variables](search_target)
-    - what is [Variables](search_target)
-    - what is [Primitive Types](search_target)
-    - what is [Reference Types](search_target)
-    - what is [Initializing Objects with Constructors](search_target)
-    - what is [Account Class](search_target)
-    - what is [Account Class with a Balance](search_target)
-    - what is [Control](search_target)
-    - what is [Control Statements](search_target)
-    - what is [Sentinel-Controlled Repetition](search_target)
-    - what is [while loop](search_target)
-    - what is [Essentials of Counter-Controlled Repetition](search_target)
-    - what is [for loop](search_target)
-    - what is [for Repetition Statement](search_target)
-    - what is [Examples Using the for Statement](search_target)
-    - what is [switch Multiple-Selection Statement](search_target)
-    - what is [switch](search_target)
-    - what is [Strings in switch Statements](search_target)
-    - what is [break](search_target)
-    - what is [continue](search_target)
-    - what is [Logical Operators](search_target)
-    - what is [Methods](search_target)
-    - what is [Program Modules in Java](search_target)
-    - what is [Modules](search_target)
-    - what is [static Fields](search_target)
-    - what is [static Methods](search_target)
-    - what is [Class Math](search_target)
-    - what is [Notes on Declaring and Using Methods](search_target)
-    - what is [Argument Promotion and Casting](search_target)
-    - what is [Promotion](search_target)
-    - what is [Casting](search_target)
-    - what is [Secure Random-Number Generation](search_target)
-    - what is [Random](search_target)
-    - what is [enum](search_target)
-    - what is [Introducing enum Types](search_target)
-    - what is [Scope of Declarations](search_target)
-    - what is [Method Overloading](search_target)
-    - what is [Overload](search_target)
-    - what is [Variable-Length Argument Lists](search_target)
-    - what is [Command](search_target)
-    - what is [Using Command-Line Arguments](search_target)
-    - what is [Arrays](search_target)
-    - what is [Class Arrays](search_target)
-    - what is [Introduction to Collections and Class ArrayList](search_target)
-    - what is [ArrayList](search_target)
-    - what is [Classes and Objects](search_target)
-    - what is [Time Class Case Study](search_target)
-    - what is [Controlling Access to Members](search_target)
-    - what is [Referring to the Current Object's Members with the this Reference](search_target)
-    - what is [Overloaded Constructors](search_target)
-    - what is [Default and No-Argument Constructors](search_target)
-    - what is [Notes on Set and Get Methods](search_target)
-    - what is [Composition](search_target)
-    - what is [Aggregation](search_target)
-    - what is [enum Types](search_target)
-    - what is [Garbage Collection](search_target)
-    - what is [static Class Members](search_target)
-    - what is [Static Import](search_target)
-    - what is [final Instance Variables](search_target)
-    - what is [Package Access](search_target)
-    - what is [Inheritance](search_target)
-    - what is [Superclasses and Subclasses](search_target)
-    - what is [protected Members](search_target)
-    - what is [Relationship Between Superclasses and Subclasses](search_target)
-    - what is [Constructors in Subclasses](search_target)
-    - i want to search about [Introduction](search_target)
-    - i want to search about [Introduction to Java Applications](search_target)
-    - i want to search about [First Program in Java](search_target)
-    - i want to search about [Modifying Your First Java Program](search_target)
-    - i want to search about [printf](search_target)
-    - i want to search about [print text](search_target)
-    - i want to search about [Displaying Text with printf](search_target)
-    - i want to search about [Another Application](search_target)
-    - i want to search about [Memory Concepts](search_target)
-    - i want to search about [Arithmetic](search_target)
-    - i want to search about [Decision Making](search_target)
-    - i want to search about [Instance Variables](search_target)
-    - i want to search about [Variables](search_target)
-    - i want to search about [Primitive Types](search_target)
-    - i want to search about [Reference Types](search_target)
-    - i want to search about [Initializing Objects with Constructors](search_target)
-    - i want to search about [Account Class](search_target)
-    - i want to search about [Account Class with a Balance](search_target)
-    - i want to search about [Control](search_target)
-    - i want to search about [Control Statements](search_target)
-    - i want to search about [Sentinel-Controlled Repetition](search_target)
-    - i want to search about [while loop](search_target)
-    - i want to search about [Essentials of Counter-Controlled Repetition](search_target)
-    - i want to search about [for loop](search_target)
-    - i want to search about [for Repetition Statement](search_target)
-    - i want to search about [Examples Using the for Statement](search_target)
-    - i want to search about [switch Multiple-Selection Statement](search_target)
-    - i want to search about [switch](search_target)
-    - i want to search about [Strings in switch Statements](search_target)
-    - i want to search about [break](search_target)
-    - i want to search about [continue](search_target)
-    - i want to search about [Logical Operators](search_target)
-    - i want to search about [Methods](search_target)
-    - i want to search about [Program Modules in Java](search_target)
-    - i want to search about [Modules](search_target)
-    - i want to search about [static Fields](search_target)
-    - i want to search about [static Methods](search_target)
-    - i want to search about [Class Math](search_target)
-    - i want to search about [Notes on Declaring and Using Methods](search_target)
-    - i want to search about [Argument Promotion and Casting](search_target)
-    - i want to search about [Promotion](search_target)
-    - i want to search about [Casting](search_target)
-    - i want to search about [Secure Random-Number Generation](search_target)
-    - i want to search about [Random](search_target)
-    - i want to search about [enum](search_target)
-    - i want to search about [Introducing enum Types](search_target)
-    - i want to search about [Scope of Declarations](search_target)
-    - i want to search about [Method Overloading](search_target)
-    - i want to search about [Overload](search_target)
-    - i want to search about [Variable-Length Argument Lists](search_target)
-    - i want to search about [Command](search_target)
-    - i want to search about [Using Command-Line Arguments](search_target)
-    - i want to search about [Arrays](search_target)
-    - i want to search about [Class Arrays](search_target)
-    - i want to search about [Introduction to Collections and Class ArrayList](search_target)
-    - i want to search about [ArrayList](search_target)
-    - i want to search about [Classes and Objects](search_target)
-    - i want to search about [Time Class Case Study](search_target)
-    - i want to search about [Controlling Access to Members](search_target)
-    - i want to search about [Referring to the Current Object's Members with the this Reference](search_target)
-    - i want to search about [Overloaded Constructors](search_target)
-    - i want to search about [Default and No-Argument Constructors](search_target)
-    - i want to search about [Notes on Set and Get Methods](search_target)
-    - i want to search about [Composition](search_target)
-    - i want to search about [Aggregation](search_target)
-    - i want to search about [enum Types](search_target)
-    - i want to search about [Garbage Collection](search_target)
-    - i want to search about [static Class Members](search_target)
-    - i want to search about [Static Import](search_target)
-    - i want to search about [final Instance Variables](search_target)
-    - i want to search about [Package Access](search_target)
-    - i want to search about [Inheritance](search_target)
-    - i want to search about [Superclasses and Subclasses](search_target)
-    - i want to search about [protected Members](search_target)
-    - i want to search about [Relationship Between Superclasses and Subclasses](search_target)
-    - i want to search about [Constructors in Subclasses](search_target)
-    - i want to search what [Introduction](search_target) means
-    - i want to search what [Introduction to Java Applications](search_target) means
-    - i want to search what [First Program in Java](search_target) means
-    - i want to search what [Modifying Your First Java Program](search_target) means
-    - i want to search what [printf](search_target) means
-    - i want to search what [print text](search_target) means
-    - i want to search what [Displaying Text with printf](search_target) means
-    - i want to search what [Another Application](search_target) means
-    - i want to search what [Memory Concepts](search_target) means
-    - i want to search what [Arithmetic](search_target) means
-    - i want to search what [Decision Making](search_target) means
-    - i want to search what [Instance Variables](search_target) means
-    - i want to search what [Variables](search_target) means
-    - i want to search what [Primitive Types](search_target) means
-    - i want to search what [Reference Types](search_target) means
-    - i want to search what [Initializing Objects with Constructors](search_target) means
-    - i want to search what [Account Class](search_target) means
-    - i want to search what [Account Class with a Balance](search_target) means
-    - i want to search what [Control](search_target) means
-    - i want to search what [Control Statements](search_target) means
-    - i want to search what [Sentinel-Controlled Repetition](search_target) means
-    - i want to search what [while loop](search_target) means
-    - i want to search what [Essentials of Counter-Controlled Repetition](search_target) means
-    - i want to search what [for loop](search_target) means
-    - i want to search what [for Repetition Statement](search_target) means
-    - i want to search what [Examples Using the for Statement](search_target) means
-    - i want to search what [switch Multiple-Selection Statement](search_target) means
-    - i want to search what [switch](search_target) means
-    - i want to search what [Strings in switch Statements](search_target) means
-    - i want to search what [break](search_target) means
-    - i want to search what [continue](search_target) means
-    - i want to search what [Logical Operators](search_target) means
-    - i want to search what [Methods](search_target) means
-    - i want to search what [Program Modules in Java](search_target) means
-    - i want to search what [Modules](search_target) means
-    - i want to search what [static Fields](search_target) means
-    - i want to search what [static Methods](search_target) means
-    - i want to search what [Class Math](search_target) means
-    - i want to search what [Notes on Declaring and Using Methods](search_target) means
-    - i want to search what [Argument Promotion and Casting](search_target) means
-    - i want to search what [Promotion](search_target) means
-    - i want to search what [Casting](search_target) means
-    - i want to search what [Secure Random-Number Generation](search_target) means
-    - i want to search what [Random](search_target) means
-    - i want to search what [enum](search_target) means
-    - i want to search what [Introducing enum Types](search_target) means
-    - i want to search what [Scope of Declarations](search_target) means
-    - i want to search what [Method Overloading](search_target) means
-    - i want to search what [Overload](search_target) means
-    - i want to search what [Variable-Length Argument Lists](search_target) means
-    - i want to search what [Command](search_target) means
-    - i want to search what [Using Command-Line Arguments](search_target) means
-    - i want to search what [Arrays](search_target) means
-    - i want to search what [Class Arrays](search_target) means
-    - i want to search what [Introduction to Collections and Class ArrayList](search_target) means
-    - i want to search what [ArrayList](search_target) means
-    - i want to search what [Classes and Objects](search_target) means
-    - i want to search what [Time Class Case Study](search_target) means
-    - i want to search what [Controlling Access to Members](search_target) means
-    - i want to search what [Referring to the Current Object's Members with the this Reference](search_target) means
-    - i want to search what [Overloaded Constructors](search_target) means
-    - i want to search what [Default and No-Argument Constructors](search_target) means
-    - i want to search what [Notes on Set and Get Methods](search_target) means
-    - i want to search what [Composition](search_target) means
-    - i want to search what [Aggregation](search_target) means
-    - i want to search what [enum Types](search_target) means
-    - i want to search what [Garbage Collection](search_target) means
-    - i want to search what [static Class Members](search_target) means
-    - i want to search what [Static Import](search_target) means
-    - i want to search what [final Instance Variables](search_target) means
-    - i want to search what [Package Access](search_target) means
-    - i want to search what [Inheritance](search_target) means
-    - i want to search what [Superclasses and Subclasses](search_target) means
-    - i want to search what [protected Members](search_target) means
-    - i want to search what [Relationship Between Superclasses and Subclasses](search_target) means
-    - i want to search what [Constructors in Subclasses](search_target) means
-    - what does [Introduction](search_target) means
-    - what does [Introduction to Java Applications](search_target) means
-    - what does [First Program in Java](search_target) means
-    - what does [Modifying Your First Java Program](search_target) means
-    - what does [printf](search_target) means
-    - what does [print text](search_target) means
-    - what does [Displaying Text with printf](search_target) means
-    - what does [Another Application](search_target) means
-    - what does [Memory Concepts](search_target) means
-    - what does [Arithmetic](search_target) means
-    - what does [Decision Making](search_target) means
-    - what does [Instance Variables](search_target) means
-    - what does [Variables](search_target) means
-    - what does [Primitive Types](search_target) means
-    - what does [Reference Types](search_target) means
-    - what does [Initializing Objects with Constructors](search_target) means
-    - what does [Account Class](search_target) means
-    - what does [Account Class with a Balance](search_target) means
-    - what does [Control](search_target) means
-    - what does [Control Statements](search_target) means
-    - what does [Sentinel-Controlled Repetition](search_target) means
-    - what does [while loop](search_target) means
-    - what does [Essentials of Counter-Controlled Repetition](search_target) means
-    - what does [for loop](search_target) means
-    - what does [for Repetition Statement](search_target) means
-    - what does [Examples Using the for Statement](search_target) means
-    - what does [switch Multiple-Selection Statement](search_target) means
-    - what does [switch](search_target) means
-    - what does [Strings in switch Statements](search_target) means
-    - what does [break](search_target) means
-    - what does [continue](search_target) means
-    - what does [Logical Operators](search_target) means
-    - what does [Methods](search_target) means
-    - what does [Program Modules in Java](search_target) means
-    - what does [Modules](search_target) means
-    - what does [static Fields](search_target) means
-    - what does [static Methods](search_target) means
-    - what does [Class Math](search_target) means
-    - what does [Notes on Declaring and Using Methods](search_target) means
-    - what does [Argument Promotion and Casting](search_target) means
-    - what does [Promotion](search_target) means
-    - what does [Casting](search_target) means
-    - what does [Secure Random-Number Generation](search_target) means
-    - what does [Random](search_target) means
-    - what does [enum](search_target) means
-    - what does [Introducing enum Types](search_target) means
-    - what does [Scope of Declarations](search_target) means
-    - what does [Method Overloading](search_target) means
-    - what does [Overload](search_target) means
-    - what does [Variable-Length Argument Lists](search_target) means
-    - what does [Command](search_target) means
-    - what does [Using Command-Line Arguments](search_target) means
-    - what does [Arrays](search_target) means
-    - what does [Class Arrays](search_target) means
-    - what does [Introduction to Collections and Class ArrayList](search_target) means
-    - what does [ArrayList](search_target) means
-    - what does [Classes and Objects](search_target) means
-    - what does [Time Class Case Study](search_target) means
-    - what does [Controlling Access to Members](search_target) means
-    - what does [Referring to the Current Object's Members with the this Reference](search_target) means
-    - what does [Overloaded Constructors](search_target) means
-    - what does [Default and No-Argument Constructors](search_target) means
-    - what does [Notes on Set and Get Methods](search_target) means
-    - what does [Composition](search_target) means
-    - what does [Aggregation](search_target) means
-    - what does [enum Types](search_target) means
-    - what does [Garbage Collection](search_target) means
-    - what does [static Class Members](search_target) means
-    - what does [Static Import](search_target) means
-    - what does [final Instance Variables](search_target) means
-    - what does [Package Access](search_target) means
-    - what does [Inheritance](search_target) means
-    - what does [Superclasses and Subclasses](search_target) means
-    - what does [protected Members](search_target) means
-    - what does [Relationship Between Superclasses and Subclasses](search_target) means
-    - what does [Constructors in Subclasses](search_target) means
+  - intent: faq/functional_requirement_2
+    examples: |
+      - Is there a case for functional requirements?
+      - The case for functional requirements
+      - Example functional requirements
 
+  - intent: faq/non_functional_requirement
+    examples: |
+      - What are non-functional requirements?
+      - Definition of non-functional requirements?
+      - non-functional requirements
+      - What are non-functional requirements
 
-- intent: classmap_suggest
-  examples: |
-    - i want to recommand some textbook material
-    - i think i find something useful as textbook
-    - suggest textbook
-    - suggest textbook material
-    - how about add this into textbook
+  - intent: faq/non_functional_requirement_2
+    examples: |
+      - Are there cases of non-functional requirements?
+      - The case for non-functional requirements
+      - Examples of non-functional requirements
 
-- intent: personal_score_query
-  examples: |
-    - i want to search my personal score
-    - i want to check my personal score
-    - i want to check my personal grade
-    - search personal score
-    - search my personal grade
-    - search my personal score
-    - query my personal score
-    - search my score
-    - query my score
-    - check my score
-    - check my grade
+  - intent: faq/concept_of_operation
+    examples: |
+      - How to write operation concept?
+      - What is the operating concept?
+      - Operational Concept
+      - How to write operational concepts?
 
+  - intent: faq/MVP
+    examples: |
+      - What is an MVP?
+      - Definition of MVP?
+      - MVP
+
+  - intent: faq/wireframe
+    examples: |
+      - What is a wireframe?
+      - Wireframes
+      - What is wireframe?
+      - wireframe
+      - What is Wireframe
+
+  - intent: faq/wireframe_1
+    examples: |
+      - How to draw wireframes?
+      - How to draw wireframes?
+      - How to draw wireframes
+      - Are there any guidelines for drawing wireframes?
+
+<<<<<<< HEAD
 - intent: personal_score_object
   examples: |
     - i want to query my grade of [homework 1](score_query_target)
@@ -723,283 +385,271 @@ nlu:
     - [quiz 10](score_query_target)
     - [peer evaluation](score_query_target)
     - [project evaluation](score_query_target)
+=======
+  - intent: faq/requirement_analyze
+    examples: |
+      - What are the criteria for needs analysis?
+      - Requirements analysis criteria?
+      - demand analysis
+>>>>>>> se_1111
 
-- intent: personal_quiz_query
-  examples: |
-    - query personal quiz
-    - personal quiz query
-    - personal quiz
-    - search personal quiz
-    - Personal examination question inquiry
-    - Query individual exam questions
-    - Individual exam questions
-    - Recommend personalized exam questions
-    - Practice personalized exam questions
-    - Personalized exam review
-    - Practice personalized questions
-    - Practice questions
-    - Practice exam questions
-    - Exam Questions Review
+  - intent: faq/uml
+    examples: |
+      - What is UML?
+      - Definition of UML?
+      - UML
+      - What is UML
 
-- intent: personal_textbook_query
-  examples: |
-    - query personal textbook
-    - search personal textbook
-    - personal textbook
-    - Query personal teaching materials
-    - Personal teaching materials
-    - View personal textbooks
-    - Recommend personalized teaching materials
-    - Practice personalized textbooks
-    - Personalized textbook review
-    - Practice personalized textbooks
-    - Practice materials
-    - Textbook review
+  - intent: faq/use_case
+    examples: |
+      - What are the use case specifications?
+      - Use Case Specifications
+      - Specifications for use cases
+      - use case
 
-- synonym: homework_1
-  examples: |
-    - homework 1
-    - homework1
-    - homework one
+  - intent: faq/PM
+    examples: |
+      - What does project management do?
+      - Project Management Jobs
+      - Project management
+      - PM
 
-- synonym: homework_2
-  examples: |
-    - homework two
-    - homework 2
-    - homework2
+  - intent: faq/WBS
+    examples: |
+      - What is WBS?
+      - WBS
+      - What is a work breakdown structure?
+      - Work breakdown structure?
 
-- synonym: homework_3
-  examples: |
-    - homework3
-    - homework 3
-    - homework three
+  - intent: faq/project_forecast
+    examples: |
+      - How to make project estimates?
+      - Project Estimate
+      - How to make job estimates?
+      - Job Estimate
 
-- synonym: homework_4
-  examples: |
-    - homework four
-    - homework4
-    - homework 4
+  - intent: faq/risk
+    examples: |
+      - What are the risks?
+      - risk
+      - risk risk
 
-- synonym: homework_5
-  examples: |
-    - homework five
-    - homework5
-    - homework 5
+  - intent: faq/board
+    examples: |
+      - How to use Kanban?
+      - Basic usage of Kanban?
 
-- synonym: homework_6
-  examples: |
-    - homework six
-    - homework6
-    - homework 6
+  - intent: faq/dependency_and_association
+    examples: |
+      - What is the difference between interdependence and association?
+      - interdependence and association
 
-- synonym: homework_7
-  examples: |
-    - homework seven
-    - homework7
-    - homework 7
+  - intent: faq/aggregation_and_composition
+    examples: |
+      - What is the difference between composition and aggregation?
+      - Combination and Aggregation
 
-- synonym: homework_8
-  examples: |
-    - homework eight
-    - homework8
-    - homework 8
+  - intent: faq/abstraction
+    examples: |
+      - What is abstraction?
+      - abstract definition
+      - What is abstraction
+      - abstract
 
-- synonym: homework_9
-  examples: |
-    - homework nine
-    - homework9
-    - homework 9
+  - intent: faq/modularity
+    examples: |
+      - What is Modularization?
+      - Modular Definition
+      - What is Modularization
+      - modular
 
-- synonym: homework_10
-  examples: |
-    - homework ten
-    - homework10
-    - homework 10
+  - intent: faq/cohesion
+    examples: |
+      - What is cohesion?
+      - Definition of Cohesion
+      - what is cohesion
+      - cohesion
 
-- synonym: midterm_exam
-  examples: |
-    - midterm exam
-    - midterm
-    - mid
+  - intent: faq/coupling
+    examples: |
+      - What is the coupling force?
+      - Definition of Coupling Force
+      - What is Coupling Force
+      - coupling force
 
-- synonym: final_exam
-  examples: |
-    - final exam
-    - final
-    - fin
+  - intent: faq/cohesion_and_coupling_rate
+    examples: |
+      - Why High Cohesion, Low Coupling is good?
+      - What does High Cohesion, Low Coupling mean?
+      - High Cohesion, Low Coupling
+      - High cohesion and low coupling
 
-- synonym: quiz_1
-  examples: |
-    - quiz one
-    - quiz 1
-    - quiz1
+  - intent: faq/system_design
+    examples: |
+      - What does the system design include?
+      - System design work content
+      - What is System Design
+      - system design
 
-- synonym: quiz_2
-  examples: |
-    - quiz two
-    - quiz 2
-    - quiz2
+  - intent: faq/architecture_design
+    examples: |
+      - What is architectural design?
+      - Definition of Architecture Design
+      - What is Architecture Design
+      - Architecture design
 
-- synonym: quiz_3
-  examples: |
-    - quiz three
-    - quiz 3
-    - quiz3
+  - intent: faq/architecture_design_2
+    examples: |
+      - What are the layers of the general Web front-end and back-end separation architecture?
+      - How to layer the front and back ends of the web
+      - Layering of the front and back ends of the web
 
-- synonym: quiz_4
-  examples: |
-    - quiz four
-    - quiz 4
-    - quiz4
+  - intent: faq/architecture_design_3
+    examples: |
+      - Is there a suggested approach to architectural design?
+      - Architecture Design Method
+      - how the architecture is designed
 
-- synonym: quiz_5
-  examples: |
-    - quiz five
-    - quiz 5
-    - quiz5
+  - intent: faq/interface
+    examples: |
+      - What is an interface?
+      - What is the interface?
+      - How to design the interface?
+      - interface
 
-- synonym: quiz_6
-  examples: |
-    - quiz six
-    - quiz 6
-    - quiz6
+  - intent: faq/interface_2
+    examples: |
+      - What does interface have to do with system integration?
+      - What is the relationship between interface design and integration?
+      - Interface design and integration
+      - The relationship between interface and system integration
+      - interface and system integration
 
-- synonym: quiz_7
-  examples: |
-    - quiz seven
-    - quiz 7
-    - quiz7
+  - intent: faq/interface_3
+    examples: |
+      - Does interface design design a user interface?
+      - Interface Design and Designing User Interfaces
+      - Interface Design and UI
 
-- synonym: quiz_8
-  examples: |
-    - quiz eight
-    - quiz 8
-    - quiz8
+  - intent: faq/interface_4
+    examples: |
+      - Is there a case for interface design?
+      - The case for interface design
 
-- synonym: quiz_9
-  examples: |
-    - quiz nine
-    - quiz 9
-    - quiz9
+  - intent: faq/design_issue
+    examples: |
+      - What is a design issue?
+      - design issue
+      - design issues
 
-- synonym: quiz_10
-  examples: |
-    - quiz ten
-    - quiz 10
-    - quiz10
+  - intent: faq/user_story
+    examples: |
+      - What is a user story?
+      - Definition of User Story
+      - What is a user story
+      - user story
 
-- synonym: chapter_1
-  examples: |
-    - chapter1
-    - chapter 1
-    - chapter one
-    - chp one
-    - chp1
+  - intent: faq/user_stroy_example
+    examples: |
+      - Are there examples of user stories?
+      - Are there any examples of user stories?
+      - Example of a user story
 
-- synonym: chapter_2
-  examples: |
-    - chapter2
-    - chapter 2
-    - chapter two
-    - chp2
-    - chp two
+  - intent: faq/user_stroy_feature
+    examples: |
+      - What are the attributes of a good user story?
+      - What are the properties of a user story?
+      - User Story Properties
+      - What is INVEST?
 
-- synonym: chapter_3
-  examples: |
-    - chapter3
-    - chapter 3
-    - chapter three
-    - chp three
-    - chp3
+  - intent: faq/story_point
+    examples: |
+      - What are story points?
+      - what is the story point
+      - Definition of Story Point
+      - What is a story point
+      - story point
 
-- synonym: chapter_4
-  examples: |
-    - chapter4
-    - chapter 4
-    - chapter four
-    - chp four
-    - chp4
+  - intent: faq/user_story_mapping
+    examples: |
+      - What is user story comparison?
+      - What is User Story Control?
+      - Definition of User Story Comparison
+      - What is User Story Comparison
+      - user story comparison
 
-- synonym: chapter_5
-  examples: |
-    - chapter5
-    - chapter 5
-    - chp five
-    - chp5
-    - chapter five
+  - intent: faq/narative_flow
+    examples: |
+      - What is narrative flow?
+      - what is narrative flow
+      - Definition of narrative flow
+      - What is narrative flow
+      - narrative flow
 
-- synonym: chapter_6
-  examples: |
-    - chapter6
-    - chapter 6
-    - chapter six
-    - chp six
-    - chp6
+  - intent: faq/version
+    examples: |
+      - What is version?
+      - what is the version
+      - Definition of version
+      - What is a version
+      - Version
 
-- synonym: chapter_7
-  examples: |
-    - chapter7
-    - chapter 7
-    - chapter seven
-    - chp7
-    - chp seven
+  - intent: faq/staging_area&repository
+    examples: |
+      - What is the relationship between working directory, staging area, and repository?
+      - Relationship between working directory, staging area, and repository
+      - Where will git put archives?
 
-- synonym: chapter_8
-  examples: |
-    - chapter8
-    - chapter 8
-    - chp8
-    - chapter eight
-    - chp eight
+  - intent: faq/wbs
+    examples: |
+      - What is a work breakdown structure?
+      - What is a work breakdown structure
+      - Definition of Work Breakdown Structure
+      - What is a work breakdown structure
+      - work breakdown structure
 
-- synonym: chapter_9
-  examples: |
-    - chapter9
-    - chapter 9
-    - chp nine
-    - chapter nine
-    - chp9
+  - intent: faq/kanban
+    examples: |
+      - What is Kanban?
+      - What is Kanban
+      - Definition of Kanban
+      - What is Kanban
+      - Kanban
 
-- synonym: chapter_10
-  examples: |
-    - chapter10
-    - chapter 10
-    - chapter ten
-    - chp ten
-    - chp10
+  - intent: faq/scrum_event
+    examples: |
+      - What events are included in Scrum?
+      - What are the events of Scrum?
 
-- synonym: chapter_11
-  examples: |
-    - chapter11
-    - chapter 11
-    - chaper eleven
-    - chp11
-    - chp eleven
+  - intent: faq/scrum_pillar
+    examples: |
+      - What are the three pillars of Scrum?
+      - What are the pillars of Scrum?
+      - Pillars of Scrum
 
-- synonym: chapter_12
-  examples: |
-    - chapter12
-    - chapter 12
-    - chapter twelve
-    - chp12
-    - chp twelve
+  - intent: faq/scrum_value
+    examples: |
+      - What are the five values of Scrum?
+      - What are the values of Scrum?
+      - What are the values of Scrum?
+      - Scrum values
 
-- synonym: chapter_13
-  examples: |
-    - chapter13
-    - chapter 13
-    - chapter thirteen
-    - chp13
-    - chp thirteen
+  - intent: faq/scrum_accountability
+    examples: |
+      - What are the three responsibilities of Scrum?
+      - What are the responsibilities of Scrum?
+      - What are the responsibilities of Scrum?
+      - Scrum's Responsibilities
 
-- synonym: chapter_14
-  examples: |
-    - chapter14
-    - chapter 14
-    - chp14
-    - chapter fourteen
-    - chp fourteen
+  - intent: faq/blackbox_test
+    examples: |
+      - What is black box testing?
+      - What is black box testing
+      - Definition of Black Box Testing
+      - What is black box testing
+      - black box testing
 
+<<<<<<< HEAD
 - synonym: chapter_15
   examples: |
     - chapter15
@@ -1018,3 +668,2749 @@ nlu:
     - peer assessment grade
     - project grade
     - project evaluation grade
+=======
+  - intent: faq/whitebox_test
+    examples: |
+      - What is white box testing?
+      - What is White Box Testing
+      - Definition of White Box Testing
+      - What is White Box Testing
+      - white box testing
+
+  - intent: faq/unit_test
+    examples: |
+      - What is unit testing?
+      - What is unit testing
+      - Definition of Unit Testing
+      - What is unit testing
+      - unit test
+
+  - intent: faq/test_double
+    examples: |
+      - What is a test double?
+      - What is a test double
+      - Definition of Test Doubles
+      - What is a test double
+      - test double
+
+  - intent: faq/integration_testing
+    examples: |
+      - What is integration testing?
+      - What is integration testing
+      - Definition of Integration Testing
+      - What is integration testing
+      - Integration testing
+
+  - intent: faq/system_integration
+    examples: |
+      - What is system testing?
+      - What is system testing
+      - Definition of System Testing
+      - What is System Testing
+      - System test
+
+  - intent: faq/acceptance_testing
+    examples: |
+      - What is an acceptance test?
+      - What is acceptance testing
+      - Definition of Acceptance Testing
+      - What is an acceptance test
+      - Acceptance Test
+
+  - intent: faq/test_case
+    examples: |
+      - What is included in the system test case?
+      - What is the content of the system test case?
+      - What does a system test case contain?
+      - What are the contents of system testing?
+      - The content of the system test
+
+  - intent: faq/regression_testing
+    examples: |
+      - When will regression testing be performed?
+      - When is regression testing required?
+      - When is regression testing required?
+      - When to do regression testing?
+      - Regression Testing
+
+# - intent: classmap_ppt
+#   examples: |
+#     - search power point
+#     - search ppt
+#     - ppt information
+#     - I'd like to query ppt
+#     - class ppt
+#     - query power point
+#     - query ppt
+#     - I want to inquire about the slideshow information
+#     - Query slide information
+#     - Slideshow information
+#     - Course slides
+#     - Course slide materials
+
+# - intent: classmap_ppt_content
+#   examples: |
+#     - i want to checkout slides of [chapter one](ppt_query_target)
+#     - i want to checkout slides of [chapter two](ppt_query_target)
+#     - i want to checkout slides of [chapter three](ppt_query_target)
+#     - i want to checkout slides of [chapter four](ppt_query_target)
+#     - i want to checkout slides of [chapter five](ppt_query_target)
+#     - i want to checkout slides of [chapter six](ppt_query_target)
+#     - i want to checkout slides of [chapter seven](ppt_query_target)
+#     - i want to checkout slides of [chapter eight](ppt_query_target)
+#     - i want to checkout slides of [chapter nine](ppt_query_target)
+#     - i want to checkout slides of [chapter ten](ppt_query_target)
+#     - i want to checkout slides of [chapter eleven](ppt_query_target)
+#     - i want to checkout slides of [chapter twelve](ppt_query_target)
+#     - i want to checkout slides of [chapter thirteen](ppt_query_target)
+#     - i want to checkout slides of [chapter fourteen](ppt_query_target)
+#     - i want to checkout slides of [chapter fifteen](ppt_query_target)
+#     - slides of [chapter1](ppt_query_target)
+#     - slides of [chapter2](ppt_query_target)
+#     - slides of [chapter3](ppt_query_target)
+#     - slides of [chapter4](ppt_query_target)
+#     - slides of [chapter5](ppt_query_target)
+#     - slides of [chapter6](ppt_query_target)
+#     - slides of [chapter7](ppt_query_target)
+#     - slides of [chapter8](ppt_query_target)
+#     - slides of [chapter9](ppt_query_target)
+#     - slides of [chapter10](ppt_query_target)
+#     - slides of [chapter11](ppt_query_target)
+#     - slides of [chapter12](ppt_query_target)
+#     - slides of [chapter13](ppt_query_target)
+#     - slides of [chapter14](ppt_query_target)
+#     - slides of [chapter15](ppt_query_target)
+#     - [chp one](ppt_query_target) power point
+#     - [chp two](ppt_query_target) power point
+#     - [chp three](ppt_query_target) power point
+#     - [chp four](ppt_query_target) power point
+#     - [chp five](ppt_query_target) power point
+#     - [chp six](ppt_query_target) power point
+#     - [chp seven](ppt_query_target) power point
+#     - [chp eight](ppt_query_target) power point
+#     - [chp nine](ppt_query_target) power point
+#     - [chp ten](ppt_query_target) power point
+#     - [chp eleven](ppt_query_target) power point
+#     - [chp twelve](ppt_query_target) power point
+#     - [chp thirteen](ppt_query_target) power point
+#     - [chp fourteen](ppt_query_target) power point
+#     - [chp fifteen](ppt_query_target) power point
+
+# - intent: supplement_search_all
+#   examples: |
+#     - I want to check all supplementary information
+#     - Check all supplementary information
+#     - All supplementary information inquiries
+#     - All supplementary information
+#     - Check all supplementary information
+#     - Check all supplementary knowledge
+#     - Check all course supplements
+#     - Query all extracurricular supplementary knowledge
+#     - Query all extracurricular supplementary materials
+#     - I want to check all the supplementary information
+#     - Query all supplementary information
+#     - All supplementary information query
+#     - All supplementary information
+#     - Check all supplementary information
+#     - Check all supplementary knowledge
+#     - Check all course supplements
+#     - Query all extracurricular supplementary knowledge
+#     - Query all extracurricular supplementary materials
+
+# - intent: supplement_search_single
+#   examples: |
+#     - I want to inquire about supplementary information
+#     - Query supplementary information
+#     - Supplementary information query
+#     - additional materials
+#     - Check supplementary information
+#     - Check supplementary knowledge
+#     - Query course supplement
+#     - Inquire about extracurricular supplementary knowledge
+#     - Query extracurricular supplementary information
+
+# - intent: supplement_search_single_content
+#   examples: |
+#     - I want to query [refactoring](supplement_target)
+#     - I want to query [DevOps](supplement_target)
+#     - I want to query [Devops Pipeline](supplement_target)
+#     - I want to query [DevOps Light Talk](supplement_target)
+#     - I want to query [design pattern](supplement_target)
+#     - Query [refactoring](supplement_target)
+#     - Query [DevOps](supplement_target)
+#     - Query [Devops Pipeline](supplement_target)
+#     - Query [DevOps Light Talk](supplement_target)
+#     - Query [design pattern](supplement_target)
+#     - [refactoring](supplement_target) query
+#     - [DevOps](supplement_target) query
+#     - [Devops Pipeline](supplement_target) query
+#     - [DevOps Light Talk](supplement_target) query
+#     - [design pattern](supplement_target) query
+#     - [refactoring](supplement_target)
+#     - [DevOps](supplement_target)
+#     - [Devops Pipeline](supplement_target)
+#     - [DevOps Light Talk](supplement_target)
+#     - [design pattern](supplement_target)
+
+# - intent: classmap_search
+#   examples: |
+#     - i want to query about classmap
+#     - i want to query classmap
+#     - query classmap
+#     - search classmap
+#     - classmap query
+#     - classmap search
+#     - I want to find the course map
+#     - Check the course map
+#     - Course map query
+#     - Course map
+#     - Check the course map
+#     - Check course knowledge
+#     - Query course knowledge
+#     - Inquire about course related knowledge
+
+  - intent: classmap_search_content
+    examples: |
+      - I want to query [method](search_target)
+      - what does [method](search_target) means
+      - i want to search about [method](search_target)
+      - what is [method](search_target)?
+      - I want to query [tool](search_target)
+      - what does [tool](search_target) means
+      - i want to search about [tool](search_target)
+      - what is [tool](search_target)?
+      - I want to query [process](search_target)
+      - what does [process](search_target) means
+      - i want to search about [process](search_target)
+      - what is [process](search_target)?
+      - I want to query [engineering](search_target)
+      - what does [engineering](search_target) means
+      - i want to search about [engineering](search_target)
+      - what is [engineering](search_target)?
+      - I want to query [software development](search_target)
+      - what does [software development](search_target) means
+      - i want to search about [software development](search_target)
+      - what is [software development](search_target)?
+      - I want to query [software engineering](search_target)
+      - what does [software engineering](search_target) means
+      - i want to search about [software engineering](search_target)
+      - what is [software engineering](search_target)?
+      - I want to query [software crisis](search_target)
+      - what does [software crisis](search_target) means
+      - i want to search about [software crisis](search_target)
+      - what is [software crisis](search_target)?
+      - I want to query [crux of the problem](search_target)
+      - what does [crux of the problem](search_target) means
+      - i want to search about [crux of the problem](search_target)
+      - what is [crux of the problem](search_target)?
+      - I want to query [software case](search_target)
+      - what does [software case](search_target) means
+      - i want to search about [software case](search_target)
+      - what is [software case](search_target)?
+      - I want to query [the essence of software](search_target)
+      - what does [the essence of software](search_target) means
+      - i want to search about [the essence of software](search_target)
+      - what is [the essence of software](search_target)?
+      - I want to query [complexity](search_target)
+      - what does [complexity](search_target) means
+      - i want to search about [complexity](search_target)
+      - what is [complexity](search_target)?
+      - I want to query [conformity](search_target)
+      - what does [conformity](search_target) means
+      - i want to search about [conformity](search_target)
+      - what is [conformity](search_target)?
+      - I want to query [invisibility](search_target)
+      - what does [invisibility](search_target) means
+      - i want to search about [invisibility](search_target)
+      - what is [invisibility](search_target)?
+      - I want to query [changeability](search_target)
+      - what does [changeability](search_target) means
+      - i want to search about [changeability](search_target)
+      - what is [changeability](search_target)?
+      - I want to query [programs,program systems and software products](search_target)
+      - what does [programs,program systems and software products](search_target) means
+      - i want to search about [programs,program systems and software products](search_target)
+      - what is [programs,program systems and software products](search_target)?
+      - I want to query [step of software development](search_target)
+      - what does [step of software development](search_target) means
+      - i want to search about [step of software development](search_target)
+      - what is [step of software development](search_target)?
+      - I want to query [requirements analysis](search_target)
+      - what does [requirements analysis](search_target) means
+      - i want to search about [requirements analysis](search_target)
+      - what is [requirements analysis](search_target)?
+      - I want to query [design](search_target)
+      - what does [design](search_target) means
+      - i want to search about [design](search_target)
+      - what is [design](search_target)?
+      - I want to query [implementation and integration](search_target)
+      - what does [implementation and integration](search_target) means
+      - i want to search about [implementation and integration](search_target)
+      - what is [implementation and integration](search_target)?
+      - I want to query [testing](search_target)
+      - what does [testing](search_target) means
+      - i want to search about [testing](search_target)
+      - what is [testing](search_target)?
+      - I want to query [project management](search_target)
+      - what does [project management](search_target) means
+      - i want to search about [project management](search_target)
+      - what is [project management](search_target)?
+      - I want to query [use cases](search_target)
+      - what does [use cases](search_target) means
+      - i want to search about [use cases](search_target)
+      - what is [use cases](search_target)?
+      - I want to query [functional requirements](search_target)
+      - what does [functional requirements](search_target) means
+      - i want to search about [functional requirements](search_target)
+      - what is [functional requirements](search_target)?
+      - I want to query [non-functional requirements](search_target)
+      - what does [non-functional requirements](search_target) means
+      - i want to search about [non-functional requirements](search_target)
+      - what is [non-functional requirements](search_target)?
+      - I want to query [requirement analysis](search_target)
+      - what does [requirement analysis](search_target) means
+      - i want to search about [requirement analysis](search_target)
+      - what is [requirement analysis](search_target)?
+      - I want to query [what](search_target)
+      - what does [what](search_target) means
+      - i want to search about [what](search_target)
+      - what is [what](search_target)?
+      - I want to query [important process of converting requirements into systems](search_target)
+      - what does [important process of converting requirements into systems](search_target) means
+      - i want to search about [important process of converting requirements into systems](search_target)
+      - what is [important process of converting requirements into systems](search_target)?
+      - I want to query [design documents](search_target)
+      - what does [design documents](search_target) means
+      - i want to search about [design documents](search_target)
+      - what is [design documents](search_target)?
+      - I want to query [design](search_target)
+      - what does [design](search_target) means
+      - i want to search about [design](search_target)
+      - what is [design](search_target)?
+      - I want to query [how](search_target)
+      - what does [how](search_target) means
+      - i want to search about [how](search_target)
+      - what is [how](search_target)?
+      - I want to query [into executable software](search_target)
+      - what does [into executable software](search_target) means
+      - i want to search about [into executable software](search_target)
+      - what is [into executable software](search_target)?
+      - I want to query [implementation](search_target)
+      - what does [implementation](search_target) means
+      - i want to search about [implementation](search_target)
+      - what is [implementation](search_target)?
+      - I want to query [integration](search_target)
+      - what does [integration](search_target) means
+      - i want to search about [integration](search_target)
+      - what is [integration](search_target)?
+      - I want to query [testing](search_target)
+      - what does [testing](search_target) means
+      - i want to search about [testing](search_target)
+      - what is [testing](search_target)?
+      - I want to query [test case](search_target)
+      - what does [test case](search_target) means
+      - i want to search about [test case](search_target)
+      - what is [test case](search_target)?
+      - I want to query [bug](search_target)
+      - what does [bug](search_target) means
+      - i want to search about [bug](search_target)
+      - what is [bug](search_target)?
+      - I want to query [quality](search_target)
+      - what does [quality](search_target) means
+      - i want to search about [quality](search_target)
+      - what is [quality](search_target)?
+      - I want to query [maintenance](search_target)
+      - what does [maintenance](search_target) means
+      - i want to search about [maintenance](search_target)
+      - what is [maintenance](search_target)?
+      - I want to query [project](search_target)
+      - what does [project](search_target) means
+      - i want to search about [project](search_target)
+      - what is [project](search_target)?
+      - I want to query [software project](search_target)
+      - what does [software project](search_target) means
+      - i want to search about [software project](search_target)
+      - what is [software project](search_target)?
+      - I want to query [project management](search_target)
+      - what does [project management](search_target) means
+      - i want to search about [project management](search_target)
+      - what is [project management](search_target)?
+      - I want to query [planning](search_target)
+      - what does [planning](search_target) means
+      - i want to search about [planning](search_target)
+      - what is [planning](search_target)?
+      - I want to query [monitoring and control](search_target)
+      - what does [monitoring and control](search_target) means
+      - i want to search about [monitoring and control](search_target)
+      - what is [monitoring and control](search_target)?
+      - I want to query [software development steps,documents and tools](search_target)
+      - what does [software development steps,documents and tools](search_target) means
+      - i want to search about [software development steps,documents and tools](search_target)
+      - what is [software development steps,documents and tools](search_target)?
+      - I want to query [waterfall model](search_target)
+      - what does [waterfall model](search_target) means
+      - i want to search about [waterfall model](search_target)
+      - what is [waterfall model](search_target)?
+      - I want to query [prototyping](search_target)
+      - what does [prototyping](search_target) means
+      - i want to search about [prototyping](search_target)
+      - what is [prototyping](search_target)?
+      - I want to query [agile method](search_target)
+      - what does [agile method](search_target) means
+      - i want to search about [agile method](search_target)
+      - what is [agile method](search_target)?
+      - I want to query [SCRUM](search_target)
+      - what does [SCRUM](search_target) means
+      - i want to search about [SCRUM](search_target)
+      - what is [SCRUM](search_target)?
+      - I want to query [step of waterfall model](search_target)
+      - what does [step of waterfall model](search_target) means
+      - i want to search about [step of waterfall model](search_target)
+      - what is [step of waterfall model](search_target)?
+      - I want to query [clear stage segmentation](search_target)
+      - what does [clear stage segmentation](search_target) means
+      - i want to search about [clear stage segmentation](search_target)
+      - what is [clear stage segmentation](search_target)?
+      - I want to query [clear document output](search_target)
+      - what does [clear document output](search_target) means
+      - i want to search about [clear document output](search_target)
+      - what is [clear document output](search_target)?
+      - I want to query [development process of prototyping](search_target)
+      - what does [development process of prototyping](search_target) means
+      - i want to search about [development process of prototyping](search_target)
+      - what is [development process of prototyping](search_target)?
+      - I want to query [throwaway prototyping](search_target)
+      - what does [throwaway prototyping](search_target) means
+      - i want to search about [throwaway prototyping](search_target)
+      - what is [throwaway prototyping](search_target)?
+      - I want to query [evolutionary prototyping](search_target)
+      - what does [evolutionary prototyping](search_target) means
+      - i want to search about [evolutionary prototyping](search_target)
+      - what is [evolutionary prototyping](search_target)?
+      - I want to query [sprint](search_target)
+      - what does [sprint](search_target) means
+      - i want to search about [sprint](search_target)
+      - what is [sprint](search_target)?
+      - I want to query [product backlog](search_target)
+      - what does [product backlog](search_target) means
+      - i want to search about [product backlog](search_target)
+      - what is [product backlog](search_target)?
+      - I want to query [scrum board](search_target)
+      - what does [scrum board](search_target) means
+      - i want to search about [scrum board](search_target)
+      - what is [scrum board](search_target)?
+      - I want to query [FAQ of software engineering](search_target)
+      - what does [FAQ of software engineering](search_target) means
+      - i want to search about [FAQ of software engineering](search_target)
+      - what is [FAQ of software engineering](search_target)?
+      - I want to query [requirements analysis](search_target)
+      - what does [requirements analysis](search_target) means
+      - i want to search about [requirements analysis](search_target)
+      - what is [requirements analysis](search_target)?
+      - I want to query [software design](search_target)
+      - what does [software design](search_target) means
+      - i want to search about [software design](search_target)
+      - what is [software design](search_target)?
+      - I want to query [functional user requirements](search_target)
+      - what does [functional user requirements](search_target) means
+      - i want to search about [functional user requirements](search_target)
+      - what is [functional user requirements](search_target)?
+      - I want to query [functional system requirements](search_target)
+      - what does [functional system requirements](search_target) means
+      - i want to search about [functional system requirements](search_target)
+      - what is [functional system requirements](search_target)?
+      - I want to query [non-functional user requirements](search_target)
+      - what does [non-functional user requirements](search_target) means
+      - i want to search about [non-functional user requirements](search_target)
+      - what is [non-functional user requirements](search_target)?
+      - I want to query [non-functional system requirements](search_target)
+      - what does [non-functional system requirements](search_target) means
+      - i want to search about [non-functional system requirements](search_target)
+      - what is [non-functional system requirements](search_target)?
+      - I want to query [software requirements specification](search_target)
+      - what does [software requirements specification](search_target) means
+      - i want to search about [software requirements specification](search_target)
+      - what is [software requirements specification](search_target)?
+      - I want to query [user requirement](search_target)
+      - what does [user requirement](search_target) means
+      - i want to search about [user requirement](search_target)
+      - what is [user requirement](search_target)?
+      - I want to query [system requirement](search_target)
+      - what does [system requirement](search_target) means
+      - i want to search about [system requirement](search_target)
+      - what is [system requirement](search_target)?
+      - I want to query [statements of services](search_target)
+      - what does [statements of services](search_target) means
+      - i want to search about [statements of services](search_target)
+      - what is [statements of services](search_target)?
+      - I want to query [constraint](search_target)
+      - what does [constraint](search_target) means
+      - i want to search about [constraint](search_target)
+      - what is [constraint](search_target)?
+      - I want to query [functional requirements](search_target)
+      - what does [functional requirements](search_target) means
+      - i want to search about [functional requirements](search_target)
+      - what is [functional requirements](search_target)?
+      - I want to query [high-level statements](search_target)
+      - what does [high-level statements](search_target) means
+      - i want to search about [high-level statements](search_target)
+      - what is [high-level statements](search_target)?
+      - I want to query [system quality](search_target)
+      - what does [system quality](search_target) means
+      - i want to search about [system quality](search_target)
+      - what is [system quality](search_target)?
+      - I want to query [product requirements](search_target)
+      - what does [product requirements](search_target) means
+      - i want to search about [product requirements](search_target)
+      - what is [product requirements](search_target)?
+      - I want to query [organisational requirements](search_target)
+      - what does [organisational requirements](search_target) means
+      - i want to search about [organisational requirements](search_target)
+      - what is [organisational requirements](search_target)?
+      - I want to query [external requirements](search_target)
+      - what does [external requirements](search_target) means
+      - i want to search about [external requirements](search_target)
+      - what is [external requirements](search_target)?
+      - I want to query [example of non-functional requirements](search_target)
+      - what does [example of non-functional requirements](search_target) means
+      - i want to search about [example of non-functional requirements](search_target)
+      - what is [example of non-functional requirements](search_target)?
+      - I want to query [set goals only](search_target)
+      - what does [set goals only](search_target) means
+      - i want to search about [set goals only](search_target)
+      - what is [set goals only](search_target)?
+      - I want to query [set verifiable descriptions](search_target)
+      - what does [set verifiable descriptions](search_target) means
+      - i want to search about [set verifiable descriptions](search_target)
+      - what is [set verifiable descriptions](search_target)?
+      - I want to query [concept of operations](search_target)
+      - what does [concept of operations](search_target) means
+      - i want to search about [concept of operations](search_target)
+      - what is [concept of operations](search_target)?
+      - I want to query [minimal viable product](search_target)
+      - what does [minimal viable product](search_target) means
+      - i want to search about [minimal viable product](search_target)
+      - what is [minimal viable product](search_target)?
+      - I want to query [MVP](search_target)
+      - what does [MVP](search_target) means
+      - i want to search about [MVP](search_target)
+      - what is [MVP](search_target)?
+      - I want to query [persona](search_target)
+      - what does [persona](search_target) means
+      - i want to search about [persona](search_target)
+      - what is [persona](search_target)?
+      - I want to query [wireframe](search_target)
+      - what does [wireframe](search_target) means
+      - i want to search about [wireframe](search_target)
+      - what is [wireframe](search_target)?
+      - I want to query [draw.io](search_target)
+      - what does [draw.io](search_target) means
+      - i want to search about [draw.io](search_target)
+      - what is [draw.io](search_target)?
+      - I want to query [figma](search_target)
+      - what does [figma](search_target) means
+      - i want to search about [figma](search_target)
+      - what is [figma](search_target)?
+      - I want to query [wireframe.cc](search_target)
+      - what does [wireframe.cc](search_target) means
+      - i want to search about [wireframe.cc](search_target)
+      - what is [wireframe.cc](search_target)?
+      - I want to query [axure](search_target)
+      - what does [axure](search_target) means
+      - i want to search about [axure](search_target)
+      - what is [axure](search_target)?
+      - I want to query [cocoo](search_target)
+      - what does [cocoo](search_target) means
+      - i want to search about [cocoo](search_target)
+      - what is [cocoo](search_target)?
+      - I want to query [prototyping](search_target)
+      - what does [prototyping](search_target) means
+      - i want to search about [prototyping](search_target)
+      - what is [prototyping](search_target)?
+      - I want to query [3C analysis](search_target)
+      - what does [3C analysis](search_target) means
+      - i want to search about [3C analysis](search_target)
+      - what is [3C analysis](search_target)?
+      - I want to query [correct](search_target)
+      - what does [correct](search_target) means
+      - i want to search about [correct](search_target)
+      - what is [correct](search_target)?
+      - I want to query [complete](search_target)
+      - what does [complete](search_target) means
+      - i want to search about [complete](search_target)
+      - what is [complete](search_target)?
+      - I want to query [conflict-free](search_target)
+      - what does [conflict-free](search_target) means
+      - i want to search about [conflict-free](search_target)
+      - what is [conflict-free](search_target)?
+      - I want to query [requirements normalization](search_target)
+      - what does [requirements normalization](search_target) means
+      - i want to search about [requirements normalization](search_target)
+      - what is [requirements normalization](search_target)?
+      - I want to query [simple version requirements specifications](search_target)
+      - what does [simple version requirements specifications](search_target) means
+      - i want to search about [simple version requirements specifications](search_target)
+      - what is [simple version requirements specifications](search_target)?
+      - I want to query [requirements validation](search_target)
+      - what does [requirements validation](search_target) means
+      - i want to search about [requirements validation](search_target)
+      - what is [requirements validation](search_target)?
+      - I want to query [script](search_target)
+      - what does [script](search_target) means
+      - i want to search about [script](search_target)
+      - what is [script](search_target)?
+      - I want to query [iteration](search_target)
+      - what does [iteration](search_target) means
+      - i want to search about [iteration](search_target)
+      - what is [iteration](search_target)?
+      - I want to query [failure to do a requirements analysis](search_target)
+      - what does [failure to do a requirements analysis](search_target) means
+      - i want to search about [failure to do a requirements analysis](search_target)
+      - what is [failure to do a requirements analysis](search_target)?
+      - I want to query [why and what of a system](search_target)
+      - what does [why and what of a system](search_target) means
+      - i want to search about [why and what of a system](search_target)
+      - what is [why and what of a system](search_target)?
+      - I want to query [user story](search_target)
+      - what does [user story](search_target) means
+      - i want to search about [user story](search_target)
+      - what is [user story](search_target)?
+      - I want to query [example of user story](search_target)
+      - what does [example of user story](search_target) means
+      - i want to search about [example of user story](search_target)
+      - what is [example of user story](search_target)?
+      - I want to query [business language](search_target)
+      - what does [business language](search_target) means
+      - i want to search about [business language](search_target)
+      - what is [business language](search_target)?
+      - I want to query [size level of story](search_target)
+      - what does [size level of story](search_target) means
+      - i want to search about [size level of story](search_target)
+      - what is [size level of story](search_target)?
+      - I want to query [detail level of story](search_target)
+      - what does [detail level of story](search_target) means
+      - i want to search about [detail level of story](search_target)
+      - what is [detail level of story](search_target)?
+      - I want to query [define role of story](search_target)
+      - what does [define role of story](search_target) means
+      - i want to search about [define role of story](search_target)
+      - what is [define role of story](search_target)?
+      - I want to query [INVEST](search_target)
+      - what does [INVEST](search_target) means
+      - i want to search about [INVEST](search_target)
+      - what is [INVEST](search_target)?
+      - I want to query [independent](search_target)
+      - what does [independent](search_target) means
+      - i want to search about [independent](search_target)
+      - what is [independent](search_target)?
+      - I want to query [negotiable](search_target)
+      - what does [negotiable](search_target) means
+      - i want to search about [negotiable](search_target)
+      - what is [negotiable](search_target)?
+      - I want to query [valuable](search_target)
+      - what does [valuable](search_target) means
+      - i want to search about [valuable](search_target)
+      - what is [valuable](search_target)?
+      - I want to query [estimatable](search_target)
+      - what does [estimatable](search_target) means
+      - i want to search about [estimatable](search_target)
+      - what is [estimatable](search_target)?
+      - I want to query [iteration](search_target)
+      - what does [iteration](search_target) means
+      - i want to search about [iteration](search_target)
+      - what is [iteration](search_target)?
+      - I want to query [story points](search_target)
+      - what does [story points](search_target) means
+      - i want to search about [story points](search_target)
+      - what is [story points](search_target)?
+      - I want to query [story in scrum](search_target)
+      - what does [story in scrum](search_target) means
+      - i want to search about [story in scrum](search_target)
+      - what is [story in scrum](search_target)?
+      - I want to query [form of user story](search_target)
+      - what does [form of user story](search_target) means
+      - i want to search about [form of user story](search_target)
+      - what is [form of user story](search_target)?
+      - I want to query [bad smell of user story](search_target)
+      - what does [bad smell of user story](search_target) means
+      - i want to search about [bad smell of user story](search_target)
+      - what is [bad smell of user story](search_target)?
+      - I want to query [non-functional requirements in user story](search_target)
+      - what does [non-functional requirements in user story](search_target) means
+      - i want to search about [non-functional requirements in user story](search_target)
+      - what is [non-functional requirements in user story](search_target)?
+      - I want to query [quiz of user story](search_target)
+      - what does [quiz of user story](search_target) means
+      - i want to search about [quiz of user story](search_target)
+      - what is [quiz of user story](search_target)?
+      - I want to query [a lack of holistic stories](search_target)
+      - what does [a lack of holistic stories](search_target) means
+      - i want to search about [a lack of holistic stories](search_target)
+      - what is [a lack of holistic stories](search_target)?
+      - I want to query [user story mapping](search_target)
+      - what does [user story mapping](search_target) means
+      - i want to search about [user story mapping](search_target)
+      - what is [user story mapping](search_target)?
+      - I want to query [example of user story map](search_target)
+      - what does [example of user story map](search_target) means
+      - i want to search about [example of user story map](search_target)
+      - what is [example of user story map](search_target)?
+      - I want to query [main idea of user story mapping](search_target)
+      - what does [main idea of user story mapping](search_target) means
+      - i want to search about [main idea of user story mapping](search_target)
+      - what is [main idea of user story mapping](search_target)?
+      - I want to query [example of split user story](search_target)
+      - what does [example of split user story](search_target) means
+      - i want to search about [example of split user story](search_target)
+      - what is [example of split user story](search_target)?
+      - I want to query [backbone and main body](search_target)
+      - what does [backbone and main body](search_target) means
+      - i want to search about [backbone and main body](search_target)
+      - what is [backbone and main body](search_target)?
+      - I want to query [narrative flow](search_target)
+      - what does [narrative flow](search_target) means
+      - i want to search about [narrative flow](search_target)
+      - what is [narrative flow](search_target)?
+      - I want to query [what about event](search_target)
+      - what does [what about event](search_target) means
+      - i want to search about [what about event](search_target)
+      - what is [what about event](search_target)?
+      - I want to query [release map](search_target)
+      - what does [release map](search_target) means
+      - i want to search about [release map](search_target)
+      - what is [release map](search_target)?
+      - I want to query [MVP](search_target)
+      - what does [MVP](search_target) means
+      - i want to search about [MVP](search_target)
+      - what is [MVP](search_target)?
+      - I want to query [opening game](search_target)
+      - what does [opening game](search_target) means
+      - i want to search about [opening game](search_target)
+      - what is [opening game](search_target)?
+      - I want to query [midgame](search_target)
+      - what does [midgame](search_target) means
+      - i want to search about [midgame](search_target)
+      - what is [midgame](search_target)?
+      - I want to query [endgame](search_target)
+      - what does [endgame](search_target) means
+      - i want to search about [endgame](search_target)
+      - what is [endgame](search_target)?
+      - I want to query [step of user story mapping](search_target)
+      - what does [step of user story mapping](search_target) means
+      - i want to search about [step of user story mapping](search_target)
+      - what is [step of user story mapping](search_target)?
+      - I want to query [what is git?](search_target)
+      - what does [what is git?](search_target) means
+      - i want to search about [what is git?](search_target)
+      - what is [what is git?](search_target)?
+      - I want to query [version control](search_target)
+      - what does [version control](search_target) means
+      - i want to search about [version control](search_target)
+      - what is [version control](search_target)?
+      - I want to query [the problem of collaborative development](search_target)
+      - what does [the problem of collaborative development](search_target) means
+      - i want to search about [the problem of collaborative development](search_target)
+      - what is [the problem of collaborative development](search_target)?
+      - I want to query [advantages of git](search_target)
+      - what does [advantages of git](search_target) means
+      - i want to search about [advantages of git](search_target)
+      - what is [advantages of git](search_target)?
+      - I want to query [install git](search_target)
+      - what does [install git](search_target) means
+      - i want to search about [install git](search_target)
+      - what is [install git](search_target)?
+      - I want to query [Git Bash](search_target)
+      - what does [Git Bash](search_target) means
+      - i want to search about [Git Bash](search_target)
+      - what is [Git Bash](search_target)?
+      - I want to query [terminal command](search_target)
+      - what does [terminal command](search_target) means
+      - i want to search about [terminal command](search_target)
+      - what is [terminal command](search_target)?
+      - I want to query [git setting](search_target)
+      - what does [git setting](search_target) means
+      - i want to search about [git setting](search_target)
+      - what is [git setting](search_target)?
+      - I want to query [git init](search_target)
+      - what does [git init](search_target) means
+      - i want to search about [git init](search_target)
+      - what is [git init](search_target)?
+      - I want to query [create project](search_target)
+      - what does [create project](search_target) means
+      - i want to search about [create project](search_target)
+      - what is [create project](search_target)?
+      - I want to query [initial project](search_target)
+      - what does [initial project](search_target) means
+      - i want to search about [initial project](search_target)
+      - what is [initial project](search_target)?
+      - I want to query [git status](search_target)
+      - what does [git status](search_target) means
+      - i want to search about [git status](search_target)
+      - what is [git status](search_target)?
+      - I want to query [view directory status](search_target)
+      - what does [view directory status](search_target) means
+      - i want to search about [view directory status](search_target)
+      - what is [view directory status](search_target)?
+      - I want to query [git add](search_target)
+      - what does [git add](search_target) means
+      - i want to search about [git add](search_target)
+      - what is [git add](search_target)?
+      - I want to query [submit the file to git for tracking](search_target)
+      - what does [submit the file to git for tracking](search_target) means
+      - i want to search about [submit the file to git for tracking](search_target)
+      - what is [submit the file to git for tracking](search_target)?
+      - I want to query [git commit](search_target)
+      - what does [git commit](search_target) means
+      - i want to search about [git commit](search_target)
+      - what is [git commit](search_target)?
+      - I want to query [submit the contents of the staging area to the staging area](search_target)
+      - what does [submit the contents of the staging area to the staging area](search_target) means
+      - i want to search about [submit the contents of the staging area to the staging area](search_target)
+      - what is [submit the contents of the staging area to the staging area](search_target)?
+      - I want to query [conventional commit](search_target)
+      - what does [conventional commit](search_target) means
+      - i want to search about [conventional commit](search_target)
+      - what is [conventional commit](search_target)?
+      - I want to query [feat](search_target)
+      - what does [feat](search_target) means
+      - i want to search about [feat](search_target)
+      - what is [feat](search_target)?
+      - I want to query [fix](search_target)
+      - what does [fix](search_target) means
+      - i want to search about [fix](search_target)
+      - what is [fix](search_target)?
+      - I want to query [working directory](search_target)
+      - what does [working directory](search_target) means
+      - i want to search about [working directory](search_target)
+      - what is [working directory](search_target)?
+      - I want to query [staging area](search_target)
+      - what does [staging area](search_target) means
+      - i want to search about [staging area](search_target)
+      - what is [staging area](search_target)?
+      - I want to query [repository](search_target)
+      - what does [repository](search_target) means
+      - i want to search about [repository](search_target)
+      - what is [repository](search_target)?
+      - I want to query [git log](search_target)
+      - what does [git log](search_target) means
+      - i want to search about [git log](search_target)
+      - what is [git log](search_target)?
+      - I want to query [view Git records](search_target)
+      - what does [view Git records](search_target) means
+      - i want to search about [view Git records](search_target)
+      - what is [view Git records](search_target)?
+      - I want to query [git rm](search_target)
+      - what does [git rm](search_target) means
+      - i want to search about [git rm](search_target)
+      - what is [git rm](search_target)?
+      - I want to query [remove files](search_target)
+      - what does [remove files](search_target) means
+      - i want to search about [remove files](search_target)
+      - what is [remove files](search_target)?
+      - I want to query [git mv](search_target)
+      - what does [git mv](search_target) means
+      - i want to search about [git mv](search_target)
+      - what is [git mv](search_target)?
+      - I want to query [modify filename](search_target)
+      - what does [modify filename](search_target) means
+      - i want to search about [modify filename](search_target)
+      - what is [modify filename](search_target)?
+      - I want to query [git blame](search_target)
+      - what does [git blame](search_target) means
+      - i want to search about [git blame](search_target)
+      - what is [git blame](search_target)?
+      - I want to query [view who did it](search_target)
+      - what does [view who did it](search_target) means
+      - i want to search about [view who did it](search_target)
+      - what is [view who did it](search_target)?
+      - I want to query [gitk](search_target)
+      - what does [gitk](search_target) means
+      - i want to search about [gitk](search_target)
+      - what is [gitk](search_target)?
+      - I want to query [built-in graphical interface](search_target)
+      - what does [built-in graphical interface](search_target) means
+      - i want to search about [built-in graphical interface](search_target)
+      - what is [built-in graphical interface](search_target)?
+      - I want to query [--amend](search_target)
+      - what does [--amend](search_target) means
+      - i want to search about [--amend](search_target)
+      - what is [--amend](search_target)?
+      - I want to query [modify commit record](search_target)
+      - what does [modify commit record](search_target) means
+      - i want to search about [modify commit record](search_target)
+      - what is [modify commit record](search_target)?
+      - I want to query [git revert](search_target)
+      - what does [git revert](search_target) means
+      - i want to search about [git revert](search_target)
+      - what is [git revert](search_target)?
+      - I want to query [back to past commits](search_target)
+      - what does [back to past commits](search_target) means
+      - i want to search about [back to past commits](search_target)
+      - what is [back to past commits](search_target)?
+      - I want to query [git reset](search_target)
+      - what does [git reset](search_target) means
+      - i want to search about [git reset](search_target)
+      - what is [git reset](search_target)?
+      - I want to query [remove commit](search_target)
+      - what does [remove commit](search_target) means
+      - i want to search about [remove commit](search_target)
+      - what is [remove commit](search_target)?
+      - I want to query [why are we using branches?](search_target)
+      - what does [why are we using branches?](search_target) means
+      - i want to search about [why are we using branches?](search_target)
+      - what is [why are we using branches?](search_target)?
+      - I want to query [git branch](search_target)
+      - what does [git branch](search_target) means
+      - i want to search about [git branch](search_target)
+      - what is [git branch](search_target)?
+      - I want to query [view all branches](search_target)
+      - what does [view all branches](search_target) means
+      - i want to search about [view all branches](search_target)
+      - what is [view all branches](search_target)?
+      - I want to query [git branch -m](search_target)
+      - what does [git branch -m](search_target) means
+      - i want to search about [git branch -m](search_target)
+      - what is [git branch -m](search_target)?
+      - I want to query [git branch -d](search_target)
+      - what does [git branch -d](search_target) means
+      - i want to search about [git branch -d](search_target)
+      - what is [git branch -d](search_target)?
+      - I want to query [adding,renaming and deleting branches](search_target)
+      - what does [adding,renaming and deleting branches](search_target) means
+      - i want to search about [adding,renaming and deleting branches](search_target)
+      - what is [adding,renaming and deleting branches](search_target)?
+      - I want to query [git checkout](search_target)
+      - what does [git checkout](search_target) means
+      - i want to search about [git checkout](search_target)
+      - what is [git checkout](search_target)?
+      - I want to query [switch branch](search_target)
+      - what does [switch branch](search_target) means
+      - i want to search about [switch branch](search_target)
+      - what is [switch branch](search_target)?
+      - I want to query [git merge](search_target)
+      - what does [git merge](search_target) means
+      - i want to search about [git merge](search_target)
+      - what is [git merge](search_target)?
+      - I want to query [merge branch](search_target)
+      - what does [merge branch](search_target) means
+      - i want to search about [merge branch](search_target)
+      - what is [merge branch](search_target)?
+      - I want to query [conflict](search_target)
+      - what does [conflict](search_target) means
+      - i want to search about [conflict](search_target)
+      - what is [conflict](search_target)?
+      - I want to query [conflict resolution](search_target)
+      - what does [conflict resolution](search_target) means
+      - i want to search about [conflict resolution](search_target)
+      - what is [conflict resolution](search_target)?
+      - I want to query [rebase](search_target)
+      - what does [rebase](search_target) means
+      - i want to search about [rebase](search_target)
+      - what is [rebase](search_target)?
+      - I want to query [merge branch](search_target)
+      - what does [merge branch](search_target) means
+      - i want to search about [merge branch](search_target)
+      - what is [merge branch](search_target)?
+      - I want to query [tag](search_target)
+      - what does [tag](search_target) means
+      - i want to search about [tag](search_target)
+      - what is [tag](search_target)?
+      - I want to query [what is tag?](search_target)
+      - what does [what is tag?](search_target) means
+      - i want to search about [what is tag?](search_target)
+      - what is [what is tag?](search_target)?
+      - I want to query [git tag](search_target)
+      - what does [git tag](search_target) means
+      - i want to search about [git tag](search_target)
+      - what is [git tag](search_target)?
+      - I want to query [git show](search_target)
+      - what does [git show](search_target) means
+      - i want to search about [git show](search_target)
+      - what is [git show](search_target)?
+      - I want to query [annotated tags](search_target)
+      - what does [annotated tags](search_target) means
+      - i want to search about [annotated tags](search_target)
+      - what is [annotated tags](search_target)?
+      - I want to query [git server](search_target)
+      - what does [git server](search_target) means
+      - i want to search about [git server](search_target)
+      - what is [git server](search_target)?
+      - I want to query [what is GutHub?](search_target)
+      - what does [what is GutHub?](search_target) means
+      - i want to search about [what is GutHub?](search_target)
+      - what is [what is GutHub?](search_target)?
+      - I want to query [create github repository](search_target)
+      - what does [create github repository](search_target) means
+      - i want to search about [create github repository](search_target)
+      - what is [create github repository](search_target)?
+      - I want to query [setting secure shell](search_target)
+      - what does [setting secure shell](search_target) means
+      - i want to search about [setting secure shell](search_target)
+      - what is [setting secure shell](search_target)?
+      - I want to query [git push](search_target)
+      - what does [git push](search_target) means
+      - i want to search about [git push](search_target)
+      - what is [git push](search_target)?
+      - I want to query [git remove](search_target)
+      - what does [git remove](search_target) means
+      - i want to search about [git remove](search_target)
+      - what is [git remove](search_target)?
+      - I want to query [add collaborators](search_target)
+      - what does [add collaborators](search_target) means
+      - i want to search about [add collaborators](search_target)
+      - what is [add collaborators](search_target)?
+      - I want to query [git clone](search_target)
+      - what does [git clone](search_target) means
+      - i want to search about [git clone](search_target)
+      - what is [git clone](search_target)?
+      - I want to query [git pull](search_target)
+      - what does [git pull](search_target) means
+      - i want to search about [git pull](search_target)
+      - what is [git pull](search_target)?
+      - I want to query [git fetch and git merge](search_target)
+      - what does [git fetch and git merge](search_target) means
+      - i want to search about [git fetch and git merge](search_target)
+      - what is [git fetch and git merge](search_target)?
+      - I want to query [can't git push](search_target)
+      - what does [can't git push](search_target) means
+      - i want to search about [can't git push](search_target)
+      - what is [can't git push](search_target)?
+      - I want to query [pull request](search_target)
+      - what does [pull request](search_target) means
+      - i want to search about [pull request](search_target)
+      - what is [pull request](search_target)?
+      - I want to query [fork](search_target)
+      - what does [fork](search_target) means
+      - i want to search about [fork](search_target)
+      - what is [fork](search_target)?
+      - I want to query [copy project](search_target)
+      - what does [copy project](search_target) means
+      - i want to search about [copy project](search_target)
+      - what is [copy project](search_target)?
+      - I want to query [open pull request](search_target)
+      - what does [open pull request](search_target) means
+      - i want to search about [open pull request](search_target)
+      - what is [open pull request](search_target)?
+      - I want to query [merge pull request](search_target)
+      - what does [merge pull request](search_target) means
+      - i want to search about [merge pull request](search_target)
+      - what is [merge pull request](search_target)?
+      - I want to query [git ignore](search_target)
+      - what does [git ignore](search_target) means
+      - i want to search about [git ignore](search_target)
+      - what is [git ignore](search_target)?
+      - I want to query [git flow](search_target)
+      - what does [git flow](search_target) means
+      - i want to search about [git flow](search_target)
+      - what is [git flow](search_target)?
+      - I want to query [git command](search_target)
+      - what does [git command](search_target) means
+      - i want to search about [git command](search_target)
+      - what is [git command](search_target)?
+      - I want to query [git and github overview](search_target)
+      - what does [git and github overview](search_target) means
+      - i want to search about [git and github overview](search_target)
+      - what is [git and github overview](search_target)?
+      - I want to query [centralized version control](search_target)
+      - what does [centralized version control](search_target) means
+      - i want to search about [centralized version control](search_target)
+      - what is [centralized version control](search_target)?
+      - I want to query [SVN](search_target)
+      - what does [SVN](search_target) means
+      - i want to search about [SVN](search_target)
+      - what is [SVN](search_target)?
+      - I want to query [integrated management version control](search_target)
+      - what does [integrated management version control](search_target) means
+      - i want to search about [integrated management version control](search_target)
+      - what is [integrated management version control](search_target)?
+      - I want to query [github flow](search_target)
+      - what does [github flow](search_target) means
+      - i want to search about [github flow](search_target)
+      - what is [github flow](search_target)?
+      - I want to query [git flow](search_target)
+      - what does [git flow](search_target) means
+      - i want to search about [git flow](search_target)
+      - what is [git flow](search_target)?
+      - I want to query [Git cloud service](search_target)
+      - what does [Git cloud service](search_target) means
+      - i want to search about [Git cloud service](search_target)
+      - what is [Git cloud service](search_target)?
+      - I want to query [GitLab](search_target)
+      - what does [GitLab](search_target) means
+      - i want to search about [GitLab](search_target)
+      - what is [GitLab](search_target)?
+      - I want to query [BitBucket](search_target)
+      - what does [BitBucket](search_target) means
+      - i want to search about [BitBucket](search_target)
+      - what is [BitBucket](search_target)?
+      - I want to query [Git raphical interface](search_target)
+      - what does [Git raphical interface](search_target) means
+      - i want to search about [Git raphical interface](search_target)
+      - what is [Git raphical interface](search_target)?
+      - I want to query [GitHub Desktop](search_target)
+      - what does [GitHub Desktop](search_target) means
+      - i want to search about [GitHub Desktop](search_target)
+      - what is [GitHub Desktop](search_target)?
+      - I want to query [SourceTree](search_target)
+      - what does [SourceTree](search_target) means
+      - i want to search about [SourceTree](search_target)
+      - what is [SourceTree](search_target)?
+      - I want to query [TortoiseGit](search_target)
+      - what does [TortoiseGit](search_target) means
+      - i want to search about [TortoiseGit](search_target)
+      - what is [TortoiseGit](search_target)?
+      - I want to query [project](search_target)
+      - what does [project](search_target) means
+      - i want to search about [project](search_target)
+      - what is [project](search_target)?
+      - I want to query [software project](search_target)
+      - what does [software project](search_target) means
+      - i want to search about [software project](search_target)
+      - what is [software project](search_target)?
+      - I want to query [defined project](search_target)
+      - what does [defined project](search_target) means
+      - i want to search about [defined project](search_target)
+      - what is [defined project](search_target)?
+      - I want to query [project management](search_target)
+      - what does [project management](search_target) means
+      - i want to search about [project management](search_target)
+      - what is [project management](search_target)?
+      - I want to query [initiating and planning](search_target)
+      - what does [initiating and planning](search_target) means
+      - i want to search about [initiating and planning](search_target)
+      - what is [initiating and planning](search_target)?
+      - I want to query [execution](search_target)
+      - what does [execution](search_target) means
+      - i want to search about [execution](search_target)
+      - what is [execution](search_target)?
+      - I want to query [monitoring](search_target)
+      - what does [monitoring](search_target) means
+      - i want to search about [monitoring](search_target)
+      - what is [monitoring](search_target)?
+      - I want to query [closure](search_target)
+      - what does [closure](search_target) means
+      - i want to search about [closure](search_target)
+      - what is [closure](search_target)?
+      - I want to query [project management processes](search_target)
+      - what does [project management processes](search_target) means
+      - i want to search about [project management processes](search_target)
+      - what is [project management processes](search_target)?
+      - I want to query [Work Breakdown Structure](search_target)
+      - what does [Work Breakdown Structure](search_target) means
+      - i want to search about [Work Breakdown Structure](search_target)
+      - what is [Work Breakdown Structure](search_target)?
+      - I want to query [project hierarchy](search_target)
+      - what does [project hierarchy](search_target) means
+      - i want to search about [project hierarchy](search_target)
+      - what is [project hierarchy](search_target)?
+      - I want to query [example of WBS](search_target)
+      - what does [example of WBS](search_target) means
+      - i want to search about [example of WBS](search_target)
+      - what is [example of WBS](search_target)?
+      - I want to query [estimation](search_target)
+      - what does [estimation](search_target) means
+      - i want to search about [estimation](search_target)
+      - what is [estimation](search_target)?
+      - I want to query [size](search_target)
+      - what does [size](search_target) means
+      - i want to search about [size](search_target)
+      - what is [size](search_target)?
+      - I want to query [complexity](search_target)
+      - what does [complexity](search_target) means
+      - i want to search about [complexity](search_target)
+      - what is [complexity](search_target)?
+      - I want to query [effort](search_target)
+      - what does [effort](search_target) means
+      - i want to search about [effort](search_target)
+      - what is [effort](search_target)?
+      - I want to query [duration](search_target)
+      - what does [duration](search_target) means
+      - i want to search about [duration](search_target)
+      - what is [duration](search_target)?
+      - I want to query [estimation working hours](search_target)
+      - what does [estimation working hours](search_target) means
+      - i want to search about [estimation working hours](search_target)
+      - what is [estimation working hours](search_target)?
+      - I want to query [scheduling method](search_target)
+      - what does [scheduling method](search_target) means
+      - i want to search about [scheduling method](search_target)
+      - what is [scheduling method](search_target)?
+      - I want to query [CPM](search_target)
+      - what does [CPM](search_target) means
+      - i want to search about [CPM](search_target)
+      - what is [CPM](search_target)?
+      - I want to query [PERT](search_target)
+      - what does [PERT](search_target) means
+      - i want to search about [PERT](search_target)
+      - what is [PERT](search_target)?
+      - I want to query [PERT chart](search_target)
+      - what does [PERT chart](search_target) means
+      - i want to search about [PERT chart](search_target)
+      - what is [PERT chart](search_target)?
+      - I want to query [task dependency](search_target)
+      - what does [task dependency](search_target) means
+      - i want to search about [task dependency](search_target)
+      - what is [task dependency](search_target)?
+      - I want to query [critical path](search_target)
+      - what does [critical path](search_target) means
+      - i want to search about [critical path](search_target)
+      - what is [critical path](search_target)?
+      - I want to query [slack float](search_target)
+      - what does [slack float](search_target) means
+      - i want to search about [slack float](search_target)
+      - what is [slack float](search_target)?
+      - I want to query [example of project directed graph](search_target)
+      - what does [example of project directed graph](search_target) means
+      - i want to search about [example of project directed graph](search_target)
+      - what is [example of project directed graph](search_target)?
+      - I want to query [WBS with working hours](search_target)
+      - what does [WBS with working hours](search_target) means
+      - i want to search about [WBS with working hours](search_target)
+      - what is [WBS with working hours](search_target)?
+      - I want to query [WBS with principal](search_target)
+      - what does [WBS with principal](search_target) means
+      - i want to search about [WBS with principal](search_target)
+      - what is [WBS with principal](search_target)?
+      - I want to query [Gantt chart](search_target)
+      - what does [Gantt chart](search_target) means
+      - i want to search about [Gantt chart](search_target)
+      - what is [Gantt chart](search_target)?
+      - I want to query [milestone](search_target)
+      - what does [milestone](search_target) means
+      - i want to search about [milestone](search_target)
+      - what is [milestone](search_target)?
+      - I want to query [knowledge and skill development](search_target)
+      - what does [knowledge and skill development](search_target) means
+      - i want to search about [knowledge and skill development](search_target)
+      - what is [knowledge and skill development](search_target)?
+      - I want to query [identifying risks](search_target)
+      - what does [identifying risks](search_target) means
+      - i want to search about [identifying risks](search_target)
+      - what is [identifying risks](search_target)?
+      - I want to query [drawing up plans](search_target)
+      - what does [drawing up plans](search_target) means
+      - i want to search about [drawing up plans](search_target)
+      - what is [drawing up plans](search_target)?
+      - I want to query [team development](search_target)
+      - what does [team development](search_target) means
+      - i want to search about [team development](search_target)
+      - what is [team development](search_target)?
+      - I want to query [complete tasks](search_target)
+      - what does [complete tasks](search_target) means
+      - i want to search about [complete tasks](search_target)
+      - what is [complete tasks](search_target)?
+      - I want to query [performance](search_target)
+      - what does [performance](search_target) means
+      - i want to search about [performance](search_target)
+      - what is [performance](search_target)?
+      - I want to query [planning](search_target)
+      - what does [planning](search_target) means
+      - i want to search about [planning](search_target)
+      - what is [planning](search_target)?
+      - I want to query [change control](search_target)
+      - what does [change control](search_target) means
+      - i want to search about [change control](search_target)
+      - what is [change control](search_target)?
+      - I want to query [progress review](search_target)
+      - what does [progress review](search_target) means
+      - i want to search about [progress review](search_target)
+      - what is [progress review](search_target)?
+      - I want to query [milestone review](search_target)
+      - what does [milestone review](search_target) means
+      - i want to search about [milestone review](search_target)
+      - what is [milestone review](search_target)?
+      - I want to query [signboard](search_target)
+      - what does [signboard](search_target) means
+      - i want to search about [signboard](search_target)
+      - what is [signboard](search_target)?
+      - I want to query [billboard](search_target)
+      - what does [billboard](search_target) means
+      - i want to search about [billboard](search_target)
+      - what is [billboard](search_target)?
+      - I want to query [WIP](search_target)
+      - what does [WIP](search_target) means
+      - i want to search about [WIP](search_target)
+      - what is [WIP](search_target)?
+      - I want to query [physical kanban](search_target)
+      - what does [physical kanban](search_target) means
+      - i want to search about [physical kanban](search_target)
+      - what is [physical kanban](search_target)?
+      - I want to query [software kanban](search_target)
+      - what does [software kanban](search_target) means
+      - i want to search about [software kanban](search_target)
+      - what is [software kanban](search_target)?
+      - I want to query [kanban practices](search_target)
+      - what does [kanban practices](search_target) means
+      - i want to search about [kanban practices](search_target)
+      - what is [kanban practices](search_target)?
+      - I want to query [Kanban tool](search_target)
+      - what does [Kanban tool](search_target) means
+      - i want to search about [Kanban tool](search_target)
+      - what is [Kanban tool](search_target)?
+      - I want to query [Trello](search_target)
+      - what does [Trello](search_target) means
+      - i want to search about [Trello](search_target)
+      - what is [Trello](search_target)?
+      - I want to query [Zenkit](search_target)
+      - what does [Zenkit](search_target) means
+      - i want to search about [Zenkit](search_target)
+      - what is [Zenkit](search_target)?
+      - I want to query [Asana](search_target)
+      - what does [Asana](search_target) means
+      - i want to search about [Asana](search_target)
+      - what is [Asana](search_target)?
+      - I want to query [Airtable](search_target)
+      - what does [Airtable](search_target) means
+      - i want to search about [Airtable](search_target)
+      - what is [Airtable](search_target)?
+      - I want to query [Trello](search_target)
+      - what does [Trello](search_target) means
+      - i want to search about [Trello](search_target)
+      - what is [Trello](search_target)?
+      - I want to query [what's being worked on](search_target)
+      - what does [what's being worked on](search_target) means
+      - i want to search about [what's being worked on](search_target)
+      - what is [what's being worked on](search_target)?
+      - I want to query [who's working on what](search_target)
+      - what does [who's working on what](search_target) means
+      - i want to search about [who's working on what](search_target)
+      - what is [who's working on what](search_target)?
+      - I want to query [where something is in a process](search_target)
+      - what does [where something is in a process](search_target) means
+      - i want to search about [where something is in a process](search_target)
+      - what is [where something is in a process](search_target)?
+      - I want to query [Board](search_target)
+      - what does [Board](search_target) means
+      - i want to search about [Board](search_target)
+      - what is [Board](search_target)?
+      - I want to query [List](search_target)
+      - what does [List](search_target) means
+      - i want to search about [List](search_target)
+      - what is [List](search_target)?
+      - I want to query [and Card](search_target)
+      - what does [and Card](search_target) means
+      - i want to search about [and Card](search_target)
+      - what is [and Card](search_target)?
+      - I want to query [trello tutorial](search_target)
+      - what does [trello tutorial](search_target) means
+      - i want to search about [trello tutorial](search_target)
+      - what is [trello tutorial](search_target)?
+      - I want to query [software development model](search_target)
+      - what does [software development model](search_target) means
+      - i want to search about [software development model](search_target)
+      - what is [software development model](search_target)?
+      - I want to query [agile concept](search_target)
+      - what does [agile concept](search_target) means
+      - i want to search about [agile concept](search_target)
+      - what is [agile concept](search_target)?
+      - I want to query [agile manifesto](search_target)
+      - what does [agile manifesto](search_target) means
+      - i want to search about [agile manifesto](search_target)
+      - what is [agile manifesto](search_target)?
+      - I want to query [Agile thinking](search_target)
+      - what does [Agile thinking](search_target) means
+      - i want to search about [Agile thinking](search_target)
+      - what is [Agile thinking](search_target)?
+      - I want to query [complexity](search_target)
+      - what does [complexity](search_target) means
+      - i want to search about [complexity](search_target)
+      - what is [complexity](search_target)?
+      - I want to query [iterative](search_target)
+      - what does [iterative](search_target) means
+      - i want to search about [iterative](search_target)
+      - what is [iterative](search_target)?
+      - I want to query [incremental](search_target)
+      - what does [incremental](search_target) means
+      - i want to search about [incremental](search_target)
+      - what is [incremental](search_target)?
+      - I want to query [sprint](search_target)
+      - what does [sprint](search_target) means
+      - i want to search about [sprint](search_target)
+      - what is [sprint](search_target)?
+      - I want to query [scrum](search_target)
+      - what does [scrum](search_target) means
+      - i want to search about [scrum](search_target)
+      - what is [scrum](search_target)?
+      - I want to query [product backlog](search_target)
+      - what does [product backlog](search_target) means
+      - i want to search about [product backlog](search_target)
+      - what is [product backlog](search_target)?
+      - I want to query [sprint backlog](search_target)
+      - what does [sprint backlog](search_target) means
+      - i want to search about [sprint backlog](search_target)
+      - what is [sprint backlog](search_target)?
+      - I want to query [increment](search_target)
+      - what does [increment](search_target) means
+      - i want to search about [increment](search_target)
+      - what is [increment](search_target)?
+      - I want to query [definition of done](search_target)
+      - what does [definition of done](search_target) means
+      - i want to search about [definition of done](search_target)
+      - what is [definition of done](search_target)?
+      - I want to query [user story](search_target)
+      - what does [user story](search_target) means
+      - i want to search about [user story](search_target)
+      - what is [user story](search_target)?
+      - I want to query [scrum event](search_target)
+      - what does [scrum event](search_target) means
+      - i want to search about [scrum event](search_target)
+      - what is [scrum event](search_target)?
+      - I want to query [sprint planning](search_target)
+      - what does [sprint planning](search_target) means
+      - i want to search about [sprint planning](search_target)
+      - what is [sprint planning](search_target)?
+      - I want to query [daily scrum](search_target)
+      - what does [daily scrum](search_target) means
+      - i want to search about [daily scrum](search_target)
+      - what is [daily scrum](search_target)?
+      - I want to query [sprint review](search_target)
+      - what does [sprint review](search_target) means
+      - i want to search about [sprint review](search_target)
+      - what is [sprint review](search_target)?
+      - I want to query [sprint retrospective](search_target)
+      - what does [sprint retrospective](search_target) means
+      - i want to search about [sprint retrospective](search_target)
+      - what is [sprint retrospective](search_target)?
+      - I want to query [Product Owner](search_target)
+      - what does [Product Owner](search_target) means
+      - i want to search about [Product Owner](search_target)
+      - what is [Product Owner](search_target)?
+      - I want to query [Development Team](search_target)
+      - what does [Development Team](search_target) means
+      - i want to search about [Development Team](search_target)
+      - what is [Development Team](search_target)?
+      - I want to query [Scrum Master](search_target)
+      - what does [Scrum Master](search_target) means
+      - i want to search about [Scrum Master](search_target)
+      - what is [Scrum Master](search_target)?
+      - I want to query [transparency](search_target)
+      - what does [transparency](search_target) means
+      - i want to search about [transparency](search_target)
+      - what is [transparency](search_target)?
+      - I want to query [inspection](search_target)
+      - what does [inspection](search_target) means
+      - i want to search about [inspection](search_target)
+      - what is [inspection](search_target)?
+      - I want to query [adaptation](search_target)
+      - what does [adaptation](search_target) means
+      - i want to search about [adaptation](search_target)
+      - what is [adaptation](search_target)?
+      - I want to query [commitment](search_target)
+      - what does [commitment](search_target) means
+      - i want to search about [commitment](search_target)
+      - what is [commitment](search_target)?
+      - I want to query [focus](search_target)
+      - what does [focus](search_target) means
+      - i want to search about [focus](search_target)
+      - what is [focus](search_target)?
+      - I want to query [openness](search_target)
+      - what does [openness](search_target) means
+      - i want to search about [openness](search_target)
+      - what is [openness](search_target)?
+      - I want to query [respect](search_target)
+      - what does [respect](search_target) means
+      - i want to search about [respect](search_target)
+      - what is [respect](search_target)?
+      - I want to query [and courage](search_target)
+      - what does [and courage](search_target) means
+      - i want to search about [and courage](search_target)
+      - what is [and courage](search_target)?
+      - I want to query [eXtreming Programming](search_target)
+      - what does [eXtreming Programming](search_target) means
+      - i want to search about [eXtreming Programming](search_target)
+      - what is [eXtreming Programming](search_target)?
+      - I want to query [XP](search_target)
+      - what does [XP](search_target) means
+      - i want to search about [XP](search_target)
+      - what is [XP](search_target)?
+      - I want to query [feature of XP](search_target)
+      - what does [feature of XP](search_target) means
+      - i want to search about [feature of XP](search_target)
+      - what is [feature of XP](search_target)?
+      - I want to query [small releases](search_target)
+      - what does [small releases](search_target) means
+      - i want to search about [small releases](search_target)
+      - what is [small releases](search_target)?
+      - I want to query [planning game](search_target)
+      - what does [planning game](search_target) means
+      - i want to search about [planning game](search_target)
+      - what is [planning game](search_target)?
+      - I want to query [testing](search_target)
+      - what does [testing](search_target) means
+      - i want to search about [testing](search_target)
+      - what is [testing](search_target)?
+      - I want to query [on-site customer](search_target)
+      - what does [on-site customer](search_target) means
+      - i want to search about [on-site customer](search_target)
+      - what is [on-site customer](search_target)?
+      - I want to query [refactoring](search_target)
+      - what does [refactoring](search_target) means
+      - i want to search about [refactoring](search_target)
+      - what is [refactoring](search_target)?
+      - I want to query [collective code ownership](search_target)
+      - what does [collective code ownership](search_target) means
+      - i want to search about [collective code ownership](search_target)
+      - what is [collective code ownership](search_target)?
+      - I want to query [pair programming](search_target)
+      - what does [pair programming](search_target) means
+      - i want to search about [pair programming](search_target)
+      - what is [pair programming](search_target)?
+      - I want to query [coding standard](search_target)
+      - what does [coding standard](search_target) means
+      - i want to search about [coding standard](search_target)
+      - what is [coding standard](search_target)?
+      - I want to query [simple design](search_target)
+      - what does [simple design](search_target) means
+      - i want to search about [simple design](search_target)
+      - what is [simple design](search_target)?
+      - I want to query [metaphor](search_target)
+      - what does [metaphor](search_target) means
+      - i want to search about [metaphor](search_target)
+      - what is [metaphor](search_target)?
+      - I want to query [sustainable pace](search_target)
+      - what does [sustainable pace](search_target) means
+      - i want to search about [sustainable pace](search_target)
+      - what is [sustainable pace](search_target)?
+      - I want to query [ continuous integration](search_target)
+      - what does [ continuous integration](search_target) means
+      - i want to search about [ continuous integration](search_target)
+      - what is [ continuous integration](search_target)?
+      - I want to query [example of XP](search_target)
+      - what does [example of XP](search_target) means
+      - i want to search about [example of XP](search_target)
+      - what is [example of XP](search_target)?
+      - I want to query [advantage of XP](search_target)
+      - what does [advantage of XP](search_target) means
+      - i want to search about [advantage of XP](search_target)
+      - what is [advantage of XP](search_target)?
+      - I want to query [object oriented](search_target)
+      - what does [object oriented](search_target) means
+      - i want to search about [object oriented](search_target)
+      - what is [object oriented](search_target)?
+      - I want to query [UML](search_target)
+      - what does [UML](search_target) means
+      - i want to search about [UML](search_target)
+      - what is [UML](search_target)?
+      - I want to query [how to figure out and use UML](search_target)
+      - what does [how to figure out and use UML](search_target) means
+      - i want to search about [how to figure out and use UML](search_target)
+      - what is [how to figure out and use UML](search_target)?
+      - I want to query [classify UML](search_target)
+      - what does [classify UML](search_target) means
+      - i want to search about [classify UML](search_target)
+      - what is [classify UML](search_target)?
+      - I want to query [UML tools](search_target)
+      - what does [UML tools](search_target) means
+      - i want to search about [UML tools](search_target)
+      - what is [UML tools](search_target)?
+      - I want to query [StarUML](search_target)
+      - what does [StarUML](search_target) means
+      - i want to search about [StarUML](search_target)
+      - what is [StarUML](search_target)?
+      - I want to query [ArgoUML](search_target)
+      - what does [ArgoUML](search_target) means
+      - i want to search about [ArgoUML](search_target)
+      - what is [ArgoUML](search_target)?
+      - I want to query [draw.io](search_target)
+      - what does [draw.io](search_target) means
+      - i want to search about [draw.io](search_target)
+      - what is [draw.io](search_target)?
+      - I want to query [Astah Community](search_target)
+      - what does [Astah Community](search_target) means
+      - i want to search about [Astah Community](search_target)
+      - what is [Astah Community](search_target)?
+      - I want to query [MagicDraw UML](search_target)
+      - what does [MagicDraw UML](search_target) means
+      - i want to search about [MagicDraw UML](search_target)
+      - what is [MagicDraw UML](search_target)?
+      - I want to query [Visual Paradigm](search_target)
+      - what does [Visual Paradigm](search_target) means
+      - i want to search about [Visual Paradigm](search_target)
+      - what is [Visual Paradigm](search_target)?
+      - I want to query [MS Visio](search_target)
+      - what does [MS Visio](search_target) means
+      - i want to search about [MS Visio](search_target)
+      - what is [MS Visio](search_target)?
+      - I want to query [use case modeling](search_target)
+      - what does [use case modeling](search_target) means
+      - i want to search about [use case modeling](search_target)
+      - what is [use case modeling](search_target)?
+      - I want to query [use case](search_target)
+      - what does [use case](search_target) means
+      - i want to search about [use case](search_target)
+      - what is [use case](search_target)?
+      - I want to query [actor](search_target)
+      - what does [actor](search_target) means
+      - i want to search about [actor](search_target)
+      - what is [actor](search_target)?
+      - I want to query [operational concept](search_target)
+      - what does [operational concept](search_target) means
+      - i want to search about [operational concept](search_target)
+      - what is [operational concept](search_target)?
+      - I want to query [story](search_target)
+      - what does [story](search_target) means
+      - i want to search about [story](search_target)
+      - what is [story](search_target)?
+      - I want to query [example of use case diagram](search_target)
+      - what does [example of use case diagram](search_target) means
+      - i want to search about [example of use case diagram](search_target)
+      - what is [example of use case diagram](search_target)?
+      - I want to query [syntax of use case diagram](search_target)
+      - what does [syntax of use case diagram](search_target) means
+      - i want to search about [syntax of use case diagram](search_target)
+      - what is [syntax of use case diagram](search_target)?
+      - I want to query [initial version of use case diagram](search_target)
+      - what does [initial version of use case diagram](search_target) means
+      - i want to search about [initial version of use case diagram](search_target)
+      - what is [initial version of use case diagram](search_target)?
+      - I want to query [detail of use case diagram](search_target)
+      - what does [detail of use case diagram](search_target) means
+      - i want to search about [detail of use case diagram](search_target)
+      - what is [detail of use case diagram](search_target)?
+      - I want to query [a complete use case diagram](search_target)
+      - what does [a complete use case diagram](search_target) means
+      - i want to search about [a complete use case diagram](search_target)
+      - what is [a complete use case diagram](search_target)?
+      - I want to query [classify use case](search_target)
+      - what does [classify use case](search_target) means
+      - i want to search about [classify use case](search_target)
+      - what is [classify use case](search_target)?
+      - I want to query [extend](search_target)
+      - what does [extend](search_target) means
+      - i want to search about [extend](search_target)
+      - what is [extend](search_target)?
+      - I want to query [include](search_target)
+      - what does [include](search_target) means
+      - i want to search about [include](search_target)
+      - what is [include](search_target)?
+      - I want to query [generalization](search_target)
+      - what does [generalization](search_target) means
+      - i want to search about [generalization](search_target)
+      - what is [generalization](search_target)?
+      - I want to query [example of use case](search_target)
+      - what does [example of use case](search_target) means
+      - i want to search about [example of use case](search_target)
+      - what is [example of use case](search_target)?
+      - I want to query [analyze use case](search_target)
+      - what does [analyze use case](search_target) means
+      - i want to search about [analyze use case](search_target)
+      - what is [analyze use case](search_target)?
+      - I want to query [class diagram](search_target)
+      - what does [class diagram](search_target) means
+      - i want to search about [class diagram](search_target)
+      - what is [class diagram](search_target)?
+      - I want to query [attribute](search_target)
+      - what does [attribute](search_target) means
+      - i want to search about [attribute](search_target)
+      - what is [attribute](search_target)?
+      - I want to query [operation](search_target)
+      - what does [operation](search_target) means
+      - i want to search about [operation](search_target)
+      - what is [operation](search_target)?
+      - I want to query [relationship between object](search_target)
+      - what does [relationship between object](search_target) means
+      - i want to search about [relationship between object](search_target)
+      - what is [relationship between object](search_target)?
+      - I want to query [association](search_target)
+      - what does [association](search_target) means
+      - i want to search about [association](search_target)
+      - what is [association](search_target)?
+      - I want to query [dependency](search_target)
+      - what does [dependency](search_target) means
+      - i want to search about [dependency](search_target)
+      - what is [dependency](search_target)?
+      - I want to query [composition](search_target)
+      - what does [composition](search_target) means
+      - i want to search about [composition](search_target)
+      - what is [composition](search_target)?
+      - I want to query [ingeritance](search_target)
+      - what does [ingeritance](search_target) means
+      - i want to search about [ingeritance](search_target)
+      - what is [ingeritance](search_target)?
+      - I want to query [object-oriented program](search_target)
+      - what does [object-oriented program](search_target) means
+      - i want to search about [object-oriented program](search_target)
+      - what is [object-oriented program](search_target)?
+      - I want to query [class](search_target)
+      - what does [class](search_target) means
+      - i want to search about [class](search_target)
+      - what is [class](search_target)?
+      - I want to query [object](search_target)
+      - what does [object](search_target) means
+      - i want to search about [object](search_target)
+      - what is [object](search_target)?
+      - I want to query [example of UML Class Diagram](search_target)
+      - what does [example of UML Class Diagram](search_target) means
+      - i want to search about [example of UML Class Diagram](search_target)
+      - what is [example of UML Class Diagram](search_target)?
+      - I want to query [class in UML](search_target)
+      - what does [class in UML](search_target) means
+      - i want to search about [class in UML](search_target)
+      - what is [class in UML](search_target)?
+      - I want to query [relationship](search_target)
+      - what does [relationship](search_target) means
+      - i want to search about [relationship](search_target)
+      - what is [relationship](search_target)?
+      - I want to query [dependency](search_target)
+      - what does [dependency](search_target) means
+      - i want to search about [dependency](search_target)
+      - what is [dependency](search_target)?
+      - I want to query [association](search_target)
+      - what does [association](search_target) means
+      - i want to search about [association](search_target)
+      - what is [association](search_target)?
+      - I want to query [uses a and knows a relationship](search_target)
+      - what does [uses a and knows a relationship](search_target) means
+      - i want to search about [uses a and knows a relationship](search_target)
+      - what is [uses a and knows a relationship](search_target)?
+      - I want to query [example of dependency](search_target)
+      - what does [example of dependency](search_target) means
+      - i want to search about [example of dependency](search_target)
+      - what is [example of dependency](search_target)?
+      - I want to query [example of association](search_target)
+      - what does [example of association](search_target) means
+      - i want to search about [example of association](search_target)
+      - what is [example of association](search_target)?
+      - I want to query [navigation](search_target)
+      - what does [navigation](search_target) means
+      - i want to search about [navigation](search_target)
+      - what is [navigation](search_target)?
+      - I want to query [multiplicity](search_target)
+      - what does [multiplicity](search_target) means
+      - i want to search about [multiplicity](search_target)
+      - what is [multiplicity](search_target)?
+      - I want to query [composition](search_target)
+      - what does [composition](search_target) means
+      - i want to search about [composition](search_target)
+      - what is [composition](search_target)?
+      - I want to query [aggregation](search_target)
+      - what does [aggregation](search_target) means
+      - i want to search about [aggregation](search_target)
+      - what is [aggregation](search_target)?
+      - I want to query [example of composition and aggregation](search_target)
+      - what does [example of composition and aggregation](search_target) means
+      - i want to search about [example of composition and aggregation](search_target)
+      - what is [example of composition and aggregation](search_target)?
+      - I want to query [code example of composition and aggregation](search_target)
+      - what does [code example of composition and aggregation](search_target) means
+      - i want to search about [code example of composition and aggregation](search_target)
+      - what is [code example of composition and aggregation](search_target)?
+      - I want to query [inheritance](search_target)
+      - what does [inheritance](search_target) means
+      - i want to search about [inheritance](search_target)
+      - what is [inheritance](search_target)?
+      - I want to query [composition](search_target)
+      - what does [composition](search_target) means
+      - i want to search about [composition](search_target)
+      - what is [composition](search_target)?
+      - I want to query [is a and has a relationship](search_target)
+      - what does [is a and has a relationship](search_target) means
+      - i want to search about [is a and has a relationship](search_target)
+      - what is [is a and has a relationship](search_target)?
+      - I want to query [inheritance](search_target)
+      - what does [inheritance](search_target) means
+      - i want to search about [inheritance](search_target)
+      - what is [inheritance](search_target)?
+      - I want to query [implement](search_target)
+      - what does [implement](search_target) means
+      - i want to search about [implement](search_target)
+      - what is [implement](search_target)?
+      - I want to query [is a and can do relationship](search_target)
+      - what does [is a and can do relationship](search_target) means
+      - i want to search about [is a and can do relationship](search_target)
+      - what is [is a and can do relationship](search_target)?
+      - I want to query [code example of inheritance](search_target)
+      - what does [code example of inheritance](search_target) means
+      - i want to search about [code example of inheritance](search_target)
+      - what is [code example of inheritance](search_target)?
+      - I want to query [code example of implement](search_target)
+      - what does [code example of implement](search_target) means
+      - i want to search about [code example of implement](search_target)
+      - what is [code example of implement](search_target)?
+      - I want to query [abstract class](search_target)
+      - what does [abstract class](search_target) means
+      - i want to search about [abstract class](search_target)
+      - what is [abstract class](search_target)?
+      - I want to query [abstract method](search_target)
+      - what does [abstract method](search_target) means
+      - i want to search about [abstract method](search_target)
+      - what is [abstract method](search_target)?
+      - I want to query [example of requirement description](search_target)
+      - what does [example of requirement description](search_target) means
+      - i want to search about [example of requirement description](search_target)
+      - what is [example of requirement description](search_target)?
+      - I want to query [find class](search_target)
+      - what does [find class](search_target) means
+      - i want to search about [find class](search_target)
+      - what is [find class](search_target)?
+      - I want to query [create relationship between object](search_target)
+      - what does [create relationship between object](search_target) means
+      - i want to search about [create relationship between object](search_target)
+      - what is [create relationship between object](search_target)?
+      - I want to query [set attribute](search_target)
+      - what does [set attribute](search_target) means
+      - i want to search about [set attribute](search_target)
+      - what is [set attribute](search_target)?
+      - I want to query [set method](search_target)
+      - what does [set method](search_target) means
+      - i want to search about [set method](search_target)
+      - what is [set method](search_target)?
+      - I want to query [SRS](search_target)
+      - what does [SRS](search_target) means
+      - i want to search about [SRS](search_target)
+      - what is [SRS](search_target)?
+      - I want to query [SDD](search_target)
+      - what does [SDD](search_target) means
+      - i want to search about [SDD](search_target)
+      - what is [SDD](search_target)?
+      - I want to query [bad design](search_target)
+      - what does [bad design](search_target) means
+      - i want to search about [bad design](search_target)
+      - what is [bad design](search_target)?
+      - I want to query [abstraction](search_target)
+      - what does [abstraction](search_target) means
+      - i want to search about [abstraction](search_target)
+      - what is [abstraction](search_target)?
+      - I want to query [entities](search_target)
+      - what does [entities](search_target) means
+      - i want to search about [entities](search_target)
+      - what is [entities](search_target)?
+      - I want to query [features](search_target)
+      - what does [features](search_target) means
+      - i want to search about [features](search_target)
+      - what is [features](search_target)?
+      - I want to query [levels of abstraction](search_target)
+      - what does [levels of abstraction](search_target) means
+      - i want to search about [levels of abstraction](search_target)
+      - what is [levels of abstraction](search_target)?
+      - I want to query [procedure abstraction](search_target)
+      - what does [procedure abstraction](search_target) means
+      - i want to search about [procedure abstraction](search_target)
+      - what is [procedure abstraction](search_target)?
+      - I want to query [data abstraction](search_target)
+      - what does [data abstraction](search_target) means
+      - i want to search about [data abstraction](search_target)
+      - what is [data abstraction](search_target)?
+      - I want to query [modularity](search_target)
+      - what does [modularity](search_target) means
+      - i want to search about [modularity](search_target)
+      - what is [modularity](search_target)?
+      - I want to query [module](search_target)
+      - what does [module](search_target) means
+      - i want to search about [module](search_target)
+      - what is [module](search_target)?
+      - I want to query [component](search_target)
+      - what does [component](search_target) means
+      - i want to search about [component](search_target)
+      - what is [component](search_target)?
+      - I want to query [cohesion](search_target)
+      - what does [cohesion](search_target) means
+      - i want to search about [cohesion](search_target)
+      - what is [cohesion](search_target)?
+      - I want to query [coupling](search_target)
+      - what does [coupling](search_target) means
+      - i want to search about [coupling](search_target)
+      - what is [coupling](search_target)?
+      - I want to query [list of subsystems/components/modules](search_target)
+      - what does [list of subsystems/components/modules](search_target) means
+      - i want to search about [list of subsystems/components/modules](search_target)
+      - what is [list of subsystems/components/modules](search_target)?
+      - I want to query [design of subsystems/components/modules](search_target)
+      - what does [design of subsystems/components/modules](search_target) means
+      - i want to search about [design of subsystems/components/modules](search_target)
+      - what is [design of subsystems/components/modules](search_target)?
+      - I want to query [logical view](search_target)
+      - what does [logical view](search_target) means
+      - i want to search about [logical view](search_target)
+      - what is [logical view](search_target)?
+      - I want to query [process view](search_target)
+      - what does [process view](search_target) means
+      - i want to search about [process view](search_target)
+      - what is [process view](search_target)?
+      - I want to query [development view](search_target)
+      - what does [development view](search_target) means
+      - i want to search about [development view](search_target)
+      - what is [development view](search_target)?
+      - I want to query [physical view](search_target)
+      - what does [physical view](search_target) means
+      - i want to search about [physical view](search_target)
+      - what is [physical view](search_target)?
+      - I want to query [use cases or scenarios](search_target)
+      - what does [use cases or scenarios](search_target) means
+      - i want to search about [use cases or scenarios](search_target)
+      - what is [use cases or scenarios](search_target)?
+      - I want to query [architectural pattern](search_target)
+      - what does [architectural pattern](search_target) means
+      - i want to search about [architectural pattern](search_target)
+      - what is [architectural pattern](search_target)?
+      - I want to query [layer architecture pattern](search_target)
+      - what does [layer architecture pattern](search_target) means
+      - i want to search about [layer architecture pattern](search_target)
+      - what is [layer architecture pattern](search_target)?
+      - I want to query [repository architecture](search_target)
+      - what does [repository architecture](search_target) means
+      - i want to search about [repository architecture](search_target)
+      - what is [repository architecture](search_target)?
+      - I want to query [distributed architecture pattern](search_target)
+      - what does [distributed architecture pattern](search_target) means
+      - i want to search about [distributed architecture pattern](search_target)
+      - what is [distributed architecture pattern](search_target)?
+      - I want to query [client-server architecture](search_target)
+      - what does [client-server architecture](search_target) means
+      - i want to search about [client-server architecture](search_target)
+      - what is [client-server architecture](search_target)?
+      - I want to query [N-Tier](search_target)
+      - what does [N-Tier](search_target) means
+      - i want to search about [N-Tier](search_target)
+      - what is [N-Tier](search_target)?
+      - I want to query [Multi-Tier architecture](search_target)
+      - what does [Multi-Tier architecture](search_target) means
+      - i want to search about [Multi-Tier architecture](search_target)
+      - what is [Multi-Tier architecture](search_target)?
+      - I want to query [peer-to-peer architecture](search_target)
+      - what does [peer-to-peer architecture](search_target) means
+      - i want to search about [peer-to-peer architecture](search_target)
+      - what is [peer-to-peer architecture](search_target)?
+      - I want to query [pipe and filter architecture pattern](search_target)
+      - what does [pipe and filter architecture pattern](search_target) means
+      - i want to search about [pipe and filter architecture pattern](search_target)
+      - what is [pipe and filter architecture pattern](search_target)?
+      - I want to query [MVC](search_target)
+      - what does [MVC](search_target) means
+      - i want to search about [MVC](search_target)
+      - what is [MVC](search_target)?
+      - I want to query [front-end and back-end hybrid architecture](search_target)
+      - what does [front-end and back-end hybrid architecture](search_target) means
+      - i want to search about [front-end and back-end hybrid architecture](search_target)
+      - what is [front-end and back-end hybrid architecture](search_target)?
+      - I want to query [front-end and back-end separation architecture](search_target)
+      - what does [front-end and back-end separation architecture](search_target) means
+      - i want to search about [front-end and back-end separation architecture](search_target)
+      - what is [front-end and back-end separation architecture](search_target)?
+      - I want to query [API](search_target)
+      - what does [API](search_target) means
+      - i want to search about [API](search_target)
+      - what is [API](search_target)?
+      - I want to query [REST](search_target)
+      - what does [REST](search_target) means
+      - i want to search about [REST](search_target)
+      - what is [REST](search_target)?
+      - I want to query [RESTful Service/API Interface](search_target)
+      - what does [RESTful Service/API Interface](search_target) means
+      - i want to search about [RESTful Service/API Interface](search_target)
+      - what is [RESTful Service/API Interface](search_target)?
+      - I want to query [example of web/mobile application](search_target)
+      - what does [example of web/mobile application](search_target) means
+      - i want to search about [example of web/mobile application](search_target)
+      - what is [example of web/mobile application](search_target)?
+      - I want to query [implement of web/mobile application](search_target)
+      - what does [implement of web/mobile application](search_target) means
+      - i want to search about [implement of web/mobile application](search_target)
+      - what is [implement of web/mobile application](search_target)?
+      - I want to query [C4 Model](search_target)
+      - what does [C4 Model](search_target) means
+      - i want to search about [C4 Model](search_target)
+      - what is [C4 Model](search_target)?
+      - I want to query [system context diagram](search_target)
+      - what does [system context diagram](search_target) means
+      - i want to search about [system context diagram](search_target)
+      - what is [system context diagram](search_target)?
+      - I want to query [container diagram](search_target)
+      - what does [container diagram](search_target) means
+      - i want to search about [container diagram](search_target)
+      - what is [container diagram](search_target)?
+      - I want to query [component diagram](search_target)
+      - what does [component diagram](search_target) means
+      - i want to search about [component diagram](search_target)
+      - what is [component diagram](search_target)?
+      - I want to query [code diagram](search_target)
+      - what does [code diagram](search_target) means
+      - i want to search about [code diagram](search_target)
+      - what is [code diagram](search_target)?
+      - I want to query [software design strategy](search_target)
+      - what does [software design strategy](search_target) means
+      - i want to search about [software design strategy](search_target)
+      - what is [software design strategy](search_target)?
+      - I want to query [divide and conquer](search_target)
+      - what does [divide and conquer](search_target) means
+      - i want to search about [divide and conquer](search_target)
+      - what is [divide and conquer](search_target)?
+      - I want to query [advanced steps](search_target)
+      - what does [advanced steps](search_target) means
+      - i want to search about [advanced steps](search_target)
+      - what is [advanced steps](search_target)?
+      - I want to query [example architecture design](search_target)
+      - what does [example architecture design](search_target) means
+      - i want to search about [example architecture design](search_target)
+      - what is [example architecture design](search_target)?
+      - I want to query [interface design](search_target)
+      - what does [interface design](search_target) means
+      - i want to search about [interface design](search_target)
+      - what is [interface design](search_target)?
+      - I want to query [internal interface](search_target)
+      - what does [internal interface](search_target) means
+      - i want to search about [internal interface](search_target)
+      - what is [internal interface](search_target)?
+      - I want to query [external interface](search_target)
+      - what does [external interface](search_target) means
+      - i want to search about [external interface](search_target)
+      - what is [external interface](search_target)?
+      - I want to query [example of interface design](search_target)
+      - what does [example of interface design](search_target) means
+      - i want to search about [example of interface design](search_target)
+      - what is [example of interface design](search_target)?
+      - I want to query [data design](search_target)
+      - what does [data design](search_target) means
+      - i want to search about [data design](search_target)
+      - what is [data design](search_target)?
+      - I want to query [activity diagram](search_target)
+      - what does [activity diagram](search_target) means
+      - i want to search about [activity diagram](search_target)
+      - what is [activity diagram](search_target)?
+      - I want to query [user interface design](search_target)
+      - what does [user interface design](search_target) means
+      - i want to search about [user interface design](search_target)
+      - what is [user interface design](search_target)?
+      - I want to query [component design](search_target)
+      - what does [component design](search_target) means
+      - i want to search about [component design](search_target)
+      - what is [component design](search_target)?
+      - I want to query [structure design](search_target)
+      - what does [structure design](search_target) means
+      - i want to search about [structure design](search_target)
+      - what is [structure design](search_target)?
+      - I want to query [behavior design](search_target)
+      - what does [behavior design](search_target) means
+      - i want to search about [behavior design](search_target)
+      - what is [behavior design](search_target)?
+      - I want to query [example of class diagram](search_target)
+      - what does [example of class diagram](search_target) means
+      - i want to search about [example of class diagram](search_target)
+      - what is [example of class diagram](search_target)?
+      - I want to query [component architecture](search_target)
+      - what does [component architecture](search_target) means
+      - i want to search about [component architecture](search_target)
+      - what is [component architecture](search_target)?
+      - I want to query [code architecture](search_target)
+      - what does [code architecture](search_target) means
+      - i want to search about [code architecture](search_target)
+      - what is [code architecture](search_target)?
+      - I want to query [design issue](search_target)
+      - what does [design issue](search_target) means
+      - i want to search about [design issue](search_target)
+      - what is [design issue](search_target)?
+      - I want to query [software testing](search_target)
+      - what does [software testing](search_target) means
+      - i want to search about [software testing](search_target)
+      - what is [software testing](search_target)?
+      - I want to query [bug](search_target)
+      - what does [bug](search_target) means
+      - i want to search about [bug](search_target)
+      - what is [bug](search_target)?
+      - I want to query [quality](search_target)
+      - what does [quality](search_target) means
+      - i want to search about [quality](search_target)
+      - what is [quality](search_target)?
+      - I want to query [difference between testing and debug](search_target)
+      - what does [difference between testing and debug](search_target) means
+      - i want to search about [difference between testing and debug](search_target)
+      - what is [difference between testing and debug](search_target)?
+      - I want to query [why are we testing?](search_target)
+      - what does [why are we testing?](search_target) means
+      - i want to search about [why are we testing?](search_target)
+      - what is [why are we testing?](search_target)?
+      - I want to query [software bugs in history](search_target)
+      - what does [software bugs in history](search_target) means
+      - i want to search about [software bugs in history](search_target)
+      - what is [software bugs in history](search_target)?
+      - I want to query [testing job](search_target)
+      - what does [testing job](search_target) means
+      - i want to search about [testing job](search_target)
+      - what is [testing job](search_target)?
+      - I want to query [developer](search_target)
+      - what does [developer](search_target) means
+      - i want to search about [developer](search_target)
+      - what is [developer](search_target)?
+      - I want to query [tester](search_target)
+      - what does [tester](search_target) means
+      - i want to search about [tester](search_target)
+      - what is [tester](search_target)?
+      - I want to query [system user](search_target)
+      - what does [system user](search_target) means
+      - i want to search about [system user](search_target)
+      - what is [system user](search_target)?
+      - I want to query [test case](search_target)
+      - what does [test case](search_target) means
+      - i want to search about [test case](search_target)
+      - what is [test case](search_target)?
+      - I want to query [black box](search_target)
+      - what does [black box](search_target) means
+      - i want to search about [black box](search_target)
+      - what is [black box](search_target)?
+      - I want to query [white box](search_target)
+      - what does [white box](search_target) means
+      - i want to search about [white box](search_target)
+      - what is [white box](search_target)?
+      - I want to query [problems with software dynamic testing](search_target)
+      - what does [problems with software dynamic testing](search_target) means
+      - i want to search about [problems with software dynamic testing](search_target)
+      - what is [problems with software dynamic testing](search_target)?
+      - I want to query [testing and diagnosis](search_target)
+      - what does [testing and diagnosis](search_target) means
+      - i want to search about [testing and diagnosis](search_target)
+      - what is [testing and diagnosis](search_target)?
+      - I want to query [exhaustive testing](search_target)
+      - what does [exhaustive testing](search_target) means
+      - i want to search about [exhaustive testing](search_target)
+      - what is [exhaustive testing](search_target)?
+      - I want to query [selective testing](search_target)
+      - what does [selective testing](search_target) means
+      - i want to search about [selective testing](search_target)
+      - what is [selective testing](search_target)?
+      - I want to query [main purpose of software dynamic testing](search_target)
+      - what does [main purpose of software dynamic testing](search_target) means
+      - i want to search about [main purpose of software dynamic testing](search_target)
+      - what is [main purpose of software dynamic testing](search_target)?
+      - I want to query [relative cost of missing exclusion](search_target)
+      - what does [relative cost of missing exclusion](search_target) means
+      - i want to search about [relative cost of missing exclusion](search_target)
+      - what is [relative cost of missing exclusion](search_target)?
+      - I want to query [white-box testing](search_target)
+      - what does [white-box testing](search_target) means
+      - i want to search about [white-box testing](search_target)
+      - what is [white-box testing](search_target)?
+      - I want to query [black-box testing](search_target)
+      - what does [black-box testing](search_target) means
+      - i want to search about [black-box testing](search_target)
+      - what is [black-box testing](search_target)?
+      - I want to query [statement coverage](search_target)
+      - what does [statement coverage](search_target) means
+      - i want to search about [statement coverage](search_target)
+      - what is [statement coverage](search_target)?
+      - I want to query [branch coverage](search_target)
+      - what does [branch coverage](search_target) means
+      - i want to search about [branch coverage](search_target)
+      - what is [branch coverage](search_target)?
+      - I want to query [condition coverage](search_target)
+      - what does [condition coverage](search_target) means
+      - i want to search about [condition coverage](search_target)
+      - what is [condition coverage](search_target)?
+      - I want to query [branch/condition coverage](search_target)
+      - what does [branch/condition coverage](search_target) means
+      - i want to search about [branch/condition coverage](search_target)
+      - what is [branch/condition coverage](search_target)?
+      - I want to query [multiple condition coverage](search_target)
+      - what does [multiple condition coverage](search_target) means
+      - i want to search about [multiple condition coverage](search_target)
+      - what is [multiple condition coverage](search_target)?
+      - I want to query [all-pathes coverage](search_target)
+      - what does [all-pathes coverage](search_target) means
+      - i want to search about [all-pathes coverage](search_target)
+      - what is [all-pathes coverage](search_target)?
+      - I want to query [statement coverage](search_target)
+      - what does [statement coverage](search_target) means
+      - i want to search about [statement coverage](search_target)
+      - what is [statement coverage](search_target)?
+      - I want to query [branch coverage](search_target)
+      - what does [branch coverage](search_target) means
+      - i want to search about [branch coverage](search_target)
+      - what is [branch coverage](search_target)?
+      - I want to query [condition coverage](search_target)
+      - what does [condition coverage](search_target) means
+      - i want to search about [condition coverage](search_target)
+      - what is [condition coverage](search_target)?
+      - I want to query [branch/condition coverage](search_target)
+      - what does [branch/condition coverage](search_target) means
+      - i want to search about [branch/condition coverage](search_target)
+      - what is [branch/condition coverage](search_target)?
+      - I want to query [equivalence partition introduction](search_target)
+      - what does [equivalence partition introduction](search_target) means
+      - i want to search about [equivalence partition introduction](search_target)
+      - what is [equivalence partition introduction](search_target)?
+      - I want to query [equivalence partition principle](search_target)
+      - what does [equivalence partition principle](search_target) means
+      - i want to search about [equivalence partition principle](search_target)
+      - what is [equivalence partition principle](search_target)?
+      - I want to query [equivalence partition example](search_target)
+      - what does [equivalence partition example](search_target) means
+      - i want to search about [equivalence partition example](search_target)
+      - what is [equivalence partition example](search_target)?
+      - I want to query [boundary value analysis](search_target)
+      - what does [boundary value analysis](search_target) means
+      - i want to search about [boundary value analysis](search_target)
+      - what is [boundary value analysis](search_target)?
+      - I want to query [BVA](search_target)
+      - what does [BVA](search_target) means
+      - i want to search about [BVA](search_target)
+      - what is [BVA](search_target)?
+      - I want to query [validation](search_target)
+      - what does [validation](search_target) means
+      - i want to search about [validation](search_target)
+      - what is [validation](search_target)?
+      - I want to query [verification](search_target)
+      - what does [verification](search_target) means
+      - i want to search about [verification](search_target)
+      - what is [verification](search_target)?
+      - I want to query [software dynamic testing program](search_target)
+      - what does [software dynamic testing program](search_target) means
+      - i want to search about [software dynamic testing program](search_target)
+      - what is [software dynamic testing program](search_target)?
+      - I want to query [unit testing](search_target)
+      - what does [unit testing](search_target) means
+      - i want to search about [unit testing](search_target)
+      - what is [unit testing](search_target)?
+      - I want to query [unit testing architectural](search_target)
+      - what does [unit testing architectural](search_target) means
+      - i want to search about [unit testing architectural](search_target)
+      - what is [unit testing architectural](search_target)?
+      - I want to query [test driver](search_target)
+      - what does [test driver](search_target) means
+      - i want to search about [test driver](search_target)
+      - what is [test driver](search_target)?
+      - I want to query [test double](search_target)
+      - what does [test double](search_target) means
+      - i want to search about [test double](search_target)
+      - what is [test double](search_target)?
+      - I want to query [test double](search_target)
+      - what does [test double](search_target) means
+      - i want to search about [test double](search_target)
+      - what is [test double](search_target)?
+      - I want to query [JUnit](search_target)
+      - what does [JUnit](search_target) means
+      - i want to search about [JUnit](search_target)
+      - what is [JUnit](search_target)?
+      - I want to query [integration testing](search_target)
+      - what does [integration testing](search_target) means
+      - i want to search about [integration testing](search_target)
+      - what is [integration testing](search_target)?
+      - I want to query [when to test](search_target)
+      - what does [when to test](search_target) means
+      - i want to search about [when to test](search_target)
+      - what is [when to test](search_target)?
+      - I want to query [who involved](search_target)
+      - what does [who involved](search_target) means
+      - i want to search about [who involved](search_target)
+      - what is [who involved](search_target)?
+      - I want to query [purpose of testing](search_target)
+      - what does [purpose of testing](search_target) means
+      - i want to search about [purpose of testing](search_target)
+      - what is [purpose of testing](search_target)?
+      - I want to query [top-down integration](search_target)
+      - what does [top-down integration](search_target) means
+      - i want to search about [top-down integration](search_target)
+      - what is [top-down integration](search_target)?
+      - I want to query [bottom-up integration](search_target)
+      - what does [bottom-up integration](search_target) means
+      - i want to search about [bottom-up integration](search_target)
+      - what is [bottom-up integration](search_target)?
+      - I want to query [top-down](search_target)
+      - what does [top-down](search_target) means
+      - i want to search about [top-down](search_target)
+      - what is [top-down](search_target)?
+      - I want to query [bottom-up](search_target)
+      - what does [bottom-up](search_target) means
+      - i want to search about [bottom-up](search_target)
+      - what is [bottom-up](search_target)?
+      - I want to query [sandwich](search_target)
+      - what does [sandwich](search_target) means
+      - i want to search about [sandwich](search_target)
+      - what is [sandwich](search_target)?
+      - I want to query [big-bang](search_target)
+      - what does [big-bang](search_target) means
+      - i want to search about [big-bang](search_target)
+      - what is [big-bang](search_target)?
+      - I want to query [system testing](search_target)
+      - what does [system testing](search_target) means
+      - i want to search about [system testing](search_target)
+      - what is [system testing](search_target)?
+      - I want to query [regression test](search_target)
+      - what does [regression test](search_target) means
+      - i want to search about [regression test](search_target)
+      - what is [regression test](search_target)?
+      - I want to query [performance](search_target)
+      - what does [performance](search_target) means
+      - i want to search about [performance](search_target)
+      - what is [performance](search_target)?
+      - I want to query [LoadRunner](search_target)
+      - what does [LoadRunner](search_target) means
+      - i want to search about [LoadRunner](search_target)
+      - what is [LoadRunner](search_target)?
+      - I want to query [JMeter](search_target)
+      - what does [JMeter](search_target) means
+      - i want to search about [JMeter](search_target)
+      - what is [JMeter](search_target)?
+      - I want to query [acceptance testing](search_target)
+      - what does [acceptance testing](search_target) means
+      - i want to search about [acceptance testing](search_target)
+      - what is [acceptance testing](search_target)?
+      - I want to query [alpha testing](search_target)
+      - what does [alpha testing](search_target) means
+      - i want to search about [alpha testing](search_target)
+      - what is [alpha testing](search_target)?
+      - I want to query [beta testing](search_target)
+      - what does [beta testing](search_target) means
+      - i want to search about [beta testing](search_target)
+      - what is [beta testing](search_target)?
+      - I want to query [UAT](search_target)
+      - what does [UAT](search_target) means
+      - i want to search about [UAT](search_target)
+      - what is [UAT](search_target)?
+      - I want to query [user acceptance testing](search_target)
+      - what does [user acceptance testing](search_target) means
+      - i want to search about [user acceptance testing](search_target)
+      - what is [user acceptance testing](search_target)?
+      - I want to query [software testing steps](search_target)
+      - what does [software testing steps](search_target) means
+      - i want to search about [software testing steps](search_target)
+      - what is [software testing steps](search_target)?
+      - I want to query [software testing plan](search_target)
+      - what does [software testing plan](search_target) means
+      - i want to search about [software testing plan](search_target)
+      - what is [software testing plan](search_target)?
+      - I want to query [software testing prepare](search_target)
+      - what does [software testing prepare](search_target) means
+      - i want to search about [software testing prepare](search_target)
+      - what is [software testing prepare](search_target)?
+      - I want to query [design test cases](search_target)
+      - what does [design test cases](search_target) means
+      - i want to search about [design test cases](search_target)
+      - what is [design test cases](search_target)?
+      - I want to query [test case example](search_target)
+      - what does [test case example](search_target) means
+      - i want to search about [test case example](search_target)
+      - what is [test case example](search_target)?
+      - I want to query [perform software testing](search_target)
+      - what does [perform software testing](search_target) means
+      - i want to search about [perform software testing](search_target)
+      - what is [perform software testing](search_target)?
+      - I want to query [test report](search_target)
+      - what does [test report](search_target) means
+      - i want to search about [test report](search_target)
+      - what is [test report](search_target)?
+      - I want to query [test analysis](search_target)
+      - what does [test analysis](search_target) means
+      - i want to search about [test analysis](search_target)
+      - what is [test analysis](search_target)?
+      - I want to query [implement software testing standard principles](search_target)
+      - what does [implement software testing standard principles](search_target) means
+      - i want to search about [implement software testing standard principles](search_target)
+      - what is [implement software testing standard principles](search_target)?
+      - I want to query [guidelines for performing software testing](search_target)
+      - what does [guidelines for performing software testing](search_target) means
+      - i want to search about [guidelines for performing software testing](search_target)
+      - what is [guidelines for performing software testing](search_target)?
+      - I want to query [perform regression tests](search_target)
+      - what does [perform regression tests](search_target) means
+      - i want to search about [perform regression tests](search_target)
+      - what is [perform regression tests](search_target)?
+      - I want to query [defect and bug process flow](search_target)
+      - what does [defect and bug process flow](search_target) means
+      - i want to search about [defect and bug process flow](search_target)
+      - what is [defect and bug process flow](search_target)?
+      - I want to query [test and defect process flow](search_target)
+      - what does [test and defect process flow](search_target) means
+      - i want to search about [test and defect process flow](search_target)
+      - what is [test and defect process flow](search_target)?
+
+# - intent: classmap_suggest
+#   examples: |
+#     - i want to recommand some textbook material
+#     - i think i find something useful as textbook
+#     - suggest textbook
+#     - suggest textbook material
+#     - how about add this into textbook
+
+  - intent: read_user_requirements
+    examples: |
+      - I want to check the requirements document
+      - Requirements document
+      - Group requirements document
+      - Team user requirements
+      - Thematic user requirements
+      - What are the user requirements of our group?
+      - What is the requirements document for our group?
+
+# - intent: personal_score_query
+#   examples: |
+#     - i want to search my personal score
+#     - i want to check my personal score
+#     - i want to check my personal grade
+#     - search personal score
+#     - search my personal grade
+#     - search my personal score
+#     - query my personal score
+#     - search my score
+#     - query my score
+#     - check my score
+#     - check my grade
+
+# - intent: personal_score_object
+#   examples: |
+#     - i want to query my grade of [homework 1](score_query_target)
+#     - i want to query my grade of [homework 2](score_query_target)
+#     - i want to query my grade of [homework 3](score_query_target)
+#     - i want to query my grade of [homework 4](score_query_target)
+#     - i want to query my grade of [homework 5](score_query_target)
+#     - i want to query my grade of [homework 6](score_query_target)
+#     - i want to query my grade of [homework 7](score_query_target)
+#     - i want to query my grade of [homework 8](score_query_target)
+#     - i want to query my grade of [homework 9](score_query_target)
+#     - i want to query my grade of [homework 10](score_query_target)
+#     - i want to query my grade of [midterm exam](score_query_target)
+#     - i want to query my grade of [final exam](score_query_target)
+#     - i want to query my grade of [quiz 1](score_query_target)
+#     - i want to query my grade of [quiz 2](score_query_target)
+#     - i want to query my grade of [quiz 3](score_query_target)
+#     - i want to query my grade of [quiz 4](score_query_target)
+#     - i want to query my grade of [quiz 5](score_query_target)
+#     - i want to query my grade of [quiz 6](score_query_target)
+#     - i want to query my grade of [quiz 7](score_query_target)
+#     - i want to query my grade of [quiz 8](score_query_target)
+#     - i want to query my grade of [quiz 9](score_query_target)
+#     - i want to query my grade of [quiz 10](score_query_target)
+#     - query my grade of [homework 1](score_query_target)
+#     - query my grade of [homework 2](score_query_target)
+#     - query my grade of [homework 3](score_query_target)
+#     - query my grade of [homework 4](score_query_target)
+#     - query my grade of [homework 5](score_query_target)
+#     - query my grade of [homework 6](score_query_target)
+#     - query my grade of [homework 7](score_query_target)
+#     - query my grade of [homework 8](score_query_target)
+#     - query my grade of [homework 9](score_query_target)
+#     - query my grade of [homework 10](score_query_target)
+#     - query my grade of [midterm exam](score_query_target)
+#     - query my grade of [final exam](score_query_target)
+#     - query my grade of [quiz 1](score_query_target)
+#     - query my grade of [quiz 2](score_query_target)
+#     - query my grade of [quiz 3](score_query_target)
+#     - query my grade of [quiz 4](score_query_target)
+#     - query my grade of [quiz 5](score_query_target)
+#     - query my grade of [quiz 6](score_query_target)
+#     - query my grade of [quiz 7](score_query_target)
+#     - query my grade of [quiz 8](score_query_target)
+#     - query my grade of [quiz 9](score_query_target)
+#     - query my grade of [quiz 10](score_query_target)
+#     - query my grade of [peer assessment](score_query_target)
+#     - query my grade of [project evaluation](score_query_target)
+#     - [homework 1](score_query_target)
+#     - [homework 2](score_query_target)
+#     - [homework 3](score_query_target)
+#     - [homework 4](score_query_target)
+#     - [homework 5](score_query_target)
+#     - [homework 6](score_query_target)
+#     - [homework 7](score_query_target)
+#     - [homework 8](score_query_target)
+#     - [homework 9](score_query_target)
+#     - [homework 10](score_query_target)
+#     - [midterm exam](score_query_target)
+#     - [final exam](score_query_target)
+#     - [quiz 1](score_query_target)
+#     - [quiz 2](score_query_target)
+#     - [quiz 3](score_query_target)
+#     - [quiz 4](score_query_target)
+#     - [quiz 5](score_query_target)
+#     - [quiz 6](score_query_target)
+#     - [quiz 7](score_query_target)
+#     - [quiz 8](score_query_target)
+#     - [quiz 9](score_query_target)
+#     - [quiz 10](score_query_target)
+#     - [peer assessment](score_query_target)
+#     - [project evaluation](score_query_target)
+
+# - intent: personal_quiz_query
+#   examples: |
+#     - query personal quiz
+#     - personal quiz query
+#     - personal quiz
+#     - search personal quiz
+#     - Personal examination question inquiry
+#     - Query individual exam questions
+#     - Individual exam questions
+#     - Recommend personalized exam questions
+#     - Practice personalized exam questions
+#     - Personalized exam review
+#     - Practice personalized questions
+#     - Practice questions
+#     - Practice exam questions
+#     - Exam Questions Review
+
+# - intent: personal_textbook_query
+#   examples: |
+#     - query personal textbook
+#     - search personal textbook
+#     - personal textbook
+#     - Query personal teaching materials
+#     - Personal teaching materials
+#     - View personal textbooks
+#     - Recommend personalized teaching materials
+#     - Practice personalized textbooks
+#     - Personalized textbook review
+#     - Practice personalized textbooks
+#     - Practice materials
+#     - Textbook review
+
+# - synonym: homework_1
+#   examples: |
+#     - homework 1
+#     - homework1
+#     - homework one
+
+# - synonym: homework_2
+#   examples: |
+#     - homework two
+#     - homework 2
+#     - homework2
+
+# - synonym: homework_3
+#   examples: |
+#     - homework3
+#     - homework 3
+#     - homework three
+
+# - synonym: homework_4
+#   examples: |
+#     - homework four
+#     - homework4
+#     - homework 4
+
+# - synonym: homework_5
+#   examples: |
+#     - homework five
+#     - homework5
+#     - homework 5
+
+# - synonym: homework_6
+#   examples: |
+#     - homework six
+#     - homework6
+#     - homework 6
+
+# - synonym: homework_7
+#   examples: |
+#     - homework seven
+#     - homework7
+#     - homework 7
+
+# - synonym: homework_8
+#   examples: |
+#     - homework eight
+#     - homework8
+#     - homework 8
+
+# - synonym: homework_9
+#   examples: |
+#     - homework nine
+#     - homework9
+#     - homework 9
+
+# - synonym: homework_10
+#   examples: |
+#     - homework ten
+#     - homework10
+#     - homework 10
+
+# - synonym: midterm_exam
+#   examples: |
+#     - midterm exam
+#     - midterm
+#     - mid
+
+# - synonym: final_exam
+#   examples: |
+#     - final exam
+#     - final
+#     - fin
+
+# - synonym: quiz_1
+#   examples: |
+#     - quiz one
+#     - quiz 1
+#     - quiz1
+
+# - synonym: quiz_2
+#   examples: |
+#     - quiz two
+#     - quiz 2
+#     - quiz2
+
+# - synonym: quiz_3
+#   examples: |
+#     - quiz three
+#     - quiz 3
+#     - quiz3
+
+# - synonym: quiz_4
+#   examples: |
+#     - quiz four
+#     - quiz 4
+#     - quiz4
+
+# - synonym: quiz_5
+#   examples: |
+#     - quiz five
+#     - quiz 5
+#     - quiz5
+
+# - synonym: quiz_6
+#   examples: |
+#     - quiz six
+#     - quiz 6
+#     - quiz6
+
+# - synonym: quiz_7
+#   examples: |
+#     - quiz seven
+#     - quiz 7
+#     - quiz7
+
+# - synonym: quiz_8
+#   examples: |
+#     - quiz eight
+#     - quiz 8
+#     - quiz8
+
+# - synonym: quiz_9
+#   examples: |
+#     - quiz nine
+#     - quiz 9
+#     - quiz9
+
+# - synonym: quiz_10
+#   examples: |
+#     - quiz ten
+#     - quiz 10
+#     - quiz10
+
+# - synonym: chapter_1
+#   examples: |
+#     - chapter1
+#     - chapter 1
+#     - chapter one
+#     - chp one
+#     - chp1
+
+# - synonym: chapter_2
+#   examples: |
+#     - chapter2
+#     - chapter 2
+#     - chapter two
+#     - chp2
+#     - chp two
+
+# - synonym: chapter_3
+#   examples: |
+#     - chapter3
+#     - chapter 3
+#     - chapter three
+#     - chp three
+#     - chp3
+
+# - synonym: chapter_4
+#   examples: |
+#     - chapter4
+#     - chapter 4
+#     - chapter four
+#     - chp four
+#     - chp4
+
+# - synonym: chapter_5
+#   examples: |
+#     - chapter5
+#     - chapter 5
+#     - chp five
+#     - chp5
+#     - chapter five
+
+# - synonym: chapter_6
+#   examples: |
+#     - chapter6
+#     - chapter 6
+#     - chapter six
+#     - chp six
+#     - chp6
+
+# - synonym: chapter_7
+#   examples: |
+#     - chapter7
+#     - chapter 7
+#     - chapter seven
+#     - chp7
+#     - chp seven
+
+# - synonym: chapter_8
+#   examples: |
+#     - chapter8
+#     - chapter 8
+#     - chp8
+#     - chapter eight
+#     - chp eight
+
+# - synonym: chapter_9
+#   examples: |
+#     - chapter9
+#     - chapter 9
+#     - chp nine
+#     - chapter nine
+#     - chp9
+
+# - synonym: chapter_10
+#   examples: |
+#     - chapter10
+#     - chapter 10
+#     - chapter ten
+#     - chp ten
+#     - chp10
+
+# - synonym: chapter_11
+#   examples: |
+#     - chapter11
+#     - chapter 11
+#     - chaper eleven
+#     - chp11
+#     - chp eleven
+
+# - synonym: chapter_12
+#   examples: |
+#     - chapter12
+#     - chapter 12
+#     - chapter twelve
+#     - chp12
+#     - chp twelve
+
+# - synonym: chapter_13
+#   examples: |
+#     - chapter13
+#     - chapter 13
+#     - chapter thirteen
+#     - chp13
+#     - chp thirteen
+
+# - synonym: chapter_14
+#   examples: |
+#     - chapter14
+#     - chapter 14
+#     - chp14
+#     - chapter fourteen
+#     - chp fourteen
+
+# - synonym: chapter_15
+#   examples: |
+#     - chapter15
+#     - chapter 15
+#     - chp15
+#     - chp fifteen
+#     - chapter fifteen
+
+# - synonym: project
+#   examples: |
+#     - peer assessment
+#     - project evaluation
+#     - project score
+#     - project grade
+#     - evaluation grade
+#     - evaluation score
+#     - peer assessment grade
+#     - peer assessment score
+#     - project evaluation grade
+#     - project evaluation score
+>>>>>>> se_1111

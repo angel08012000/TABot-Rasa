@@ -12,959 +12,2468 @@ nlu:
       - 午安
       - 晚安
 
-  - intent: help
-    examples: |
-      - 我需要查詢功能
-      - 有什麼功能
-      - 有哪些功能
-      - 功能有哪些
-      - 你可以幹麻
-      - 你可以做什麼
-      - 教程
-      - 如何使用
-      - 使用說明
-      - 說明
-      - 我該如何使用
-      - 入門
+  # - intent: help
+  #   examples: |
+  #     - 我需要查詢功能
+  #     - 有什麼功能
+  #     - 有哪些功能
+  #     - 功能有哪些
+  #     - 你可以幹麻
+  #     - 你可以做什麼
+  #     - 教程
+  #     - 如何使用
+  #     - 使用說明
+  #     - 說明
+  #     - 我該如何使用
+  #     - 入門
 
-  - intent: faq/java_garbled_code
+  - intent: faq/software_engineering
     examples: |
-      - 為何編輯Java程式會有亂碼?
-      - Java編譯出現亂碼怎麼辦?
-      - Java亂碼問題
-      - Java亂碼
-      - java出現亂碼
+      - 軟體開發包含哪些主要活動？
+      - 軟體開發要做哪些事情
+      - 軟體開發的步驟
+      - 軟體開發的流程
 
-  - intent: faq/chinese_annotation_compile
+  - intent: faq/user_requirement
     examples: |
-      - 如何解決遇到中文註解無法正確compile之情況？
-      - 有中文註解編譯不會過
-      - 加中文註解程式會壞掉
-      - 中文註解異常
-      - 為什麼不能用中文註解
-      - 中文註解失敗怎麼辦
-      - 中文註解無法編譯
-      - 無法編譯中文註解
+      - 使用者需求是甚麼？
+      - 使用者需求的定義？
+      - 使用者需求
+      - 何謂使用者需求
 
-  - intent: faq/chinese_garbled
+  - intent: faq/system_requirement
     examples: |
-      - 為何讀取中文檔案會顯示亂碼?
-      - 為何讀取中文檔案會出現亂碼?
-      - 讀取中文檔案出現亂碼
-      - 中文檔案有亂碼
-      - 中文檔案亂碼問題
+      - 系統需求是甚麼？
+      - 系統需求的定義？
+      - 系統需求
+      - 何謂系統需求
 
-  - intent: faq/vector_arraylist_difference
+  - intent: faq/functional_requirement
     examples: |
-      - Vector與ArrayList之差異為何?
-      - vector跟arraylist差在哪裡?
-      - arraylist跟vector有差別嗎?
-      - arraylist跟vector的差別
-      - vector跟arraylist的差別
-      - arraylist與vector的差別
-      - vector與arraylist的差別
-      - arraylist和vector的差別
-      - vector和arraylist的差別
+      - 功能需求是甚麼？
+      - 功能需求的定義？
+      - 功能需求
+      - 何謂功能需求
 
-  - intent: faq/java_bean
+  - intent: faq/functional_requirement_2
     examples: |
-      - 什麼是Java Bean？為何要使用Java Bean？
-      - Java bean是啥
-      - java bean有用嗎?
-      - java bean怎麼用
-      - 為什麼要java bean
-      - 定義java bean
-      - java bean的定義
-      - java bean是什麼
-      - 如何使用java bean
-      - java bean
+      - 有功能需求的案例嗎？
+      - 功能需求的案例
+      - 舉例功能需求
 
-  - intent: faq/package_import_path_classpath_difference
+  - intent: faq/non_functional_requirement
     examples: |
-      - package, import, path, classpath的意思跟差別在哪裡阿
-      - package跟import跟path還有classpath有差別嗎
-      - import,classpath,path,package有什麼具體的差別嗎
-      - import,classpath,path,package
-      - import,classpath,path,package的差別
-      - import,classpath,path,package有什麼不同
-      - 如何區分import,classpath,path,package
-      - 區分import,classpath,path,package
+      - 非功能需求是甚麼？
+      - 非功能需求的定義？ 
+      - 非功能需求 
+      - 何謂非功能需求
 
-  - intent: faq/garbage_collection
+  - intent: faq/non_functional_requirement_2
     examples: |
-      - 什麼時候會進行garbage collection?
-      - 程式什麼時候會進行garbage collection
-      - 垃圾回收什麼時候會進行阿
-      - garbage collection什麼時候會被執行
-      - java的garbage collection機制
-      - jvm的garbage collection機制
-      - garbage collection的原理
-      - 為什麼需要garbage collection
-      - garbage collection
-      - 垃圾回收
+      - 有非功能需求的案例嗎？
+      - 非功能需求的案例
+      - 舉例非功能需求
 
-  - intent: faq/arraylist_to_array
+  - intent: faq/concept_of_operation
     examples: |
-      - 如何把arraylist轉換成array
-      - 要怎麼把arraylist轉成array
-      - arraylist怎麼轉成array
-      - arraylist要怎麼轉成array
-      - arraylist to array
-      - arraylist轉換成array
-      - arraylist轉成array
+      - 怎麼寫操作概念？
+      - 操作概念是甚麼？
+      - 操作概念
+      - 操作概念如何寫？
 
-  - intent: faq/layout
+  - intent: faq/MVP
     examples: |
-      - 要怎麼自訂元件的layout方式
-      - layout的方式要怎麼自訂,像是位置跟大小
-      - 元件的layout要怎麼改
-      - 元件如何layout
-      - 元件如何編排
-      - 元件如何配置
-      - 元件如何排版
-      - 自定義元件layout
-      - 自訂元件layout
-      - 元件layout
+      - MVP是甚麼？
+      - MVP的定義？ 
+      - MVP
 
-  - intent: faq/icon_transparency
+  - intent: faq/wireframe
     examples: |
-      - 要怎麼建立半透明的icon
-      - 如何建立半透明的icon
-      - icon要怎麼改成半透明
-      - 要怎麼建半透明的icon
-      - 半透明的icon要怎麼建
-      - 建立半透明的icon
-      - 半透明的icon
-      - icon修改成半透明
+      - 線框圖是甚麼？
+      - 線框圖
+      - Wireframe是甚麼？
+      - Wireframe
+      - 何謂Wireframe
 
-  - intent: faq/source_usage
+  - intent: faq/wireframe_1
     examples: |
-      - 如何偵測java的資源使用情形跟效能
-      - java的效能跟資源使用情形怎麼看
-      - 怎麼看java的資源使用狀況跟效能
-      - java的效能與資源使用狀況
-      - java的資源使用狀況與效能
+      - 線框圖怎麼畫？
+      - 線框圖如何畫？
+      - 如何畫線框圖
+      - 有沒有畫線框圖的準則？
 
-  - intent: faq/jdk1-5_feature
+  - intent: faq/requirement_analyze
     examples: |
-      - jdk1.5有什麼新的特色
-      - jdk1.5有什麼新的feature
-      - jdk1.5有加什麼新feature
-      - jdk1.5的特色
-      - jdk1.5
+      - 需求分析有哪些準則？
+      - 需求分析的準則？
+      - 需求分析
 
-  - intent: faq/jdk1-6_feature
+  - intent: faq/uml
     examples: |
-      - jdk1.6有什麼新的特色
-      - jdk1.6有什麼新的feature
-      - jdk1.6有加什麼新feature
-      - jdk1.6的特色
-      - jdk1.6
+      - UML是甚麼？
+      - UML的定義？
+      - UML
+      - 何謂UML
 
-  - intent: faq/jdk1-7_feature
+  - intent: faq/use_case
     examples: |
-      - jdk1.7有什麼新的特色
-      - jdk1.7有什麼新的feature
-      - jdk1.7有加什麼新feature
-      - jdk1.7的特色
-      - jdk1.7
+      - 使用案例規格是甚麼？
+      - 使用案例規格
+      - 使用案例的規格
+      - use case
 
-  - intent: faq/jdk1-8_feature
+  - intent: faq/PM
     examples: |
-      - jdk1.8有什麼新的特色
-      - jdk1.8有什麼新的feature
-      - jdk1.8有加什麼新feature
-      - jdk1.8的特色
-      - jdk1.8
+      - 專案管理會做甚麼？
+      - 專案管理的工作
+      - 專案管理
+      - PM
 
-  - intent: suggest_review_pass
+  - intent: faq/WBS
     examples: |
-      - 通過
-      - 可以
-      - 好
-      - 我覺得可以
-      - 好阿
-      - 好喔
-      - OK
-      - ok
-      - 0k
-      - 0K
+      - 甚麼是WBS？
+      - WBS
+      - 甚麼是工作分解結構？
+      - 工作分解結構？
 
-  - intent: suggest_review_fail
+  - intent: faq/project_forecast
     examples: |
-      - 不好
-      - 不通過
-      - 不行
-      - 不太好
-      - 再看看
-      - NO
-      - no
-      - No
-      - N0
-      - 不
+      - 如何進行專案預估？
+      - 專案預估
+      - 如何進行工作預估？
+      - 工作預估
 
-  - intent: classmap_ppt
+  - intent: faq/risk
     examples: |
-      - 我想查詢投影片資料
-      - 查詢投影片資料
-      - 投影片資料
-      - 課程投影片
-      - 課程投影片資料
+      - 風險是甚麼？
+      - 風險
+      - risk
 
-  - intent: classmap_ppt_content
+  - intent: faq/board
     examples: |
-      - 我想查[第一章](ppt_query_target)的投影片
-      - 我想查[第二章](ppt_query_target)的投影片
-      - 我想查[第三章](ppt_query_target)的投影片
-      - 我想查[第四章](ppt_query_target)的投影片
-      - 我想查[第五章](ppt_query_target)的投影片
-      - 我想查[第六章](ppt_query_target)的投影片
-      - 我想查[第七章](ppt_query_target)的投影片
-      - 我想查[第八章](ppt_query_target)的投影片
-      - 我想查[第九章](ppt_query_target)的投影片
-      - 我想查[第十章](ppt_query_target)的投影片
-      - 我想查[第十一章](ppt_query_target)的投影片
-      - 我想查[第十二章](ppt_query_target)的投影片
-      - 我想查[第十三章](ppt_query_target)的投影片
-      - 我想查[第十四章](ppt_query_target)的投影片
-      - 我想查[第十五章](ppt_query_target)的投影片
-      - [第一章](ppt_query_target)
-      - [第二章](ppt_query_target)
-      - [第三章](ppt_query_target)
-      - [第四章](ppt_query_target)
-      - [第五章](ppt_query_target)
-      - [第六章](ppt_query_target)
-      - [第七章](ppt_query_target)
-      - [第八章](ppt_query_target)
-      - [第九章](ppt_query_target)
-      - [第十章](ppt_query_target)
-      - [第十一章](ppt_query_target)
-      - [第十二章](ppt_query_target)
-      - [第十三章](ppt_query_target)
-      - [第十四章](ppt_query_target)
-      - [第十五章](ppt_query_target)
-      - [第一章](ppt_query_target)的投影片
-      - [第二章](ppt_query_target)的投影片
-      - [第三章](ppt_query_target)的投影片
-      - [第四章](ppt_query_target)的投影片
-      - [第五章](ppt_query_target)的投影片
-      - [第六章](ppt_query_target)的投影片
-      - [第七章](ppt_query_target)的投影片
-      - [第八章](ppt_query_target)的投影片
-      - [第九章](ppt_query_target)的投影片
-      - [第十章](ppt_query_target)的投影片
-      - [第十一章](ppt_query_target)的投影片
-      - [第十二章](ppt_query_target)的投影片
-      - [第十三章](ppt_query_target)的投影片
-      - [第十四章](ppt_query_target)的投影片
-      - [第十五章](ppt_query_target)的投影片
+      - 看板的使用方式？
+      - 看板的基本用法？
+      - 看板是什麼
+      - 看板
 
-  - intent: classmap_search
+  - intent: faq/dependency_and_association
     examples: |
-      - 我想查尋課程地圖
-      - 查詢課程地圖
-      - 課程地圖查詢
-      - 課程地圖
-      - 查課程地圖
-      - 查課程知識
-      - 查詢課程知識
-      - 查詢課程相關知識
+      - 相依與關聯不一樣在哪裡？
+      - 相依與關聯
+
+  - intent: faq/aggregation_and_composition
+    examples: |
+      - 組合與聚合不一樣在哪裡？
+      - 組合與聚合
+
+  - intent: faq/abstraction
+    examples: |
+      - 抽象化是甚麼？
+      - 抽象化的定義
+      - 何謂抽象化
+      - 抽象化
+
+  - intent: faq/modularity
+    examples: |
+      - 模組化是甚麼？
+      - 模組化的定義
+      - 何謂模組化
+      - 模組化
+
+  - intent: faq/cohesion
+    examples: |
+      - 凝聚力是甚麼？
+      - 凝聚力的定義
+      - 何謂凝聚力
+      - 凝聚力
+
+  - intent: faq/coupling
+    examples: |
+      - 耦合力是甚麼？
+      - 耦合力的定義
+      - 何謂耦合力
+      - 耦合力
+
+  - intent: faq/cohesion_and_coupling_rate
+    examples: |
+      - 為什麼要High Cohesion, Low Coupling是好的？
+      - High Cohesion, Low Coupling是甚麼意思？
+      - High Cohesion, Low Coupling
+      - 高凝聚低耦合
+
+  - intent: faq/system_design
+    examples: |
+      - 系統設計包含哪些工作?
+      - 系統設計的工作內容
+      - 何謂系統設計
+      - 系統設計
+
+  - intent: faq/architecture_design
+    examples: |
+      - 甚麼是架構設計？
+      - 架構設計的定義
+      - 何謂架構設計
+      - 架構設計
+
+  - intent: faq/architecture_design_2
+    examples: |
+      - 一般Web前後端分離架構分為哪幾層？
+      - Web前後端如何分層
+      - Web前後端的分層
+
+  - intent: faq/architecture_design_3
+    examples: |
+      - 有沒有建議的架構設計方法？
+      - 架構設計方法
+      - 架構如何設計
+
+  - intent: faq/interface
+    examples: |
+      - 甚麼是介面？
+      - 介面是甚麼？
+      - 介面要怎麼設計？
+      - interface
+      - 介面
+
+  - intent: faq/interface_2
+    examples: |
+      - 介面跟系統整合有甚麼關係？
+      - 介面設計跟整合的關聯性是甚麼？
+      - 介面設計跟整合的關聯性
+      - 介面跟系統整合的關係
+      - 介面跟系統整合
+
+  - intent: faq/interface_3
+    examples: |
+      - 介面設計是設計使用者介面(User Interface)嗎?
+      - 介面設計與設計使用者介面
+      - 介面設計與UI
+
+  - intent: faq/interface_4
+    examples: |
+      - 有沒有介面設計的案例？
+      - 介面設計的案例
+
+  - intent: faq/design_issue
+    examples: |
+      - 設計議題(design issue)是甚麼？
+      - design issue
+      - 設計議題
+
+  - intent: faq/user_story
+    examples: |
+      - 使用者故事是甚麼？
+      - 使用者故事的定義
+      - 何謂使用者故事
+      - 使用者故事
+
+  - intent: faq/user_stroy_example
+    examples: |
+      - 是否有使用者故事的範例？
+      - 有沒有使用者故事的範例？
+      - 使用者故事的範例
+
+  - intent: faq/user_stroy_feature
+    examples: |
+      - 好的使用者故事有那些屬性？
+      - 使用者故事的屬性是什麼？
+      - 使用者故事的屬性
+      - INVEST是什麼？
+
+  - intent: faq/story_point
+    examples: |
+      - 甚麼是故事點？
+      - 故事點是什麼
+      - 故事點的定義
+      - 何謂故事點
+      - 故事點
+
+  - intent: faq/user_story_mapping
+    examples: |
+      - 甚麼是使用者故事對照？
+      - 使用者故事對照是什麼
+      - 使用者故事對照的定義
+      - 何謂使用者故事對照
+      - 使用者故事對照
+
+  - intent: faq/narative_flow
+    examples: |
+      - 甚麼是敘事流？
+      - 敘事流是什麼
+      - 敘事流的定義
+      - 何謂敘事流
+      - 敘事流
+
+  - intent: faq/version
+    examples: |
+      - 甚麼是版本？
+      - 版本是什麼
+      - 版本的定義
+      - 何謂版本
+      - 版本
+
+  - intent: faq/staging_area&repository
+    examples: |
+      - 工作目錄、暫存區、儲存庫的關係為何？
+      - 工作目錄、暫存區、儲存庫的關係
+      - git 會把檔案放在哪裡？
+
+  - intent: faq/wbs
+    examples: |
+      - 甚麼是工作分解結構？
+      - 工作分解結構是什麼
+      - 工作分解結構的定義
+      - 何謂工作分解結構
+      - 工作分解結構
+
+  - intent: faq/kanban
+    examples: |
+      - 甚麼是看板？
+      - 看板是什麼
+      - 看板的定義
+      - 何謂看板
+      - 看板
+
+  - intent: faq/scrum_event
+    examples: |
+      - Scrum包含哪些事件？
+      - Scrum的事件有哪些？
+
+  - intent: faq/scrum_pillar
+    examples: |
+      - Scrum有哪三個支柱?
+      - Scrum有哪些支柱?
+      - Scrum的支柱
+
+  - intent: faq/scrum_value
+    examples: |
+      - Scrum有哪五個價值觀？
+      - Scrum有哪些價值觀？
+      - Scrum 的價值觀有哪些？
+      - Scrum的價值觀
+
+  - intent: faq/scrum_accountability
+    examples: |
+      - Scrum有哪三個權責？
+      - Scrum有哪些權責？
+      - Scrum 的權責有哪些？
+      - Scrum的權責
+
+  - intent: faq/blackbox_test
+    examples: |
+      - 甚麼是黑箱測試？
+      - 黑箱測試是什麼
+      - 黑箱測試的定義
+      - 何謂黑箱測試
+      - 黑箱測試
+
+  - intent: faq/whitebox_test
+    examples: |
+      - 甚麼是白箱測試？
+      - 白箱測試是什麼
+      - 白箱測試的定義
+      - 何謂白箱測試
+      - 白箱測試
+
+  - intent: faq/unit_test
+    examples: |
+      - 甚麼是單元測試？
+      - 單元測試是什麼
+      - 單元測試的定義
+      - 何謂單元測試
+      - 單元測試
+
+  - intent: faq/test_double
+    examples: |
+      - 甚麼是測試替身？
+      - 測試替身是什麼
+      - 測試替身的定義
+      - 何謂測試替身
+      - 測試替身
+
+  - intent: faq/integration_testing
+    examples: |
+      - 甚麼是整合測試？
+      - 整合測試是什麼
+      - 整合測試的定義
+      - 何謂整合測試
+      - 整合測試
+
+  - intent: faq/system_integration
+    examples: |
+      - 甚麼是系統測試？
+      - 系統測試是什麼
+      - 系統測試的定義
+      - 何謂系統測試
+      - 系統測試
+
+  - intent: faq/acceptance_testing
+    examples: |
+      - 甚麼是驗收測試？
+      - 驗收測試是什麼
+      - 驗收測試的定義
+      - 何謂驗收測試
+      - 驗收測試
+
+  - intent: faq/test_case
+    examples: |
+      - 系統測試案例包含哪些內容？
+      - 系統測試案例的內容是什麼？
+      - 系統測試案例包含什麼？
+      - 系統測試的內容有哪些?
+      - 系統測試的內容
+
+  - intent: faq/regression_testing
+    examples: |
+      - 何時會進行迴歸測試？
+      - 什麼時候需要進行迴歸測試？
+      - 什麼時候需要迴歸測試？
+      - 什麼時候要做迴歸測試？
+      - 迴歸測試
+
+  # manual review suggest for now
+  # - intent: suggest_review_pass
+  #   examples: |
+  #     - 通過
+  #     - 可以
+  #     - 好
+  #     - 我覺得可以
+  #     - 好阿
+  #     - 好喔
+  #     - OK
+  #     - ok
+  #     - 0k
+  #     - 0K
+
+  # - intent: suggest_review_fail
+  #   examples: |
+  #     - 不好
+  #     - 不通過
+  #     - 不行
+  #     - 不太好
+  #     - 再看看
+  #     - NO
+  #     - no
+  #     - No
+  #     - N0
+  #     - 不
+
+  # - intent: classmap_ppt
+  #   examples: |
+  #     - 我想查詢投影片資料
+  #     - 查詢投影片資料
+  #     - 投影片資料
+  #     - 課程投影片
+  #     - 課程投影片資料
+
+  # - intent: classmap_ppt_content
+  #   examples: |
+  #     - 我想查[第一章](ppt_query_target)的投影片
+  #     - 我想查[第二章](ppt_query_target)的投影片
+  #     - 我想查[第三章](ppt_query_target)的投影片
+  #     - 我想查[第四章](ppt_query_target)的投影片
+  #     - 我想查[第五章](ppt_query_target)的投影片
+  #     - 我想查[第六章](ppt_query_target)的投影片
+  #     - 我想查[第七章](ppt_query_target)的投影片
+  #     - 我想查[第八章](ppt_query_target)的投影片
+  #     - 我想查[第九章](ppt_query_target)的投影片
+  #     - 我想查[第十章](ppt_query_target)的投影片
+  #     - 我想查[第十一章](ppt_query_target)的投影片
+  #     - 我想查[第十二章](ppt_query_target)的投影片
+  #     - 我想查[第十三章](ppt_query_target)的投影片
+  #     - 我想查[第十四章](ppt_query_target)的投影片
+  #     - 我想查[第十五章](ppt_query_target)的投影片
+  #     - [第一章](ppt_query_target)
+  #     - [第二章](ppt_query_target)
+  #     - [第三章](ppt_query_target)
+  #     - [第四章](ppt_query_target)
+  #     - [第五章](ppt_query_target)
+  #     - [第六章](ppt_query_target)
+  #     - [第七章](ppt_query_target)
+  #     - [第八章](ppt_query_target)
+  #     - [第九章](ppt_query_target)
+  #     - [第十章](ppt_query_target)
+  #     - [第十一章](ppt_query_target)
+  #     - [第十二章](ppt_query_target)
+  #     - [第十三章](ppt_query_target)
+  #     - [第十四章](ppt_query_target)
+  #     - [第十五章](ppt_query_target)
+  #     - [第一章](ppt_query_target)的投影片
+  #     - [第二章](ppt_query_target)的投影片
+  #     - [第三章](ppt_query_target)的投影片
+  #     - [第四章](ppt_query_target)的投影片
+  #     - [第五章](ppt_query_target)的投影片
+  #     - [第六章](ppt_query_target)的投影片
+  #     - [第七章](ppt_query_target)的投影片
+  #     - [第八章](ppt_query_target)的投影片
+  #     - [第九章](ppt_query_target)的投影片
+  #     - [第十章](ppt_query_target)的投影片
+  #     - [第十一章](ppt_query_target)的投影片
+  #     - [第十二章](ppt_query_target)的投影片
+  #     - [第十三章](ppt_query_target)的投影片
+  #     - [第十四章](ppt_query_target)的投影片
+  #     - [第十五章](ppt_query_target)的投影片
+
+  # - intent: supplement_search_all
+  #   examples: |
+  #     - 我想查詢所有補充資料
+  #     - 查詢所有補充資料
+  #     - 所有補充資料查詢
+  #     - 所有補充資料
+  #     - 查所有補充資料
+  #     - 查所有補充知識
+  #     - 查詢所有課程補充
+  #     - 查詢所有課外補充知識
+  #     - 查詢所有課外補充資料
+  #     - 我想查詢全部的補充資料
+  #     - 查詢全部的補充資料
+  #     - 全部的補充資料查詢
+  #     - 全部的補充資料
+  #     - 查全部的補充資料
+  #     - 查全部的補充知識
+  #     - 查詢全部的課程補充
+  #     - 查詢全部的課外補充知識
+  #     - 查詢全部的課外補充資料
+
+  # - intent: supplement_search_single
+  #   examples: |
+  #     - 我想查詢補充資料
+  #     - 查詢補充資料
+  #     - 補充資料查詢
+  #     - 補充資料
+  #     - 查補充資料
+  #     - 查補充知識
+  #     - 查詢課程補充
+  #     - 查詢課外補充知識
+  #     - 查詢課外補充資料
+
+  # - intent: supplement_search_single_content
+  #   examples: |
+  #     - 我想查詢[軟體重構](supplement_target)
+  #     - 我想查詢[refactoring](supplement_target)
+  #     - 我想查詢[DevOps](supplement_target)
+  #     - 我想查詢[Devops Pipeline](supplement_target)
+  #     - 我想查詢[范振原](supplement_target)
+  #     - 我想查詢[DevOps Light Talk](supplement_target)
+  #     - 我想查詢[莊晏](supplement_target)
+  #     - 我想查詢[設計模式](supplement_target)
+  #     - 我想查詢[design pattern](supplement_target)
+  #     - 查詢[軟體重構](supplement_target)
+  #     - 查詢[refactoring](supplement_target)
+  #     - 查詢[DevOps](supplement_target)
+  #     - 查詢[Devops Pipeline](supplement_target)
+  #     - 查詢[范振原](supplement_target)
+  #     - 查詢[DevOps Light Talk](supplement_target)
+  #     - 查詢[莊晏](supplement_target)
+  #     - 查詢[設計模式](supplement_target)
+  #     - 查詢[design pattern](supplement_target)
+  #     - [軟體重構](supplement_target)查詢
+  #     - [refactoring](supplement_target)查詢
+  #     - [DevOps](supplement_target)查詢
+  #     - [Devops Pipeline](supplement_target)查詢
+  #     - [范振原](supplement_target)查詢
+  #     - [DevOps Light Talk](supplement_target)查詢
+  #     - [莊晏](supplement_target)查詢
+  #     - [設計模式](supplement_target)查詢
+  #     - [design pattern](supplement_target)查詢
+  #     - [軟體重構](supplement_target)
+  #     - [refactoring](supplement_target)
+  #     - [DevOps](supplement_target)
+  #     - [Devops Pipeline](supplement_target)
+  #     - [范振原](supplement_target)
+  #     - [DevOps Light Talk](supplement_target)
+  #     - [莊晏](supplement_target)
+  #     - [設計模式](supplement_target)
+  #     - [design pattern](supplement_target)
+
+  # - intent: classmap_search
+  #   examples: |
+  #     - 我想查詢課程地圖
+  #     - 查詢課程地圖
+  #     - 課程地圖查詢
+  #     - 課程地圖
+  #     - 查課程地圖
+  #     - 查課程知識
+  #     - 查詢課程知識
+  #     - 查詢課程相關知識
 
   - intent: classmap_search_content
     examples: |
-      - [閉包](search_target)是什麼
-      - 我想查詢[閉包](search_target)是什麼
-      - 什麼是[閉包](search_target)
-      - [html](search_target)是什麼
-      - 什麼是[css](search_target)
-      - 我想查什麼是[css](search_target)
-      - 我想查詢[簡介](search_target)
-      - 我想查詢[Java專案](search_target)
-      - 我想查詢[第一個程式](search_target)
-      - 我想查詢[顯示文字](search_target)
-      - 我想查詢[另一個應用](search_target)
-      - 我想查詢[記憶結構](search_target)
-      - 我想查詢[算術](search_target)
-      - 我想查詢[決策](search_target)
-      - 我想查詢[變數](search_target)
-      - 我想查詢[基本型態](search_target)
-      - 我想查詢[參考型態](search_target)
-      - 我想查詢[型態](search_target)
-      - 我想查詢[建構子](search_target)
-      - 我想查詢[建構式](search_target)
-      - 我想查詢[構造函數](search_target)
-      - 我想查詢[構造方法](search_target)
-      - 我想查詢[Constructor](search_target)
-      - 我想查詢[帳戶類別](search_target)
-      - 我想查詢[類別](search_target)
-      - 我想查詢[控制敘述](search_target)
-      - 我想查詢[特定資料結束](search_target)
-      - 我想查詢[迴圈](search_target)
-      - 我想查詢[while loop](search_target)
-      - 我想查詢[計數式迴圈](search_target)
-      - 我想查詢[for loop](search_target)
-      - 我想查詢[範例](search_target)
-      - 我想查詢[條件式](search_target)
-      - 我想查詢[switch](search_target)
-      - 我想查詢[break](search_target)
-      - 我想查詢[continue](search_target)
-      - 我想查詢[邏輯運算](search_target)
-      - 我想查詢[Logical Operators](search_target)
-      - 我想查詢[方法](search_target)
-      - 我想查詢[Methods](search_target)
-      - 我想查詢[Modules](search_target)
-      - 我想查詢[Program Modules in Java](search_target)
-      - 我想查詢[靜態類別](search_target)
-      - 我想查詢[靜態欄位](search_target)
-      - 我想查詢[Class Math](search_target)
-      - 我想查詢[static Fields](search_target)
-      - 我想查詢[static Methods](search_target)
-      - 我想查詢[方法注意事項](search_target)
-      - 我想查詢[Casting](search_target)
-      - 我想查詢[晉升](search_target)
-      - 我想查詢[轉型](search_target)
-      - 我想查詢[隨機變數](search_target)
-      - 我想查詢[Random](search_target)
-      - 我想查詢[列舉](search_target)
-      - 我想查詢[枚舉型態](search_target)
-      - 我想查詢[enum](search_target)
-      - 我想查詢[聲明範圍](search_target)
-      - 我想查詢[Scope of Declarations](search_target)
-      - 我想查詢[範例](search_target)
-      - 我想查詢[多載](search_target)
-      - 我想查詢[Overload](search_target)
-      - 我想查詢[Variable-Length Argument Lists](search_target)
-      - 我想查詢[不定長度引數](search_target)
-      - 我想查詢[命令列引數](search_target)
-      - 我想查詢[Command](search_target)
-      - 我想查詢[Using Command-Line Arguments](search_target)
-      - 我想查詢[Arrays](search_target)
-      - 我想查詢[陣列](search_target)
-      - 我想查詢[Arrays](search_target)
-      - 我想查詢[Class Arrays](search_target)
-      - 我想查詢[ArrayList](search_target)
-      - 我想查詢[Classes and Objects](search_target)
-      - 我想查詢[Objects](search_target)
-      - 我想查詢[Time Class Case Study](search_target)
-      - 我想查詢[Controlling Access to Members](search_target)
-      - 我想查詢[Referring to the Current Object's Members with the this Reference](search_target)
-      - 我想查詢[Overloaded Constructors](search_target)
-      - 我想查詢[Default and No-Argument Constructors](search_target)
-      - 我想查詢[Notes on Set and Get Methods](search_target)
-      - 我想查詢[Aggregation](search_target)
-      - 我想查詢[Composition](search_target)
-      - 我想查詢[enum Types](search_target)
-      - 我想查詢[Garbage Collection](search_target)
-      - 我想查詢[static Class Members](search_target)
-      - 我想查詢[Static Import](search_target)
-      - 我想查詢[final Instance Variables](search_target)
-      - 我想查詢[Package Access](search_target)
-      - 我想查詢[Inheritance](search_target)
-      - 我想查詢[Superclasses and Subclasses](search_target)
-      - 我想查詢[protected Members](search_target)
-      - 我想查詢[Relationship Between Superclasses and Subclasses](search_target)
-      - 我想查詢[Constructors in Subclasses](search_target)
-      - 什麼是[簡介](search_target)
-      - 什麼是[Java專案](search_target)
-      - 什麼是[第一個程式](search_target)
-      - 什麼是[顯示文字](search_target)
-      - 什麼是[另一個應用](search_target)
-      - 什麼是[記憶結構](search_target)
-      - 什麼是[算術](search_target)
-      - 什麼是[決策](search_target)
-      - 什麼是[變數](search_target)
-      - 什麼是[基本型態](search_target)
-      - 什麼是[參考型態](search_target)
-      - 什麼是[型態](search_target)
-      - 什麼是[建構子](search_target)
-      - 什麼是[建構式](search_target)
-      - 什麼是[構造函數](search_target)
-      - 什麼是[構造方法](search_target)
-      - 什麼是[Constructor](search_target)
-      - 什麼是[帳戶類別](search_target)
-      - 什麼是[類別](search_target)
-      - 什麼是[控制敘述](search_target)
-      - 什麼是[特定資料結束](search_target)
-      - 什麼是[迴圈](search_target)
-      - 什麼是[while loop](search_target)
-      - 什麼是[計數式迴圈](search_target)
-      - 什麼是[for loop](search_target)
-      - 什麼是[範例](search_target)
-      - 什麼是[條件式](search_target)
-      - 什麼是[switch](search_target)
-      - 什麼是[break](search_target)
-      - 什麼是[continue](search_target)
-      - 什麼是[邏輯運算](search_target)
-      - 什麼是[Logical Operators](search_target)
-      - 什麼是[方法](search_target)
-      - 什麼是[Methods](search_target)
-      - 什麼是[Modules](search_target)
-      - 什麼是[Program Modules in Java](search_target)
-      - 什麼是[靜態類別](search_target)
-      - 什麼是[靜態欄位](search_target)
-      - 什麼是[Class Math](search_target)
-      - 什麼是[static Fields](search_target)
-      - 什麼是[static Methods](search_target)
-      - 什麼是[方法注意事項](search_target)
-      - 什麼是[Casting](search_target)
-      - 什麼是[晉升](search_target)
-      - 什麼是[轉型](search_target)
-      - 什麼是[隨機變數](search_target)
-      - 什麼是[Random](search_target)
-      - 什麼是[列舉](search_target)
-      - 什麼是[枚舉型態](search_target)
-      - 什麼是[enum](search_target)
-      - 什麼是[聲明範圍](search_target)
-      - 什麼是[Scope of Declarations](search_target)
-      - 什麼是[範例](search_target)
-      - 什麼是[多載](search_target)
-      - 什麼是[Overload](search_target)
-      - 什麼是[Variable-Length Argument Lists](search_target)
-      - 什麼是[不定長度引數](search_target)
-      - 什麼是[命令列引數](search_target)
-      - 什麼是[Command](search_target)
-      - 什麼是[Using Command-Line Arguments](search_target)
-      - 什麼是[Arrays](search_target)
-      - 什麼是[陣列](search_target)
-      - 什麼是[Arrays](search_target)
-      - 什麼是[Class Arrays](search_target)
-      - 什麼是[ArrayList](search_target)
-      - 什麼是[Classes and Objects](search_target)
-      - 什麼是[Objects](search_target)
-      - 什麼是[Time Class Case Study](search_target)
-      - 什麼是[Controlling Access to Members](search_target)
-      - 什麼是[Referring to the Current Object's Members with the this Reference](search_target)
-      - 什麼是[Overloaded Constructors](search_target)
-      - 什麼是[Default and No-Argument Constructors](search_target)
-      - 什麼是[Notes on Set and Get Methods](search_target)
-      - 什麼是[Aggregation](search_target)
-      - 什麼是[Composition](search_target)
-      - 什麼是[enum Types](search_target)
-      - 什麼是[Garbage Collection](search_target)
-      - 什麼是[static Class Members](search_target)
-      - 什麼是[Static Import](search_target)
-      - 什麼是[final Instance Variables](search_target)
-      - 什麼是[Package Access](search_target)
-      - 什麼是[Inheritance](search_target)
-      - 什麼是[Superclasses and Subclasses](search_target)
-      - 什麼是[protected Members](search_target)
-      - 什麼是[Relationship Between Superclasses and Subclasses](search_target)
-      - 什麼是[Constructors in Subclasses](search_target)
-      - [簡介](search_target)是什麼
-      - [Java專案](search_target)是什麼
-      - [第一個程式](search_target)是什麼
-      - [顯示文字](search_target)是什麼
-      - [另一個應用](search_target)是什麼
-      - [記憶結構](search_target)是什麼
-      - [算術](search_target)是什麼
-      - [決策](search_target)是什麼
-      - [變數](search_target)是什麼
-      - [基本型態](search_target)是什麼
-      - [參考型態](search_target)是什麼
-      - [型態](search_target)是什麼
-      - [建構子](search_target)是什麼
-      - [建構式](search_target)是什麼
-      - [構造函數](search_target)是什麼
-      - [構造方法](search_target)是什麼
-      - [Constructor](search_target)是什麼
-      - [帳戶類別](search_target)是什麼
-      - [類別](search_target)是什麼
-      - [控制敘述](search_target)是什麼
-      - [特定資料結束](search_target)是什麼
-      - [迴圈](search_target)是什麼
-      - [while loop](search_target)是什麼
-      - [計數式迴圈](search_target)是什麼
-      - [for loop](search_target)是什麼
-      - [範例](search_target)是什麼
-      - [條件式](search_target)是什麼
-      - [switch](search_target)是什麼
-      - [break](search_target)是什麼
-      - [continue](search_target)是什麼
-      - [邏輯運算](search_target)是什麼
-      - [Logical Operators](search_target)是什麼
+      - 我想查詢[方法](search_target)?
+      - 什麼是[方法](search_target)?
       - [方法](search_target)是什麼
-      - [Methods](search_target)是什麼
-      - [Modules](search_target)是什麼
-      - [Program Modules in Java](search_target)是什麼
-      - [靜態類別](search_target)是什麼
-      - [靜態欄位](search_target)是什麼
-      - [Class Math](search_target)是什麼
-      - [static Fields](search_target)是什麼
-      - [static Methods](search_target)是什麼
-      - [方法注意事項](search_target)是什麼
-      - [Casting](search_target)是什麼
-      - [晉升](search_target)是什麼
-      - [轉型](search_target)是什麼
-      - [隨機變數](search_target)是什麼
-      - [Random](search_target)是什麼
-      - [列舉](search_target)是什麼
-      - [枚舉型態](search_target)是什麼
-      - [enum](search_target)是什麼
-      - [聲明範圍](search_target)是什麼
-      - [Scope of Declarations](search_target)是什麼
-      - [範例](search_target)是什麼
-      - [多載](search_target)是什麼
-      - [Overload](search_target)是什麼
-      - [Variable-Length Argument Lists](search_target)是什麼
-      - [不定長度引數](search_target)是什麼
-      - [命令列引數](search_target)是什麼
-      - [Command](search_target)是什麼
-      - [Using Command-Line Arguments](search_target)是什麼
-      - [Arrays](search_target)是什麼
-      - [陣列](search_target)是什麼
-      - [Arrays](search_target)是什麼
-      - [Class Arrays](search_target)是什麼
-      - [ArrayList](search_target)是什麼
-      - [Classes and Objects](search_target)是什麼
-      - [Objects](search_target)是什麼
-      - [Time Class Case Study](search_target)是什麼
-      - [Controlling Access to Members](search_target)是什麼
-      - [Referring to the Current Object's Members with the this Reference](search_target)是什麼
-      - [Overloaded Constructors](search_target)是什麼
-      - [Default and No-Argument Constructors](search_target)是什麼
-      - [Notes on Set and Get Methods](search_target)是什麼
-      - [Aggregation](search_target)是什麼
-      - [Composition](search_target)是什麼
-      - [enum Types](search_target)是什麼
-      - [Garbage Collection](search_target)是什麼
-      - [static Class Members](search_target)是什麼
-      - [Static Import](search_target)是什麼
-      - [final Instance Variables](search_target)是什麼
-      - [Package Access](search_target)是什麼
-      - [Inheritance](search_target)是什麼
-      - [Superclasses and Subclasses](search_target)是什麼
-      - [protected Members](search_target)是什麼
-      - [Relationship Between Superclasses and Subclasses](search_target)是什麼
-      - [Constructors in Subclasses](search_target)是什麼
+      - 我想查詢[工具](search_target)?
+      - 什麼是[工具](search_target)?
+      - [工具](search_target)是什麼
+      - 我想查詢[流程](search_target)?
+      - 什麼是[流程](search_target)?
+      - [流程](search_target)是什麼
+      - 我想查詢[工程化](search_target)?
+      - 什麼是[工程化](search_target)?
+      - [工程化](search_target)是什麼
+      - 我想查詢[軟體開發](search_target)?
+      - 什麼是[軟體開發](search_target)?
+      - [軟體開發](search_target)是什麼
+      - 我想查詢[軟體工程](search_target)?
+      - 什麼是[軟體工程](search_target)?
+      - [軟體工程](search_target)是什麼
+      - 我想查詢[軟體危機](search_target)?
+      - 什麼是[軟體危機](search_target)?
+      - [軟體危機](search_target)是什麼
+      - 我想查詢[問題癥結](search_target)?
+      - 什麼是[問題癥結](search_target)?
+      - [問題癥結](search_target)是什麼
+      - 我想查詢[真實軟體案例](search_target)?
+      - 什麼是[真實軟體案例](search_target)?
+      - [真實軟體案例](search_target)是什麼
+      - 我想查詢[軟體的本質問題](search_target)?
+      - 什麼是[軟體的本質問題](search_target)?
+      - [軟體的本質問題](search_target)是什麼
+      - 我想查詢[複雜性](search_target)?
+      - 什麼是[複雜性](search_target)?
+      - [複雜性](search_target)是什麼
+      - 我想查詢[一致性](search_target)?
+      - 什麼是[一致性](search_target)?
+      - [一致性](search_target)是什麼
+      - 我想查詢[隱藏性](search_target)?
+      - 什麼是[隱藏性](search_target)?
+      - [隱藏性](search_target)是什麼
+      - 我想查詢[易變性](search_target)?
+      - 什麼是[易變性](search_target)?
+      - [易變性](search_target)是什麼
+      - 我想查詢[程式、程式系統與軟體產品](search_target)?
+      - 什麼是[程式、程式系統與軟體產品](search_target)?
+      - [程式、程式系統與軟體產品](search_target)是什麼
+      - 我想查詢[軟體開發步驟](search_target)?
+      - 什麼是[軟體開發步驟](search_target)?
+      - [軟體開發步驟](search_target)是什麼
+      - 我想查詢[需求分析](search_target)?
+      - 什麼是[需求分析](search_target)?
+      - [需求分析](search_target)是什麼
+      - 我想查詢[設計](search_target)?
+      - 什麼是[設計](search_target)?
+      - [設計](search_target)是什麼
+      - 我想查詢[實作與整合](search_target)?
+      - 什麼是[實作與整合](search_target)?
+      - [實作與整合](search_target)是什麼
+      - 我想查詢[測試](search_target)?
+      - 什麼是[測試](search_target)?
+      - [測試](search_target)是什麼
+      - 我想查詢[專案管理](search_target)?
+      - 什麼是[專案管理](search_target)?
+      - [專案管理](search_target)是什麼
+      - 我想查詢[使用案例](search_target)?
+      - 什麼是[使用案例](search_target)?
+      - [使用案例](search_target)是什麼
+      - 我想查詢[功能需求](search_target)?
+      - 什麼是[功能需求](search_target)?
+      - [功能需求](search_target)是什麼
+      - 我想查詢[非功能需求](search_target)?
+      - 什麼是[非功能需求](search_target)?
+      - [非功能需求](search_target)是什麼
+      - 我想查詢[需求分析](search_target)?
+      - 什麼是[需求分析](search_target)?
+      - [需求分析](search_target)是什麼
+      - 我想查詢[將需求轉換為系統的重要過程](search_target)?
+      - 什麼是[將需求轉換為系統的重要過程](search_target)?
+      - [將需求轉換為系統的重要過程](search_target)是什麼
+      - 我想查詢[設計文件](search_target)?
+      - 什麼是[設計文件](search_target)?
+      - [設計文件](search_target)是什麼
+      - 我想查詢[設計](search_target)?
+      - 什麼是[設計](search_target)?
+      - [設計](search_target)是什麼
+      - 我想查詢[轉化為可執行的軟體](search_target)?
+      - 什麼是[轉化為可執行的軟體](search_target)?
+      - [轉化為可執行的軟體](search_target)是什麼
+      - 我想查詢[實作與整合](search_target)?
+      - 什麼是[實作與整合](search_target)?
+      - [實作與整合](search_target)是什麼
+      - 我想查詢[檢測](search_target)?
+      - 什麼是[檢測](search_target)?
+      - [檢測](search_target)是什麼
+      - 我想查詢[測試案例](search_target)?
+      - 什麼是[測試案例](search_target)?
+      - [測試案例](search_target)是什麼
+      - 我想查詢[發現錯誤](search_target)?
+      - 什麼是[發現錯誤](search_target)?
+      - [發現錯誤](search_target)是什麼
+      - 我想查詢[評估品質](search_target)?
+      - 什麼是[評估品質](search_target)?
+      - [評估品質](search_target)是什麼
+      - 我想查詢[軟體維護](search_target)?
+      - 什麼是[軟體維護](search_target)?
+      - [軟體維護](search_target)是什麼
+      - 我想查詢[專案規劃](search_target)?
+      - 什麼是[專案規劃](search_target)?
+      - [專案規劃](search_target)是什麼
+      - 我想查詢[專案監控](search_target)?
+      - 什麼是[專案監控](search_target)?
+      - [專案監控](search_target)是什麼
+      - 我想查詢[看板](search_target)?
+      - 什麼是[看板](search_target)?
+      - [看板](search_target)是什麼
+      - 我想查詢[軟體開發步驟、文件與工具](search_target)?
+      - 什麼是[軟體開發步驟、文件與工具](search_target)?
+      - [軟體開發步驟、文件與工具](search_target)是什麼
+      - 我想查詢[瀑布式開發流程](search_target)?
+      - 什麼是[瀑布式開發流程](search_target)?
+      - [瀑布式開發流程](search_target)是什麼
+      - 我想查詢[雛型模型](search_target)?
+      - 什麼是[雛型模型](search_target)?
+      - [雛型模型](search_target)是什麼
+      - 我想查詢[極限製程](search_target)?
+      - 什麼是[極限製程](search_target)?
+      - [極限製程](search_target)是什麼
+      - 我想查詢[SCRUM](search_target)?
+      - 什麼是[SCRUM](search_target)?
+      - [SCRUM](search_target)是什麼
+      - 我想查詢[瀑布式開發流程](search_target)?
+      - 什麼是[瀑布式開發流程](search_target)?
+      - [瀑布式開發流程](search_target)是什麼
+      - 我想查詢[清楚的階段分割](search_target)?
+      - 什麼是[清楚的階段分割](search_target)?
+      - [清楚的階段分割](search_target)是什麼
+      - 我想查詢[明確的文件產出](search_target)?
+      - 什麼是[明確的文件產出](search_target)?
+      - [明確的文件產出](search_target)是什麼
+      - 我想查詢[雛型(Prototyping)發展流程](search_target)?
+      - 什麼是[雛型(Prototyping)發展流程](search_target)?
+      - [雛型(Prototyping)發展流程](search_target)是什麼
+      - 我想查詢[捨棄式雛型法](search_target)?
+      - 什麼是[捨棄式雛型法](search_target)?
+      - [捨棄式雛型法](search_target)是什麼
+      - 我想查詢[漸進式雛型法](search_target)?
+      - 什麼是[漸進式雛型法](search_target)?
+      - [漸進式雛型法](search_target)是什麼
+      - 我想查詢[衝刺](search_target)?
+      - 什麼是[衝刺](search_target)?
+      - [衝刺](search_target)是什麼
+      - 我想查詢[產品待辦清單](search_target)?
+      - 什麼是[產品待辦清單](search_target)?
+      - [產品待辦清單](search_target)是什麼
+      - 我想查詢[軟體工程常見問題](search_target)?
+      - 什麼是[軟體工程常見問題](search_target)?
+      - [軟體工程常見問題](search_target)是什麼
+      - 我想查詢[需求分析與軟體設計](search_target)?
+      - 什麼是[需求分析與軟體設計](search_target)?
+      - [需求分析與軟體設計](search_target)是什麼
+      - 我想查詢[功能性使用者需求](search_target)?
+      - 什麼是[功能性使用者需求](search_target)?
+      - [功能性使用者需求](search_target)是什麼
+      - 我想查詢[功能性系統需求](search_target)?
+      - 什麼是[功能性系統需求](search_target)?
+      - [功能性系統需求](search_target)是什麼
+      - 我想查詢[非功能性使用者需求](search_target)?
+      - 什麼是[非功能性使用者需求](search_target)?
+      - [非功能性使用者需求](search_target)是什麼
+      - 我想查詢[非功能性系統需求](search_target)?
+      - 什麼是[非功能性系統需求](search_target)?
+      - [非功能性系統需求](search_target)是什麼
+      - 我想查詢[軟體需求規格書](search_target)?
+      - 什麼是[軟體需求規格書](search_target)?
+      - [軟體需求規格書](search_target)是什麼
+      - 我想查詢[使用者需求](search_target)?
+      - 什麼是[使用者需求](search_target)?
+      - [使用者需求](search_target)是什麼
+      - 我想查詢[系統需求](search_target)?
+      - 什麼是[系統需求](search_target)?
+      - [系統需求](search_target)是什麼
+      - 我想查詢[服務陳](search_target)?
+      - 什麼是[服務陳](search_target)?
+      - [服務陳](search_target)是什麼
+      - 我想查詢[約束](search_target)?
+      - 什麼是[約束](search_target)?
+      - [約束](search_target)是什麼
+      - 我想查詢[功能需求](search_target)?
+      - 什麼是[功能需求](search_target)?
+      - [功能需求](search_target)是什麼
+      - 我想查詢[高階陳述](search_target)?
+      - 什麼是[高階陳述](search_target)?
+      - [高階陳述](search_target)是什麼
+      - 我想查詢[系統品質](search_target)?
+      - 什麼是[系統品質](search_target)?
+      - [系統品質](search_target)是什麼
+      - 我想查詢[產品需求](search_target)?
+      - 什麼是[產品需求](search_target)?
+      - [產品需求](search_target)是什麼
+      - 我想查詢[組織需求](search_target)?
+      - 什麼是[組織需求](search_target)?
+      - [組織需求](search_target)是什麼
+      - 我想查詢[外部需求](search_target)?
+      - 什麼是[外部需求](search_target)?
+      - [外部需求](search_target)是什麼
+      - 我想查詢[非功能需求範例](search_target)?
+      - 什麼是[非功能需求範例](search_target)?
+      - [非功能需求範例](search_target)是什麼
+      - 我想查詢[設定目標](search_target)?
+      - 什麼是[設定目標](search_target)?
+      - [設定目標](search_target)是什麼
+      - 我想查詢[設定可驗證的描述](search_target)?
+      - 什麼是[設定可驗證的描述](search_target)?
+      - [設定可驗證的描述](search_target)是什麼
+      - 我想查詢[操作概念](search_target)?
+      - 什麼是[操作概念](search_target)?
+      - [操作概念](search_target)是什麼
+      - 我想查詢[MVP概念](search_target)?
+      - 什麼是[MVP概念](search_target)?
+      - [MVP概念](search_target)是什麼
+      - 我想查詢[人物誌](search_target)?
+      - 什麼是[人物誌](search_target)?
+      - [人物誌](search_target)是什麼
+      - 我想查詢[線框圖](search_target)?
+      - 什麼是[線框圖](search_target)?
+      - [線框圖](search_target)是什麼
+      - 我想查詢[draw.io](search_target)?
+      - 什麼是[draw.io](search_target)?
+      - [draw.io](search_target)是什麼
+      - 我想查詢[figma](search_target)?
+      - 什麼是[figma](search_target)?
+      - [figma](search_target)是什麼
+      - 我想查詢[wireframe.cc](search_target)?
+      - 什麼是[wireframe.cc](search_target)?
+      - [wireframe.cc](search_target)是什麼
+      - 我想查詢[axure](search_target)?
+      - 什麼是[axure](search_target)?
+      - [axure](search_target)是什麼
+      - 我想查詢[cocoo](search_target)?
+      - 什麼是[cocoo](search_target)?
+      - [cocoo](search_target)是什麼
+      - 我想查詢[雛型法](search_target)?
+      - 什麼是[雛型法](search_target)?
+      - [雛型法](search_target)是什麼
+      - 我想查詢[3C分析](search_target)?
+      - 什麼是[3C分析](search_target)?
+      - [3C分析](search_target)是什麼
+      - 我想查詢[正確](search_target)?
+      - 什麼是[正確](search_target)?
+      - [正確](search_target)是什麼
+      - 我想查詢[完整](search_target)?
+      - 什麼是[完整](search_target)?
+      - [完整](search_target)是什麼
+      - 我想查詢[沒有衝突](search_target)?
+      - 什麼是[沒有衝突](search_target)?
+      - [沒有衝突](search_target)是什麼
+      - 我想查詢[需求規格化](search_target)?
+      - 什麼是[需求規格化](search_target)?
+      - [需求規格化](search_target)是什麼
+      - 我想查詢[簡易版需求規格](search_target)?
+      - 什麼是[簡易版需求規格](search_target)?
+      - [簡易版需求規格](search_target)是什麼
+      - 我想查詢[需求確認](search_target)?
+      - 什麼是[需求確認](search_target)?
+      - [需求確認](search_target)是什麼
+      - 我想查詢[衝刺](search_target)?
+      - 什麼是[衝刺](search_target)?
+      - [衝刺](search_target)是什麼
+      - 我想查詢[沒有做好需求分析的情況](search_target)?
+      - 什麼是[沒有做好需求分析的情況](search_target)?
+      - [沒有做好需求分析的情況](search_target)是什麼
+      - 我想查詢[使用者故事](search_target)?
+      - 什麼是[使用者故事](search_target)?
+      - [使用者故事](search_target)是什麼
+      - 我想查詢[使用者故事範例](search_target)?
+      - 什麼是[使用者故事範例](search_target)?
+      - [使用者故事範例](search_target)是什麼
+      - 我想查詢[商務語言](search_target)?
+      - 什麼是[商務語言](search_target)?
+      - [商務語言](search_target)是什麼
+      - 我想查詢[故事的顆粒大小](search_target)?
+      - 什麼是[故事的顆粒大小](search_target)?
+      - [故事的顆粒大小](search_target)是什麼
+      - 我想查詢[故事的詳細程度](search_target)?
+      - 什麼是[故事的詳細程度](search_target)?
+      - [故事的詳細程度](search_target)是什麼
+      - 我想查詢[定義故事的角色](search_target)?
+      - 什麼是[定義故事的角色](search_target)?
+      - [定義故事的角色](search_target)是什麼
+      - 我想查詢[INVEST屬性](search_target)?
+      - 什麼是[INVEST屬性](search_target)?
+      - [INVEST屬性](search_target)是什麼
+      - 我想查詢[獨立的故事 (Independent)](search_target)?
+      - 什麼是[獨立的故事 (Independent)](search_target)?
+      - [獨立的故事 (Independent)](search_target)是什麼
+      - 我想查詢[可協商的故事 (Negotiable Story)](search_target)?
+      - 什麼是[可協商的故事 (Negotiable Story)](search_target)?
+      - [可協商的故事 (Negotiable Story)](search_target)是什麼
+      - 我想查詢[有價值的故事 (Valuable Story)](search_target)?
+      - 什麼是[有價值的故事 (Valuable Story)](search_target)?
+      - [有價值的故事 (Valuable Story)](search_target)是什麼
+      - 我想查詢[可估算的故事 (Estimatable Story)](search_target)?
+      - 什麼是[可估算的故事 (Estimatable Story)](search_target)?
+      - [可估算的故事 (Estimatable Story)](search_target)是什麼
+      - 我想查詢[故事與迭代(Iteration)](search_target)?
+      - 什麼是[故事與迭代(Iteration)](search_target)?
+      - [故事與迭代(Iteration)](search_target)是什麼
+      - 我想查詢[故事點](search_target)?
+      - 什麼是[故事點](search_target)?
+      - [故事點](search_target)是什麼
+      - 我想查詢[在Scrum中運用故事](search_target)?
+      - 什麼是[在Scrum中運用故事](search_target)?
+      - [在Scrum中運用故事](search_target)是什麼
+      - 我想查詢[使用者故事模板](search_target)?
+      - 什麼是[使用者故事模板](search_target)?
+      - [使用者故事模板](search_target)是什麼
+      - 我想查詢[故事壞味道](search_target)?
+      - 什麼是[故事壞味道](search_target)?
+      - [故事壞味道](search_target)是什麼
+      - 我想查詢[使用者故事與非功能需求](search_target)?
+      - 什麼是[使用者故事與非功能需求](search_target)?
+      - [使用者故事與非功能需求](search_target)是什麼
+      - 我想查詢[使用者故事Quiz](search_target)?
+      - 什麼是[使用者故事Quiz](search_target)?
+      - [使用者故事Quiz](search_target)是什麼
+      - 我想查詢[缺乏整體性故事的問題](search_target)?
+      - 什麼是[缺乏整體性故事的問題](search_target)?
+      - [缺乏整體性故事的問題](search_target)是什麼
+      - 我想查詢[使用者故事對照](search_target)?
+      - 什麼是[使用者故事對照](search_target)?
+      - [使用者故事對照](search_target)是什麼
+      - 我想查詢[故事地圖範例](search_target)?
+      - 什麼是[故事地圖範例](search_target)?
+      - [故事地圖範例](search_target)是什麼
+      - 我想查詢[使用者故事對照核心理念](search_target)?
+      - 什麼是[使用者故事對照核心理念](search_target)?
+      - [使用者故事對照核心理念](search_target)是什麼
+      - 我想查詢[使用者故事拆解案例](search_target)?
+      - 什麼是[使用者故事拆解案例](search_target)?
+      - [使用者故事拆解案例](search_target)是什麼
+      - 我想查詢[骨幹與主體](search_target)?
+      - 什麼是[骨幹與主體](search_target)?
+      - [骨幹與主體](search_target)是什麼
+      - 我想查詢[敘事流](search_target)?
+      - 什麼是[敘事流](search_target)?
+      - [敘事流](search_target)是什麼
+      - 我想查詢[檢視漏洞](search_target)?
+      - 什麼是[檢視漏洞](search_target)?
+      - [檢視漏洞](search_target)是什麼
+      - 我想查詢[版本路線圖](search_target)?
+      - 什麼是[版本路線圖](search_target)?
+      - [版本路線圖](search_target)是什麼
+      - 我想查詢[最小可行產品](search_target)?
+      - 什麼是[最小可行產品](search_target)?
+      - [最小可行產品](search_target)是什麼
+      - 我想查詢[開局](search_target)?
+      - 什麼是[開局](search_target)?
+      - [開局](search_target)是什麼
+      - 我想查詢[中局](search_target)?
+      - 什麼是[中局](search_target)?
+      - [中局](search_target)是什麼
+      - 我想查詢[終局](search_target)?
+      - 什麼是[終局](search_target)?
+      - [終局](search_target)是什麼
+      - 我想查詢[使用者故事對照步驟](search_target)?
+      - 什麼是[使用者故事對照步驟](search_target)?
+      - [使用者故事對照步驟](search_target)是什麼
+      - 我想查詢[甚麼是GIT?](search_target)?
+      - 什麼是[甚麼是GIT?](search_target)?
+      - [甚麼是GIT?](search_target)是什麼
+      - 我想查詢[版本控制](search_target)?
+      - 什麼是[版本控制](search_target)?
+      - [版本控制](search_target)是什麼
+      - 我想查詢[協同開發的問題](search_target)?
+      - 什麼是[協同開發的問題](search_target)?
+      - [協同開發的問題](search_target)是什麼
+      - 我想查詢[Git的優點](search_target)?
+      - 什麼是[Git的優點](search_target)?
+      - [Git的優點](search_target)是什麼
+      - 我想查詢[Git系統安裝](search_target)?
+      - 什麼是[Git系統安裝](search_target)?
+      - [Git系統安裝](search_target)是什麼
+      - 我想查詢[Git Bash](search_target)?
+      - 什麼是[Git Bash](search_target)?
+      - [Git Bash](search_target)是什麼
+      - 我想查詢[常用終端機命令列指令](search_target)?
+      - 什麼是[常用終端機命令列指令](search_target)?
+      - [常用終端機命令列指令](search_target)是什麼
+      - 我想查詢[設定Git](search_target)?
+      - 什麼是[設定Git](search_target)?
+      - [設定Git](search_target)是什麼
+      - 我想查詢[新增專案](search_target)?
+      - 什麼是[新增專案](search_target)?
+      - [新增專案](search_target)是什麼
+      - 我想查詢[初始專案](search_target)?
+      - 什麼是[初始專案](search_target)?
+      - [初始專案](search_target)是什麼
+      - 我想查詢[查看目錄狀態](search_target)?
+      - 什麼是[查看目錄狀態](search_target)?
+      - [查看目錄狀態](search_target)是什麼
+      - 我想查詢[將檔案交給Git追蹤](search_target)?
+      - 什麼是[將檔案交給Git追蹤](search_target)?
+      - [將檔案交給Git追蹤](search_target)是什麼
+      - 我想查詢[把暫存區的內容提交到倉庫](search_target)?
+      - 什麼是[把暫存區的內容提交到倉庫](search_target)?
+      - [把暫存區的內容提交到倉庫](search_target)是什麼
+      - 我想查詢[約定式提交(Conventional Commit)](search_target)?
+      - 什麼是[約定式提交(Conventional Commit)](search_target)?
+      - [約定式提交(Conventional Commit)](search_target)是什麼
+      - 我想查詢[工作目錄](search_target)?
+      - 什麼是[工作目錄](search_target)?
+      - [工作目錄](search_target)是什麼
+      - 我想查詢[暫存區](search_target)?
+      - 什麼是[暫存區](search_target)?
+      - [暫存區](search_target)是什麼
+      - 我想查詢[儲存庫](search_target)?
+      - 什麼是[儲存庫](search_target)?
+      - [儲存庫](search_target)是什麼
+      - 我想查詢[檢視Git紀錄](search_target)?
+      - 什麼是[檢視Git紀錄](search_target)?
+      - [檢視Git紀錄](search_target)是什麼
+      - 我想查詢[刪除檔案](search_target)?
+      - 什麼是[刪除檔案](search_target)?
+      - [刪除檔案](search_target)是什麼
+      - 我想查詢[改檔案名稱](search_target)?
+      - 什麼是[改檔案名稱](search_target)?
+      - [改檔案名稱](search_target)是什麼
+      - 我想查詢[查看是誰做的](search_target)?
+      - 什麼是[查看是誰做的](search_target)?
+      - [查看是誰做的](search_target)是什麼
+      - 我想查詢[內建圖形化介面: gitk](search_target)?
+      - 什麼是[內建圖形化介面: gitk](search_target)?
+      - [內建圖形化介面: gitk](search_target)是什麼
+      - 我想查詢[修改 Commit 紀錄](search_target)?
+      - 什麼是[修改 Commit 紀錄](search_target)?
+      - [修改 Commit 紀錄](search_target)是什麼
+      - 我想查詢[回到過去的Commit](search_target)?
+      - 什麼是[回到過去的Commit](search_target)?
+      - [回到過去的Commit](search_target)是什麼
+      - 我想查詢[拆掉Commit](search_target)?
+      - 什麼是[拆掉Commit](search_target)?
+      - [拆掉Commit](search_target)是什麼
+      - 我想查詢[為什麼要使用分支(Branch)？](search_target)?
+      - 什麼是[為什麼要使用分支(Branch)？](search_target)?
+      - [為什麼要使用分支(Branch)？](search_target)是什麼
+      - 我想查詢[查看分支](search_target)?
+      - 什麼是[查看分支](search_target)?
+      - [查看分支](search_target)是什麼
+      - 我想查詢[分支新增、改名與刪除](search_target)?
+      - 什麼是[分支新增、改名與刪除](search_target)?
+      - [分支新增、改名與刪除](search_target)是什麼
+      - 我想查詢[切換分支](search_target)?
+      - 什麼是[切換分支](search_target)?
+      - [切換分支](search_target)是什麼
+      - 我想查詢[合併分支](search_target)?
+      - 什麼是[合併分支](search_target)?
+      - [合併分支](search_target)是什麼
+      - 我想查詢[解決衝突](search_target)?
+      - 什麼是[解決衝突](search_target)?
+      - [解決衝突](search_target)是什麼
+      - 我想查詢[合併分支](search_target)?
+      - 什麼是[合併分支](search_target)?
+      - [合併分支](search_target)是什麼
+      - 我想查詢[標籤(tag)是什麼？](search_target)?
+      - 什麼是[標籤(tag)是什麼？](search_target)?
+      - [標籤(tag)是什麼？](search_target)是什麼
+      - 我想查詢[有附註(Annotated)的標籤](search_target)?
+      - 什麼是[有附註(Annotated)的標籤](search_target)?
+      - [有附註(Annotated)的標籤](search_target)是什麼
+      - 我想查詢[GitHub 是什麼？](search_target)?
+      - 什麼是[GitHub 是什麼？](search_target)?
+      - [GitHub 是什麼？](search_target)是什麼
+      - 我想查詢[創建GitHub Repository](search_target)?
+      - 什麼是[創建GitHub Repository](search_target)?
+      - [創建GitHub Repository](search_target)是什麼
+      - 我想查詢[設定SSH (Secure Shell)](search_target)?
+      - 什麼是[設定SSH (Secure Shell)](search_target)?
+      - [設定SSH (Secure Shell)](search_target)是什麼
+      - 我想查詢[Git Push](search_target)?
+      - 什麼是[Git Push](search_target)?
+      - [Git Push](search_target)是什麼
+      - 我想查詢[加入協作者](search_target)?
+      - 什麼是[加入協作者](search_target)?
+      - [加入協作者](search_target)是什麼
+      - 我想查詢[Git Clone](search_target)?
+      - 什麼是[Git Clone](search_target)?
+      - [Git Clone](search_target)是什麼
+      - 我想查詢[git pull](search_target)?
+      - 什麼是[git pull](search_target)?
+      - [git pull](search_target)是什麼
+      - 我想查詢[fetch 和 merge](search_target)?
+      - 什麼是[fetch 和 merge](search_target)?
+      - [fetch 和 merge](search_target)是什麼
+      - 我想查詢[為何有時無法Push?](search_target)?
+      - 什麼是[為何有時無法Push?](search_target)?
+      - [為何有時無法Push?](search_target)是什麼
+      - 我想查詢[Pull Request (PR)](search_target)?
+      - 什麼是[Pull Request (PR)](search_target)?
+      - [Pull Request (PR)](search_target)是什麼
+      - 我想查詢[GitHub Fork](search_target)?
+      - 什麼是[GitHub Fork](search_target)?
+      - [GitHub Fork](search_target)是什麼
+      - 我想查詢[複製專案](search_target)?
+      - 什麼是[複製專案](search_target)?
+      - [複製專案](search_target)是什麼
+      - 我想查詢[Open Pull Request](search_target)?
+      - 什麼是[Open Pull Request](search_target)?
+      - [Open Pull Request](search_target)是什麼
+      - 我想查詢[合併 pull request](search_target)?
+      - 什麼是[合併 pull request](search_target)?
+      - [合併 pull request](search_target)是什麼
+      - 我想查詢[Git Ignore](search_target)?
+      - 什麼是[Git Ignore](search_target)?
+      - [Git Ignore](search_target)是什麼
+      - 我想查詢[Git整體運作流程](search_target)?
+      - 什麼是[Git整體運作流程](search_target)?
+      - [Git整體運作流程](search_target)是什麼
+      - 我想查詢[Git重要指令](search_target)?
+      - 什麼是[Git重要指令](search_target)?
+      - [Git重要指令](search_target)是什麼
+      - 我想查詢[Git & GitHub 概述](search_target)?
+      - 什麼是[Git & GitHub 概述](search_target)?
+      - [Git & GitHub 概述](search_target)是什麼
+      - 我想查詢[集中式版本控制](search_target)?
+      - 什麼是[集中式版本控制](search_target)?
+      - [集中式版本控制](search_target)是什麼
+      - 我想查詢[SVN 流程](search_target)?
+      - 什麼是[SVN 流程](search_target)?
+      - [SVN 流程](search_target)是什麼
+      - 我想查詢[整合管理版本控制](search_target)?
+      - 什麼是[整合管理版本控制](search_target)?
+      - [整合管理版本控制](search_target)是什麼
+      - 我想查詢[分支規範](search_target)?
+      - 什麼是[分支規範](search_target)?
+      - [分支規範](search_target)是什麼
+      - 我想查詢[分支規範](search_target)?
+      - 什麼是[分支規範](search_target)?
+      - [分支規範](search_target)是什麼
+      - 我想查詢[其他的GIT雲端服務](search_target)?
+      - 什麼是[其他的GIT雲端服務](search_target)?
+      - [其他的GIT雲端服務](search_target)是什麼
+      - 我想查詢[GitLab](search_target)?
+      - 什麼是[GitLab](search_target)?
+      - [GitLab](search_target)是什麼
+      - 我想查詢[BitBucket](search_target)?
+      - 什麼是[BitBucket](search_target)?
+      - [BitBucket](search_target)是什麼
+      - 我想查詢[Git/GitHub圖形化介面](search_target)?
+      - 什麼是[Git/GitHub圖形化介面](search_target)?
+      - [Git/GitHub圖形化介面](search_target)是什麼
+      - 我想查詢[GitHub Desktop](search_target)?
+      - 什麼是[GitHub Desktop](search_target)?
+      - [GitHub Desktop](search_target)是什麼
+      - 我想查詢[SourceTree](search_target)?
+      - 什麼是[SourceTree](search_target)?
+      - [SourceTree](search_target)是什麼
+      - 我想查詢[TortoiseGit](search_target)?
+      - 什麼是[TortoiseGit](search_target)?
+      - [TortoiseGit](search_target)是什麼
+      - 我想查詢[專案](search_target)?
+      - 什麼是[專案](search_target)?
+      - [專案](search_target)是什麼
+      - 我想查詢[軟體專案](search_target)?
+      - 什麼是[軟體專案](search_target)?
+      - [軟體專案](search_target)是什麼
+      - 我想查詢[已定義專案](search_target)?
+      - 什麼是[已定義專案](search_target)?
+      - [已定義專案](search_target)是什麼
+      - 我想查詢[專案管理](search_target)?
+      - 什麼是[專案管理](search_target)?
+      - [專案管理](search_target)是什麼
+      - 我想查詢[專案初始與規劃](search_target)?
+      - 什麼是[專案初始與規劃](search_target)?
+      - [專案初始與規劃](search_target)是什麼
+      - 我想查詢[專案執行](search_target)?
+      - 什麼是[專案執行](search_target)?
+      - [專案執行](search_target)是什麼
+      - 我想查詢[專案監控](search_target)?
+      - 什麼是[專案監控](search_target)?
+      - [專案監控](search_target)是什麼
+      - 我想查詢[專案結案](search_target)?
+      - 什麼是[專案結案](search_target)?
+      - [專案結案](search_target)是什麼
+      - 我想查詢[專案管理流程](search_target)?
+      - 什麼是[專案管理流程](search_target)?
+      - [專案管理流程](search_target)是什麼
+      - 我想查詢[工作分解結構](search_target)?
+      - 什麼是[工作分解結構](search_target)?
+      - [工作分解結構](search_target)是什麼
+      - 我想查詢[專案階層的圖形化呈現](search_target)?
+      - 什麼是[專案階層的圖形化呈現](search_target)?
+      - [專案階層的圖形化呈現](search_target)是什麼
+      - 我想查詢[WBS範例](search_target)?
+      - 什麼是[WBS範例](search_target)?
+      - [WBS範例](search_target)是什麼
+      - 我想查詢[專案預估](search_target)?
+      - 什麼是[專案預估](search_target)?
+      - [專案預估](search_target)是什麼
+      - 我想查詢[產品規模](search_target)?
+      - 什麼是[產品規模](search_target)?
+      - [產品規模](search_target)是什麼
+      - 我想查詢[複雜度](search_target)?
+      - 什麼是[複雜度](search_target)?
+      - [複雜度](search_target)是什麼
+      - 我想查詢[所需人力](search_target)?
+      - 什麼是[所需人力](search_target)?
+      - [所需人力](search_target)是什麼
+      - 我想查詢[所需時程](search_target)?
+      - 什麼是[所需時程](search_target)?
+      - [所需時程](search_target)是什麼
+      - 我想查詢[工時預估](search_target)?
+      - 什麼是[工時預估](search_target)?
+      - [工時預估](search_target)是什麼
+      - 我想查詢[排程方法](search_target)?
+      - 什麼是[排程方法](search_target)?
+      - [排程方法](search_target)是什麼
+      - 我想查詢[CPM](search_target)?
+      - 什麼是[CPM](search_target)?
+      - [CPM](search_target)是什麼
+      - 我想查詢[PERT](search_target)?
+      - 什麼是[PERT](search_target)?
+      - [PERT](search_target)是什麼
+      - 我想查詢[PERT 圖](search_target)?
+      - 什麼是[PERT 圖](search_target)?
+      - [PERT 圖](search_target)是什麼
+      - 我想查詢[工作相依性](search_target)?
+      - 什麼是[工作相依性](search_target)?
+      - [工作相依性](search_target)是什麼
+      - 我想查詢[關鍵路徑](search_target)?
+      - 什麼是[關鍵路徑](search_target)?
+      - [關鍵路徑](search_target)是什麼
+      - 我想查詢[浮動時間](search_target)?
+      - 什麼是[浮動時間](search_target)?
+      - [浮動時間](search_target)是什麼
+      - 我想查詢[專案有向圖範例](search_target)?
+      - 什麼是[專案有向圖範例](search_target)?
+      - [專案有向圖範例](search_target)是什麼
+      - 我想查詢[有時程預估的WBS](search_target)?
+      - 什麼是[有時程預估的WBS](search_target)?
+      - [有時程預估的WBS](search_target)是什麼
+      - 我想查詢[配置負責人的WBS](search_target)?
+      - 什麼是[配置負責人的WBS](search_target)?
+      - [配置負責人的WBS](search_target)是什麼
+      - 我想查詢[甘特圖](search_target)?
+      - 什麼是[甘特圖](search_target)?
+      - [甘特圖](search_target)是什麼
+      - 我想查詢[里程碑](search_target)?
+      - 什麼是[里程碑](search_target)?
+      - [里程碑](search_target)是什麼
+      - 我想查詢[知識技能培養](search_target)?
+      - 什麼是[知識技能培養](search_target)?
+      - [知識技能培養](search_target)是什麼
+      - 我想查詢[定風險項目](search_target)?
+      - 什麼是[定風險項目](search_target)?
+      - [定風險項目](search_target)是什麼
+      - 我想查詢[訂風險計畫](search_target)?
+      - 什麼是[訂風險計畫](search_target)?
+      - [訂風險計畫](search_target)是什麼
+      - 我想查詢[建構團隊](search_target)?
+      - 什麼是[建構團隊](search_target)?
+      - [建構團隊](search_target)是什麼
+      - 我想查詢[執行工作](search_target)?
+      - 什麼是[執行工作](search_target)?
+      - [執行工作](search_target)是什麼
+      - 我想查詢[定期度量專案績效](search_target)?
+      - 什麼是[定期度量專案績效](search_target)?
+      - [定期度量專案績效](search_target)是什麼
+      - 我想查詢[調整專案規劃](search_target)?
+      - 什麼是[調整專案規劃](search_target)?
+      - [調整專案規劃](search_target)是什麼
+      - 我想查詢[變更控制機制](search_target)?
+      - 什麼是[變更控制機制](search_target)?
+      - [變更控制機制](search_target)是什麼
+      - 我想查詢[進行進度審查](search_target)?
+      - 什麼是[進行進度審查](search_target)?
+      - [進行進度審查](search_target)是什麼
+      - 我想查詢[進行里程碑審查](search_target)?
+      - 什麼是[進行里程碑審查](search_target)?
+      - [進行里程碑審查](search_target)是什麼
+      - 我想查詢[看板](search_target)?
+      - 什麼是[看板](search_target)?
+      - [看板](search_target)是什麼
+      - 我想查詢[同時工作數量](search_target)?
+      - 什麼是[同時工作數量](search_target)?
+      - [同時工作數量](search_target)是什麼
+      - 我想查詢[實體看板](search_target)?
+      - 什麼是[實體看板](search_target)?
+      - [實體看板](search_target)是什麼
+      - 我想查詢[線上看板](search_target)?
+      - 什麼是[線上看板](search_target)?
+      - [線上看板](search_target)是什麼
+      - 我想查詢[看板練習](search_target)?
+      - 什麼是[看板練習](search_target)?
+      - [看板練習](search_target)是什麼
+      - 我想查詢[Kanban工具](search_target)?
+      - 什麼是[Kanban工具](search_target)?
+      - [Kanban工具](search_target)是什麼
+      - 我想查詢[Trello](search_target)?
+      - 什麼是[Trello](search_target)?
+      - [Trello](search_target)是什麼
+      - 我想查詢[要做什麼](search_target)?
+      - 什麼是[要做什麼](search_target)?
+      - [要做什麼](search_target)是什麼
+      - 我想查詢[誰負責做](search_target)?
+      - 什麼是[誰負責做](search_target)?
+      - [誰負責做](search_target)是什麼
+      - 我想查詢[是流程中的哪一步](search_target)?
+      - 什麼是[是流程中的哪一步](search_target)?
+      - [是流程中的哪一步](search_target)是什麼
+      - 我想查詢[Board](search_target)?
+      - 什麼是[Board](search_target)?
+      - [Board](search_target)是什麼
+      - 我想查詢[List](search_target)?
+      - 什麼是[List](search_target)?
+      - [List](search_target)是什麼
+      - 我想查詢[and Card](search_target)?
+      - 什麼是[and Card](search_target)?
+      - [and Card](search_target)是什麼
+      - 我想查詢[Trello建議運用方式](search_target)?
+      - 什麼是[Trello建議運用方式](search_target)?
+      - [Trello建議運用方式](search_target)是什麼
+      - 我想查詢[著名的軟體開發模式](search_target)?
+      - 什麼是[著名的軟體開發模式](search_target)?
+      - [著名的軟體開發模式](search_target)是什麼
+      - 我想查詢[敏捷概念](search_target)?
+      - 什麼是[敏捷概念](search_target)?
+      - [敏捷概念](search_target)是什麼
+      - 我想查詢[敏捷宣言](search_target)?
+      - 什麼是[敏捷宣言](search_target)?
+      - [敏捷宣言](search_target)是什麼
+      - 我想查詢[敏捷思維](search_target)?
+      - 什麼是[敏捷思維](search_target)?
+      - [敏捷思維](search_target)是什麼
+      - 我想查詢[複雜程度](search_target)?
+      - 什麼是[複雜程度](search_target)?
+      - [複雜程度](search_target)是什麼
+      - 我想查詢[迭代](search_target)?
+      - 什麼是[迭代](search_target)?
+      - [迭代](search_target)是什麼
+      - 我想查詢[遞增式](search_target)?
+      - 什麼是[遞增式](search_target)?
+      - [遞增式](search_target)是什麼
+      - 我想查詢[衝刺](search_target)?
+      - 什麼是[衝刺](search_target)?
+      - [衝刺](search_target)是什麼
+      - 我想查詢[產品待辦清單](search_target)?
+      - 什麼是[產品待辦清單](search_target)?
+      - [產品待辦清單](search_target)是什麼
+      - 我想查詢[工作待辦清單](search_target)?
+      - 什麼是[工作待辦清單](search_target)?
+      - [工作待辦清單](search_target)是什麼
+      - 我想查詢[增量](search_target)?
+      - 什麼是[增量](search_target)?
+      - [增量](search_target)是什麼
+      - 我想查詢[完成之定義](search_target)?
+      - 什麼是[完成之定義](search_target)?
+      - [完成之定義](search_target)是什麼
+      - 我想查詢[使用者故事](search_target)?
+      - 什麼是[使用者故事](search_target)?
+      - [使用者故事](search_target)是什麼
+      - 我想查詢[Scrum事件](search_target)?
+      - 什麼是[Scrum事件](search_target)?
+      - [Scrum事件](search_target)是什麼
+      - 我想查詢[第1種會議: Sprint Planning](search_target)?
+      - 什麼是[第1種會議: Sprint Planning](search_target)?
+      - [第1種會議: Sprint Planning](search_target)是什麼
+      - 我想查詢[第2種會議: Daily Scrum](search_target)?
+      - 什麼是[第2種會議: Daily Scrum](search_target)?
+      - [第2種會議: Daily Scrum](search_target)是什麼
+      - 我想查詢[第3種會議: Sprint Review](search_target)?
+      - 什麼是[第3種會議: Sprint Review](search_target)?
+      - [第3種會議: Sprint Review](search_target)是什麼
+      - 我想查詢[第4種會議: Sprint Retrospective](search_target)?
+      - 什麼是[第4種會議: Sprint Retrospective](search_target)?
+      - [第4種會議: Sprint Retrospective](search_target)是什麼
+      - 我想查詢[Product Owner](search_target)?
+      - 什麼是[Product Owner](search_target)?
+      - [Product Owner](search_target)是什麼
+      - 我想查詢[Development Team](search_target)?
+      - 什麼是[Development Team](search_target)?
+      - [Development Team](search_target)是什麼
+      - 我想查詢[Scrum Master](search_target)?
+      - 什麼是[Scrum Master](search_target)?
+      - [Scrum Master](search_target)是什麼
+      - 我想查詢[Scrum Master的特質](search_target)?
+      - 什麼是[Scrum Master的特質](search_target)?
+      - [Scrum Master的特質](search_target)是什麼
+      - 我想查詢[Scrum的理論](search_target)?
+      - 什麼是[Scrum的理論](search_target)?
+      - [Scrum的理論](search_target)是什麼
+      - 我想查詢[透明性](search_target)?
+      - 什麼是[透明性](search_target)?
+      - [透明性](search_target)是什麼
+      - 我想查詢[檢視性](search_target)?
+      - 什麼是[檢視性](search_target)?
+      - [檢視性](search_target)是什麼
+      - 我想查詢[調適性](search_target)?
+      - 什麼是[調適性](search_target)?
+      - [調適性](search_target)是什麼
+      - 我想查詢[Scrum的價值觀](search_target)?
+      - 什麼是[Scrum的價值觀](search_target)?
+      - [Scrum的價值觀](search_target)是什麼
+      - 我想查詢[承諾](search_target)?
+      - 什麼是[承諾](search_target)?
+      - [承諾](search_target)是什麼
+      - 我想查詢[專注](search_target)?
+      - 什麼是[專注](search_target)?
+      - [專注](search_target)是什麼
+      - 我想查詢[開放](search_target)?
+      - 什麼是[開放](search_target)?
+      - [開放](search_target)是什麼
+      - 我想查詢[尊重](search_target)?
+      - 什麼是[尊重](search_target)?
+      - [尊重](search_target)是什麼
+      - 我想查詢[勇氣](search_target)?
+      - 什麼是[勇氣](search_target)?
+      - [勇氣](search_target)是什麼
+      - 我想查詢[極限製程](search_target)?
+      - 什麼是[極限製程](search_target)?
+      - [極限製程](search_target)是什麼
+      - 我想查詢[極限製程之特色](search_target)?
+      - 什麼是[極限製程之特色](search_target)?
+      - [極限製程之特色](search_target)是什麼
+      - 我想查詢[小幅釋出](search_target)?
+      - 什麼是[小幅釋出](search_target)?
+      - [小幅釋出](search_target)是什麼
+      - 我想查詢[規劃遊戲](search_target)?
+      - 什麼是[規劃遊戲](search_target)?
+      - [規劃遊戲](search_target)是什麼
+      - 我想查詢[測試](search_target)?
+      - 什麼是[測試](search_target)?
+      - [測試](search_target)是什麼
+      - 我想查詢[客戶駐點](search_target)?
+      - 什麼是[客戶駐點](search_target)?
+      - [客戶駐點](search_target)是什麼
+      - 我想查詢[重構](search_target)?
+      - 什麼是[重構](search_target)?
+      - [重構](search_target)是什麼
+      - 我想查詢[團隊共有程式碼](search_target)?
+      - 什麼是[團隊共有程式碼](search_target)?
+      - [團隊共有程式碼](search_target)是什麼
+      - 我想查詢[配對程式開發](search_target)?
+      - 什麼是[配對程式開發](search_target)?
+      - [配對程式開發](search_target)是什麼
+      - 我想查詢[程式碼標準](search_target)?
+      - 什麼是[程式碼標準](search_target)?
+      - [程式碼標準](search_target)是什麼
+      - 我想查詢[簡單設計](search_target)?
+      - 什麼是[簡單設計](search_target)?
+      - [簡單設計](search_target)是什麼
+      - 我想查詢[隱喻](search_target)?
+      - 什麼是[隱喻](search_target)?
+      - [隱喻](search_target)是什麼
+      - 我想查詢[可持續的速度](search_target)?
+      - 什麼是[可持續的速度](search_target)?
+      - [可持續的速度](search_target)是什麼
+      - 我想查詢[持續整合](search_target)?
+      - 什麼是[持續整合](search_target)?
+      - [持續整合](search_target)是什麼
+      - 我想查詢[極限製程時程規劃範例](search_target)?
+      - 什麼是[極限製程時程規劃範例](search_target)?
+      - [極限製程時程規劃範例](search_target)是什麼
+      - 我想查詢[極限製程的優缺點](search_target)?
+      - 什麼是[極限製程的優缺點](search_target)?
+      - [極限製程的優缺點](search_target)是什麼
+      - 我想查詢[物件導向](search_target)?
+      - 什麼是[物件導向](search_target)?
+      - [物件導向](search_target)是什麼
+      - 我想查詢[UML](search_target)?
+      - 什麼是[UML](search_target)?
+      - [UML](search_target)是什麼
+      - 我想查詢[如何瞭解及使用UML](search_target)?
+      - 什麼是[如何瞭解及使用UML](search_target)?
+      - [如何瞭解及使用UML](search_target)是什麼
+      - 我想查詢[UML圖形的分類](search_target)?
+      - 什麼是[UML圖形的分類](search_target)?
+      - [UML圖形的分類](search_target)是什麼
+      - 我想查詢[UML工具](search_target)?
+      - 什麼是[UML工具](search_target)?
+      - [UML工具](search_target)是什麼
+      - 我想查詢[StarUML](search_target)?
+      - 什麼是[StarUML](search_target)?
+      - [StarUML](search_target)是什麼
+      - 我想查詢[ArgoUML](search_target)?
+      - 什麼是[ArgoUML](search_target)?
+      - [ArgoUML](search_target)是什麼
+      - 我想查詢[draw.io](search_target)?
+      - 什麼是[draw.io](search_target)?
+      - [draw.io](search_target)是什麼
+      - 我想查詢[Astah Community](search_target)?
+      - 什麼是[Astah Community](search_target)?
+      - [Astah Community](search_target)是什麼
+      - 我想查詢[MagicDraw UML](search_target)?
+      - 什麼是[MagicDraw UML](search_target)?
+      - [MagicDraw UML](search_target)是什麼
+      - 我想查詢[Visual Paradigm](search_target)?
+      - 什麼是[Visual Paradigm](search_target)?
+      - [Visual Paradigm](search_target)是什麼
+      - 我想查詢[MS Visio](search_target)?
+      - 什麼是[MS Visio](search_target)?
+      - [MS Visio](search_target)是什麼
+      - 我想查詢[使用案例塑模](search_target)?
+      - 什麼是[使用案例塑模](search_target)?
+      - [使用案例塑模](search_target)是什麼
+      - 我想查詢[使用案例](search_target)?
+      - 什麼是[使用案例](search_target)?
+      - [使用案例](search_target)是什麼
+      - 我想查詢[參與者](search_target)?
+      - 什麼是[參與者](search_target)?
+      - [參與者](search_target)是什麼
+      - 我想查詢[操作概念](search_target)?
+      - 什麼是[操作概念](search_target)?
+      - [操作概念](search_target)是什麼
+      - 我想查詢[使用案例圖範例](search_target)?
+      - 什麼是[使用案例圖範例](search_target)?
+      - [使用案例圖範例](search_target)是什麼
+      - 我想查詢[使用案例圖的語法](search_target)?
+      - 什麼是[使用案例圖的語法](search_target)?
+      - [使用案例圖的語法](search_target)是什麼
+      - 我想查詢[使用案例的初版](search_target)?
+      - 什麼是[使用案例的初版](search_target)?
+      - [使用案例的初版](search_target)是什麼
+      - 我想查詢[使用案例的細化內容](search_target)?
+      - 什麼是[使用案例的細化內容](search_target)?
+      - [使用案例的細化內容](search_target)是什麼
+      - 我想查詢[完整的使用案例圖(無特殊關係)](search_target)?
+      - 什麼是[完整的使用案例圖(無特殊關係)](search_target)?
+      - [完整的使用案例圖(無特殊關係)](search_target)是什麼
+      - 我想查詢[使用案例分類](search_target)?
+      - 什麼是[使用案例分類](search_target)?
+      - [使用案例分類](search_target)是什麼
+      - 我想查詢[Use Case一般化](search_target)?
+      - 什麼是[Use Case一般化](search_target)?
+      - [Use Case一般化](search_target)是什麼
+      - 我想查詢[使用案例範例](search_target)?
+      - 什麼是[使用案例範例](search_target)?
+      - [使用案例範例](search_target)是什麼
+      - 我想查詢[使用案例之分析](search_target)?
+      - 什麼是[使用案例之分析](search_target)?
+      - [使用案例之分析](search_target)是什麼
+      - 我想查詢[類別圖](search_target)?
+      - 什麼是[類別圖](search_target)?
+      - [類別圖](search_target)是什麼
+      - 我想查詢[屬性](search_target)?
+      - 什麼是[屬性](search_target)?
+      - [屬性](search_target)是什麼
+      - 我想查詢[操作](search_target)?
+      - 什麼是[操作](search_target)?
+      - [操作](search_target)是什麼
+      - 我想查詢[物件間的關係](search_target)?
+      - 什麼是[物件間的關係](search_target)?
+      - [物件間的關係](search_target)是什麼
+      - 我想查詢[關聯](search_target)?
+      - 什麼是[關聯](search_target)?
+      - [關聯](search_target)是什麼
+      - 我想查詢[相依](search_target)?
+      - 什麼是[相依](search_target)?
+      - [相依](search_target)是什麼
+      - 我想查詢[組合](search_target)?
+      - 什麼是[組合](search_target)?
+      - [組合](search_target)是什麼
+      - 我想查詢[繼承](search_target)?
+      - 什麼是[繼承](search_target)?
+      - [繼承](search_target)是什麼
+      - 我想查詢[物件導向程式](search_target)?
+      - 什麼是[物件導向程式](search_target)?
+      - [物件導向程式](search_target)是什麼
+      - 我想查詢[類別](search_target)?
+      - 什麼是[類別](search_target)?
+      - [類別](search_target)是什麼
+      - 我想查詢[物件](search_target)?
+      - 什麼是[物件](search_target)?
+      - [物件](search_target)是什麼
+      - 我想查詢[UML類別圖範例](search_target)?
+      - 什麼是[UML類別圖範例](search_target)?
+      - [UML類別圖範例](search_target)是什麼
+      - 我想查詢[UML裡的class](search_target)?
+      - 什麼是[UML裡的class](search_target)?
+      - [UML裡的class](search_target)是什麼
+      - 我想查詢[類別關聯性](search_target)?
+      - 什麼是[類別關聯性](search_target)?
+      - [類別關聯性](search_target)是什麼
+      - 我想查詢[相依](search_target)?
+      - 什麼是[相依](search_target)?
+      - [相依](search_target)是什麼
+      - 我想查詢[關聯](search_target)?
+      - 什麼是[關聯](search_target)?
+      - [關聯](search_target)是什麼
+      - 我想查詢[Uses a與Knows a關係](search_target)?
+      - 什麼是[Uses a與Knows a關係](search_target)?
+      - [Uses a與Knows a關係](search_target)是什麼
+      - 我想查詢[Dependency程式範例](search_target)?
+      - 什麼是[Dependency程式範例](search_target)?
+      - [Dependency程式範例](search_target)是什麼
+      - 我想查詢[Association程式碼範例](search_target)?
+      - 什麼是[Association程式碼範例](search_target)?
+      - [Association程式碼範例](search_target)是什麼
+      - 我想查詢[Navigation](search_target)?
+      - 什麼是[Navigation](search_target)?
+      - [Navigation](search_target)是什麼
+      - 我想查詢[數量](search_target)?
+      - 什麼是[數量](search_target)?
+      - [數量](search_target)是什麼
+      - 我想查詢[組合](search_target)?
+      - 什麼是[組合](search_target)?
+      - [組合](search_target)是什麼
+      - 我想查詢[聚合](search_target)?
+      - 什麼是[聚合](search_target)?
+      - [聚合](search_target)是什麼
+      - 我想查詢[Aggregation與Composition範例](search_target)?
+      - 什麼是[Aggregation與Composition範例](search_target)?
+      - [Aggregation與Composition範例](search_target)是什麼
+      - 我想查詢[Aggregation與Composition程式範例](search_target)?
+      - 什麼是[Aggregation與Composition程式範例](search_target)?
+      - [Aggregation與Composition程式範例](search_target)是什麼
+      - 我想查詢[繼承](search_target)?
+      - 什麼是[繼承](search_target)?
+      - [繼承](search_target)是什麼
+      - 我想查詢[組合](search_target)?
+      - 什麼是[組合](search_target)?
+      - [組合](search_target)是什麼
+      - 我想查詢[Is a與Has a關係比較](search_target)?
+      - 什麼是[Is a與Has a關係比較](search_target)?
+      - [Is a與Has a關係比較](search_target)是什麼
+      - 我想查詢[繼承](search_target)?
+      - 什麼是[繼承](search_target)?
+      - [繼承](search_target)是什麼
+      - 我想查詢[實作](search_target)?
+      - 什麼是[實作](search_target)?
+      - [實作](search_target)是什麼
+      - 我想查詢[Is a與Can do關係比較](search_target)?
+      - 什麼是[Is a與Can do關係比較](search_target)?
+      - [Is a與Can do關係比較](search_target)是什麼
+      - 我想查詢[Inheritance程式範例](search_target)?
+      - 什麼是[Inheritance程式範例](search_target)?
+      - [Inheritance程式範例](search_target)是什麼
+      - 我想查詢[Implementation程式範例](search_target)?
+      - 什麼是[Implementation程式範例](search_target)?
+      - [Implementation程式範例](search_target)是什麼
+      - 我想查詢[抽象類別](search_target)?
+      - 什麼是[抽象類別](search_target)?
+      - [抽象類別](search_target)是什麼
+      - 我想查詢[抽象方法](search_target)?
+      - 什麼是[抽象方法](search_target)?
+      - [抽象方法](search_target)是什麼
+      - 我想查詢[需求敘述範例](search_target)?
+      - 什麼是[需求敘述範例](search_target)?
+      - [需求敘述範例](search_target)是什麼
+      - 我想查詢[識別類別](search_target)?
+      - 什麼是[識別類別](search_target)?
+      - [識別類別](search_target)是什麼
+      - 我想查詢[建立類別間的關係](search_target)?
+      - 什麼是[建立類別間的關係](search_target)?
+      - [建立類別間的關係](search_target)是什麼
+      - 我想查詢[設定類別屬性](search_target)?
+      - 什麼是[設定類別屬性](search_target)?
+      - [設定類別屬性](search_target)是什麼
+      - 我想查詢[設定類別方法](search_target)?
+      - 什麼是[設定類別方法](search_target)?
+      - [設定類別方法](search_target)是什麼
+      - 我想查詢[軟體需求規格](search_target)?
+      - 什麼是[軟體需求規格](search_target)?
+      - [軟體需求規格](search_target)是什麼
+      - 我想查詢[軟體設計文件](search_target)?
+      - 什麼是[軟體設計文件](search_target)?
+      - [軟體設計文件](search_target)是什麼
+      - 我想查詢[不好的設計：現實世界類別](search_target)?
+      - 什麼是[不好的設計：現實世界類別](search_target)?
+      - [不好的設計：現實世界類別](search_target)是什麼
+      - 我想查詢[抽象化](search_target)?
+      - 什麼是[抽象化](search_target)?
+      - [抽象化](search_target)是什麼
+      - 我想查詢[物件](search_target)?
+      - 什麼是[物件](search_target)?
+      - [物件](search_target)是什麼
+      - 我想查詢[特性](search_target)?
+      - 什麼是[特性](search_target)?
+      - [特性](search_target)是什麼
+      - 我想查詢[抽象化階層](search_target)?
+      - 什麼是[抽象化階層](search_target)?
+      - [抽象化階層](search_target)是什麼
+      - 我想查詢[程序抽象化](search_target)?
+      - 什麼是[程序抽象化](search_target)?
+      - [程序抽象化](search_target)是什麼
+      - 我想查詢[資料抽象化](search_target)?
+      - 什麼是[資料抽象化](search_target)?
+      - [資料抽象化](search_target)是什麼
+      - 我想查詢[模組化](search_target)?
+      - 什麼是[模組化](search_target)?
+      - [模組化](search_target)是什麼
+      - 我想查詢[軟體單元](search_target)?
+      - 什麼是[軟體單元](search_target)?
+      - [軟體單元](search_target)是什麼
+      - 我想查詢[凝聚力](search_target)?
+      - 什麼是[凝聚力](search_target)?
+      - [凝聚力](search_target)是什麼
+      - 我想查詢[耦合力](search_target)?
+      - 什麼是[耦合力](search_target)?
+      - [耦合力](search_target)是什麼
+      - 我想查詢[架構](search_target)?
+      - 什麼是[架構](search_target)?
+      - [架構](search_target)是什麼
+      - 我想查詢[架構設計](search_target)?
+      - 什麼是[架構設計](search_target)?
+      - [架構設計](search_target)是什麼
+      - 我想查詢[4 + 1 View Model](search_target)?
+      - 什麼是[4 + 1 View Model](search_target)?
+      - [4 + 1 View Model](search_target)是什麼
+      - 我想查詢[概念區塊切割](search_target)?
+      - 什麼是[概念區塊切割](search_target)?
+      - [概念區塊切割](search_target)是什麼
+      - 我想查詢[考慮系統運作流程](search_target)?
+      - 什麼是[考慮系統運作流程](search_target)?
+      - [考慮系統運作流程](search_target)是什麼
+      - 我想查詢[考慮開發面](search_target)?
+      - 什麼是[考慮開發面](search_target)?
+      - [考慮開發面](search_target)是什麼
+      - 我想查詢[考慮部署方式](search_target)?
+      - 什麼是[考慮部署方式](search_target)?
+      - [考慮部署方式](search_target)是什麼
+      - 我想查詢[考慮使用方式](search_target)?
+      - 什麼是[考慮使用方式](search_target)?
+      - [考慮使用方式](search_target)是什麼
+      - 我想查詢[架構樣式](search_target)?
+      - 什麼是[架構樣式](search_target)?
+      - [架構樣式](search_target)是什麼
+      - 我想查詢[階層架構樣式](search_target)?
+      - 什麼是[階層架構樣式](search_target)?
+      - [階層架構樣式](search_target)是什麼
+      - 我想查詢[儲存庫架構](search_target)?
+      - 什麼是[儲存庫架構](search_target)?
+      - [儲存庫架構](search_target)是什麼
+      - 我想查詢[分散式架構樣式](search_target)?
+      - 什麼是[分散式架構樣式](search_target)?
+      - [分散式架構樣式](search_target)是什麼
+      - 我想查詢[主從式架構](search_target)?
+      - 什麼是[主從式架構](search_target)?
+      - [主從式架構](search_target)是什麼
+      - 我想查詢[多層式架構](search_target)?
+      - 什麼是[多層式架構](search_target)?
+      - [多層式架構](search_target)是什麼
+      - 我想查詢[點對點架構](search_target)?
+      - 什麼是[點對點架構](search_target)?
+      - [點對點架構](search_target)是什麼
+      - 我想查詢[管狀架構樣式](search_target)?
+      - 什麼是[管狀架構樣式](search_target)?
+      - [管狀架構樣式](search_target)是什麼
+      - 我想查詢[MVC架構樣式](search_target)?
+      - 什麼是[MVC架構樣式](search_target)?
+      - [MVC架構樣式](search_target)是什麼
+      - 我想查詢[Web前後端混合架構](search_target)?
+      - 什麼是[Web前後端混合架構](search_target)?
+      - [Web前後端混合架構](search_target)是什麼
+      - 我想查詢[Web前後端分離架構](search_target)?
+      - 什麼是[Web前後端分離架構](search_target)?
+      - [Web前後端分離架構](search_target)是什麼
+      - 我想查詢[API](search_target)?
+      - 什麼是[API](search_target)?
+      - [API](search_target)是什麼
+      - 我想查詢[REST](search_target)?
+      - 什麼是[REST](search_target)?
+      - [REST](search_target)是什麼
+      - 我想查詢[RESTful Service/API Interface](search_target)?
+      - 什麼是[RESTful Service/API Interface](search_target)?
+      - [RESTful Service/API Interface](search_target)是什麼
+      - 我想查詢[Web/Mobile Application: 典型架構範例](search_target)?
+      - 什麼是[Web/Mobile Application: 典型架構範例](search_target)?
+      - [Web/Mobile Application: 典型架構範例](search_target)是什麼
+      - 我想查詢[Web/Mobile Application:  可能實作方案](search_target)?
+      - 什麼是[Web/Mobile Application:  可能實作方案](search_target)?
+      - [Web/Mobile Application:  可能實作方案](search_target)是什麼
+      - 我想查詢[C4 Model](search_target)?
+      - 什麼是[C4 Model](search_target)?
+      - [C4 Model](search_target)是什麼
+      - 我想查詢[上下文](search_target)?
+      - 什麼是[上下文](search_target)?
+      - [上下文](search_target)是什麼
+      - 我想查詢[容器](search_target)?
+      - 什麼是[容器](search_target)?
+      - [容器](search_target)是什麼
+      - 我想查詢[元件](search_target)?
+      - 什麼是[元件](search_target)?
+      - [元件](search_target)是什麼
+      - 我想查詢[程式碼](search_target)?
+      - 什麼是[程式碼](search_target)?
+      - [程式碼](search_target)是什麼
+      - 我想查詢[軟體設計策略](search_target)?
+      - 什麼是[軟體設計策略](search_target)?
+      - [軟體設計策略](search_target)是什麼
+      - 我想查詢[各個擊破](search_target)?
+      - 什麼是[各個擊破](search_target)?
+      - [各個擊破](search_target)是什麼
+      - 我想查詢[軟體設計的建議步驟](search_target)?
+      - 什麼是[軟體設計的建議步驟](search_target)?
+      - [軟體設計的建議步驟](search_target)是什麼
+      - 我想查詢[架構設計的範例](search_target)?
+      - 什麼是[架構設計的範例](search_target)?
+      - [架構設計的範例](search_target)是什麼
+      - 我想查詢[介面設計](search_target)?
+      - 什麼是[介面設計](search_target)?
+      - [介面設計](search_target)是什麼
+      - 我想查詢[內部介面](search_target)?
+      - 什麼是[內部介面](search_target)?
+      - [內部介面](search_target)是什麼
+      - 我想查詢[外部介面](search_target)?
+      - 什麼是[外部介面](search_target)?
+      - [外部介面](search_target)是什麼
+      - 我想查詢[介面設計的範例](search_target)?
+      - 什麼是[介面設計的範例](search_target)?
+      - [介面設計的範例](search_target)是什麼
+      - 我想查詢[資料設計](search_target)?
+      - 什麼是[資料設計](search_target)?
+      - [資料設計](search_target)是什麼
+      - 我想查詢[流程設計](search_target)?
+      - 什麼是[流程設計](search_target)?
+      - [流程設計](search_target)是什麼
+      - 我想查詢[使用者介面設計](search_target)?
+      - 什麼是[使用者介面設計](search_target)?
+      - [使用者介面設計](search_target)是什麼
+      - 我想查詢[元件設計](search_target)?
+      - 什麼是[元件設計](search_target)?
+      - [元件設計](search_target)是什麼
+      - 我想查詢[結構設計](search_target)?
+      - 什麼是[結構設計](search_target)?
+      - [結構設計](search_target)是什麼
+      - 我想查詢[行為設計](search_target)?
+      - 什麼是[行為設計](search_target)?
+      - [行為設計](search_target)是什麼
+      - 我想查詢[類別圖設計的範例](search_target)?
+      - 什麼是[類別圖設計的範例](search_target)?
+      - [類別圖設計的範例](search_target)是什麼
+      - 我想查詢[元件設計與架構圖](search_target)?
+      - 什麼是[元件設計與架構圖](search_target)?
+      - [元件設計與架構圖](search_target)是什麼
+      - 我想查詢[設計議題](search_target)?
+      - 什麼是[設計議題](search_target)?
+      - [設計議題](search_target)是什麼
+      - 我想查詢[軟體測試](search_target)?
+      - 什麼是[軟體測試](search_target)?
+      - [軟體測試](search_target)是什麼
+      - 我想查詢[程式的錯誤](search_target)?
+      - 什麼是[程式的錯誤](search_target)?
+      - [程式的錯誤](search_target)是什麼
+      - 我想查詢[程式的品質](search_target)?
+      - 什麼是[程式的品質](search_target)?
+      - [程式的品質](search_target)是什麼
+      - 我想查詢[測試和除錯有什麼不同?](search_target)?
+      - 什麼是[測試和除錯有什麼不同?](search_target)?
+      - [測試和除錯有什麼不同?](search_target)是什麼
+      - 我想查詢[為何需要測試軟體?](search_target)?
+      - 什麼是[為何需要測試軟體?](search_target)?
+      - [為何需要測試軟體?](search_target)是什麼
+      - 我想查詢[歷史上知名的軟體錯誤](search_target)?
+      - 什麼是[歷史上知名的軟體錯誤](search_target)?
+      - [歷史上知名的軟體錯誤](search_target)是什麼
+      - 我想查詢[不同角色的測試工作](search_target)?
+      - 什麼是[不同角色的測試工作](search_target)?
+      - [不同角色的測試工作](search_target)是什麼
+      - 我想查詢[開發人員](search_target)?
+      - 什麼是[開發人員](search_target)?
+      - [開發人員](search_target)是什麼
+      - 我想查詢[測試人員](search_target)?
+      - 什麼是[測試人員](search_target)?
+      - [測試人員](search_target)是什麼
+      - 我想查詢[系統使用者](search_target)?
+      - 什麼是[系統使用者](search_target)?
+      - [系統使用者](search_target)是什麼
+      - 我想查詢[動態測試](search_target)?
+      - 什麼是[動態測試](search_target)?
+      - [動態測試](search_target)是什麼
+      - 我想查詢[測試案例](search_target)?
+      - 什麼是[測試案例](search_target)?
+      - [測試案例](search_target)是什麼
+      - 我想查詢[黑箱](search_target)?
+      - 什麼是[黑箱](search_target)?
+      - [黑箱](search_target)是什麼
+      - 我想查詢[白箱](search_target)?
+      - 什麼是[白箱](search_target)?
+      - [白箱](search_target)是什麼
+      - 我想查詢[軟體動態測試的問題](search_target)?
+      - 什麼是[軟體動態測試的問題](search_target)?
+      - [軟體動態測試的問題](search_target)是什麼
+      - 我想查詢[測試與診療](search_target)?
+      - 什麼是[測試與診療](search_target)?
+      - [測試與診療](search_target)是什麼
+      - 我想查詢[窮舉性測試](search_target)?
+      - 什麼是[窮舉性測試](search_target)?
+      - [窮舉性測試](search_target)是什麼
+      - 我想查詢[選擇性測試](search_target)?
+      - 什麼是[選擇性測試](search_target)?
+      - [選擇性測試](search_target)是什麼
+      - 我想查詢[軟體動態測試的主要目的](search_target)?
+      - 什麼是[軟體動態測試的主要目的](search_target)?
+      - [軟體動態測試的主要目的](search_target)是什麼
+      - 我想查詢[缺失排除的相對代價](search_target)?
+      - 什麼是[缺失排除的相對代價](search_target)?
+      - [缺失排除的相對代價](search_target)是什麼
+      - 我想查詢[白箱測試](search_target)?
+      - 什麼是[白箱測試](search_target)?
+      - [白箱測試](search_target)是什麼
+      - 我想查詢[黑箱測試](search_target)?
+      - 什麼是[黑箱測試](search_target)?
+      - [黑箱測試](search_target)是什麼
+      - 我想查詢[敘述覆蓋](search_target)?
+      - 什麼是[敘述覆蓋](search_target)?
+      - [敘述覆蓋](search_target)是什麼
+      - 我想查詢[分支決策覆蓋](search_target)?
+      - 什麼是[分支決策覆蓋](search_target)?
+      - [分支決策覆蓋](search_target)是什麼
+      - 我想查詢[條件覆蓋](search_target)?
+      - 什麼是[條件覆蓋](search_target)?
+      - [條件覆蓋](search_target)是什麼
+      - 我想查詢[決策／條件覆蓋](search_target)?
+      - 什麼是[決策／條件覆蓋](search_target)?
+      - [決策／條件覆蓋](search_target)是什麼
+      - 我想查詢[多重條件組合覆蓋](search_target)?
+      - 什麼是[多重條件組合覆蓋](search_target)?
+      - [多重條件組合覆蓋](search_target)是什麼
+      - 我想查詢[全面路徑覆蓋](search_target)?
+      - 什麼是[全面路徑覆蓋](search_target)?
+      - [全面路徑覆蓋](search_target)是什麼
+      - 我想查詢[敘述覆蓋](search_target)?
+      - 什麼是[敘述覆蓋](search_target)?
+      - [敘述覆蓋](search_target)是什麼
+      - 我想查詢[分支決策覆蓋](search_target)?
+      - 什麼是[分支決策覆蓋](search_target)?
+      - [分支決策覆蓋](search_target)是什麼
+      - 我想查詢[條件覆蓋](search_target)?
+      - 什麼是[條件覆蓋](search_target)?
+      - [條件覆蓋](search_target)是什麼
+      - 我想查詢[決策／條件覆蓋](search_target)?
+      - 什麼是[決策／條件覆蓋](search_target)?
+      - [決策／條件覆蓋](search_target)是什麼
+      - 我想查詢[黑箱等價劃分簡介](search_target)?
+      - 什麼是[黑箱等價劃分簡介](search_target)?
+      - [黑箱等價劃分簡介](search_target)是什麼
+      - 我想查詢[等價劃分原則](search_target)?
+      - 什麼是[等價劃分原則](search_target)?
+      - [等價劃分原則](search_target)是什麼
+      - 我想查詢[等價劃分範例](search_target)?
+      - 什麼是[等價劃分範例](search_target)?
+      - [等價劃分範例](search_target)是什麼
+      - 我想查詢[邊界值分析](search_target)?
+      - 什麼是[邊界值分析](search_target)?
+      - [邊界值分析](search_target)是什麼
+      - 我想查詢[確認](search_target)?
+      - 什麼是[確認](search_target)?
+      - [確認](search_target)是什麼
+      - 我想查詢[驗證](search_target)?
+      - 什麼是[驗證](search_target)?
+      - [驗證](search_target)是什麼
+      - 我想查詢[軟體動態測試程序](search_target)?
+      - 什麼是[軟體動態測試程序](search_target)?
+      - [軟體動態測試程序](search_target)是什麼
+      - 我想查詢[單元測試](search_target)?
+      - 什麼是[單元測試](search_target)?
+      - [單元測試](search_target)是什麼
+      - 我想查詢[單元測試架構](search_target)?
+      - 什麼是[單元測試架構](search_target)?
+      - [單元測試架構](search_target)是什麼
+      - 我想查詢[驅動測試程式](search_target)?
+      - 什麼是[驅動測試程式](search_target)?
+      - [驅動測試程式](search_target)是什麼
+      - 我想查詢[測試替身](search_target)?
+      - 什麼是[測試替身](search_target)?
+      - [測試替身](search_target)是什麼
+      - 我想查詢[測試替身](search_target)?
+      - 什麼是[測試替身](search_target)?
+      - [測試替身](search_target)是什麼
+      - 我想查詢[JUnit](search_target)?
+      - 什麼是[JUnit](search_target)?
+      - [JUnit](search_target)是什麼
+      - 我想查詢[整合測試](search_target)?
+      - 什麼是[整合測試](search_target)?
+      - [整合測試](search_target)是什麼
+      - 我想查詢[測試時機](search_target)?
+      - 什麼是[測試時機](search_target)?
+      - [測試時機](search_target)是什麼
+      - 我想查詢[參與人員](search_target)?
+      - 什麼是[參與人員](search_target)?
+      - [參與人員](search_target)是什麼
+      - 我想查詢[測試目的](search_target)?
+      - 什麼是[測試目的](search_target)?
+      - [測試目的](search_target)是什麼
+      - 我想查詢[由上而下的整合](search_target)?
+      - 什麼是[由上而下的整合](search_target)?
+      - [由上而下的整合](search_target)是什麼
+      - 我想查詢[由下而上的整合](search_target)?
+      - 什麼是[由下而上的整合](search_target)?
+      - [由下而上的整合](search_target)是什麼
+      - 我想查詢[整合策略](search_target)?
+      - 什麼是[整合策略](search_target)?
+      - [整合策略](search_target)是什麼
+      - 我想查詢[系統測試](search_target)?
+      - 什麼是[系統測試](search_target)?
+      - [系統測試](search_target)是什麼
+      - 我想查詢[迴歸測試](search_target)?
+      - 什麼是[迴歸測試](search_target)?
+      - [迴歸測試](search_target)是什麼
+      - 我想查詢[效能測試](search_target)?
+      - 什麼是[效能測試](search_target)?
+      - [效能測試](search_target)是什麼
+      - 我想查詢[LoadRunner](search_target)?
+      - 什麼是[LoadRunner](search_target)?
+      - [LoadRunner](search_target)是什麼
+      - 我想查詢[JMeter](search_target)?
+      - 什麼是[JMeter](search_target)?
+      - [JMeter](search_target)是什麼
+      - 我想查詢[驗收測試](search_target)?
+      - 什麼是[驗收測試](search_target)?
+      - [驗收測試](search_target)是什麼
+      - 我想查詢[α測試](search_target)?
+      - 什麼是[α測試](search_target)?
+      - [α測試](search_target)是什麼
+      - 我想查詢[alpha測試](search_target)?
+      - 什麼是[alpha測試](search_target)?
+      - [alpha測試](search_target)是什麼
+      - 我想查詢[β測試](search_target)?
+      - 什麼是[β測試](search_target)?
+      - [β測試](search_target)是什麼
+      - 我想查詢[beta測試](search_target)?
+      - 什麼是[beta測試](search_target)?
+      - [beta測試](search_target)是什麼
+      - 我想查詢[使用者驗收測試](search_target)?
+      - 什麼是[使用者驗收測試](search_target)?
+      - [使用者驗收測試](search_target)是什麼
+      - 我想查詢[軟體測試步驟](search_target)?
+      - 什麼是[軟體測試步驟](search_target)?
+      - [軟體測試步驟](search_target)是什麼
+      - 我想查詢[測試規劃](search_target)?
+      - 什麼是[測試規劃](search_target)?
+      - [測試規劃](search_target)是什麼
+      - 我想查詢[測試準備](search_target)?
+      - 什麼是[測試準備](search_target)?
+      - [測試準備](search_target)是什麼
+      - 我想查詢[測試案例設計方法](search_target)?
+      - 什麼是[測試案例設計方法](search_target)?
+      - [測試案例設計方法](search_target)是什麼
+      - 我想查詢[測試案例](search_target)?
+      - 什麼是[測試案例](search_target)?
+      - [測試案例](search_target)是什麼
+      - 我想查詢[執行軟體測試](search_target)?
+      - 什麼是[執行軟體測試](search_target)?
+      - [執行軟體測試](search_target)是什麼
+      - 我想查詢[測試結果報告](search_target)?
+      - 什麼是[測試結果報告](search_target)?
+      - [測試結果報告](search_target)是什麼
+      - 我想查詢[測試結果分析](search_target)?
+      - 什麼是[測試結果分析](search_target)?
+      - [測試結果分析](search_target)是什麼
+      - 我想查詢[執行軟體測試標準原則](search_target)?
+      - 什麼是[執行軟體測試標準原則](search_target)?
+      - [執行軟體測試標準原則](search_target)是什麼
+      - 我想查詢[執行軟體測試的指導原則](search_target)?
+      - 什麼是[執行軟體測試的指導原則](search_target)?
+      - [執行軟體測試的指導原則](search_target)是什麼
+      - 我想查詢[執行迴歸測試](search_target)?
+      - 什麼是[執行迴歸測試](search_target)?
+      - [執行迴歸測試](search_target)是什麼
+      - 我想查詢[Defect (Bug) 處理流程](search_target)?
+      - 什麼是[Defect (Bug) 處理流程](search_target)?
+      - [Defect (Bug) 處理流程](search_target)是什麼
+      - 我想查詢[測試與Defect處理流程](search_target)?
+      - 什麼是[測試與Defect處理流程](search_target)?
+      - [測試與Defect處理流程](search_target)是什麼
 
-  # - intent: classmap_map
+  # - intent: classmap_suggest
   #   examples: |
-  #     -
+  #     - 我想推薦教材
+  #     - 我覺得可以增加新教材
+  #     - 推薦教材
+  #     - 新增教材
 
-  # - intent: classmap_map_content
+  - intent: read_user_requirements
+    examples: |
+      - 我想查需求文件
+      - 需求文件
+      - 小組需求文件
+      - 團隊使用者需求
+      - 專題使用者需求
+      - 我們這組的使用者需求是什麼？
+      - 我們這組的需求文件是什麼？
+
+  # - intent: personal_score_query
   #   examples: |
-  #     -
+  #     - 我想查詢個人成績
+  #     - 個人成績查詢
+  #     - 查詢個人成績
+  #     - 查詢成績
+  #     - 成績查詢
+  #     - 查成績
+  #     - 可以幫我看一下成績嗎
+  #     - 我的成績是多少
 
-  - intent: classmap_suggest
-    examples: |
-      - 我想推薦教材
-      - 我覺得可以增加新教材
-      - 推薦教材
-      - 新增教材
-
-  # - intent: classmap_suggest_content
+  # - intent: personal_score_object
   #   examples: |
-  #     -
+  #     - 我想查[作業一](score_query_target)
+  #     - 我想查[作業二](score_query_target)
+  #     - 我想查[作業三](score_query_target)
+  #     - 我想查[作業四](score_query_target)
+  #     - 我想查[作業五](score_query_target)
+  #     - 我想查[作業六](score_query_target)
+  #     - 我想查[作業七](score_query_target)
+  #     - 我想查[作業八](score_query_target)
+  #     - 我想查[作業九](score_query_target)
+  #     - 我想查[作業十](score_query_target)
+  #     - 我想查[期中考](score_query_target)
+  #     - 我想查[期末考](score_query_target)
+  #     - 我想查[小考一](score_query_target)
+  #     - 我想查[小考二](score_query_target)
+  #     - 我想查[小考三](score_query_target)
+  #     - 我想查[小考四](score_query_target)
+  #     - 我想查[小考五](score_query_target)
+  #     - 我想查[小考六](score_query_target)
+  #     - 我想查[小考七](score_query_target)
+  #     - 我想查[小考八](score_query_target)
+  #     - 我想查[小考九](score_query_target)
+  #     - 我想查[小考十](score_query_target)
+  #     - 我想查[作業一](score_query_target)的成績
+  #     - 我想查[作業二](score_query_target)的成績
+  #     - 我想查[作業三](score_query_target)的成績
+  #     - 我想查[作業四](score_query_target)的成績
+  #     - 我想查[作業五](score_query_target)的成績
+  #     - 我想查[作業六](score_query_target)的成績
+  #     - 我想查[作業七](score_query_target)的成績
+  #     - 我想查[作業八](score_query_target)的成績
+  #     - 我想查[作業九](score_query_target)的成績
+  #     - 我想查[作業十](score_query_target)的成績
+  #     - 我想查[期中考](score_query_target)的成績
+  #     - 我想查[期末考](score_query_target)的成績
+  #     - 我想查[小考一](score_query_target)的成績
+  #     - 我想查[小考二](score_query_target)的成績
+  #     - 我想查[小考三](score_query_target)的成績
+  #     - 我想查[小考四](score_query_target)的成績
+  #     - 我想查[小考五](score_query_target)的成績
+  #     - 我想查[小考六](score_query_target)的成績
+  #     - 我想查[小考七](score_query_target)的成績
+  #     - 我想查[小考八](score_query_target)的成績
+  #     - 我想查[小考九](score_query_target)的成績
+  #     - 我想查[小考十](score_query_target)的成績
+  #     - 我想查[專案互評](score_query_target)的成績
+  #     - 我想查[互評成績](score_query_target)的成績
+  #     - [作業一](score_query_target)
+  #     - [作業二](score_query_target)
+  #     - [作業三](score_query_target)
+  #     - [作業四](score_query_target)
+  #     - [作業五](score_query_target)
+  #     - [作業六](score_query_target)
+  #     - [作業七](score_query_target)
+  #     - [作業八](score_query_target)
+  #     - [作業九](score_query_target)
+  #     - [作業十](score_query_target)
+  #     - [期中考](score_query_target)
+  #     - [期末考](score_query_target)
+  #     - [小考一](score_query_target)
+  #     - [小考二](score_query_target)
+  #     - [小考三](score_query_target)
+  #     - [小考四](score_query_target)
+  #     - [小考五](score_query_target)
+  #     - [小考六](score_query_target)
+  #     - [小考七](score_query_target)
+  #     - [小考八](score_query_target)
+  #     - [小考九](score_query_target)
+  #     - [小考十](score_query_target)
+  #     - [專案互評](score_query_target)
+  #     - [互評成績](score_query_target)
 
-  - intent: personal_score_query
-    examples: |
-      - 我想查詢個人成績
-      - 個人成績查詢
-      - 查詢個人成績
-      - 查詢成績
-      - 成績查詢
-      - 查成績
-      - 可以幫我看一下成績嗎
-      - 我的成績是多少
+  # - intent: personal_quiz_query
+  #   examples: |
+  #     - 個人考題查詢
+  #     - 查詢個人考題
+  #     - 個人考題
+  #     - 推薦個人化考題
+  #     - 練習個人化考題
+  #     - 個人化考題複習
+  #     - 練習個人化題目
+  #     - 練習題目
+  #     - 練習考題
+  #     - 考題複習
 
-  - intent: personal_score_object
-    examples: |
-      - 我想查[作業一](score_query_target)
-      - 我想查[作業二](score_query_target)
-      - 我想查[作業三](score_query_target)
-      - 我想查[作業四](score_query_target)
-      - 我想查[作業五](score_query_target)
-      - 我想查[作業六](score_query_target)
-      - 我想查[作業七](score_query_target)
-      - 我想查[作業八](score_query_target)
-      - 我想查[作業九](score_query_target)
-      - 我想查[作業十](score_query_target)
-      - 我想查[期中考](score_query_target)
-      - 我想查[期末考](score_query_target)
-      - 我想查[小考一](score_query_target)
-      - 我想查[小考二](score_query_target)
-      - 我想查[小考三](score_query_target)
-      - 我想查[小考四](score_query_target)
-      - 我想查[小考五](score_query_target)
-      - 我想查[小考六](score_query_target)
-      - 我想查[小考七](score_query_target)
-      - 我想查[小考八](score_query_target)
-      - 我想查[小考九](score_query_target)
-      - 我想查[小考十](score_query_target)
-      - 我想查[專案互評](score_query_target)
-      - 我想查[作業一](score_query_target)的成績
-      - 我想查[作業二](score_query_target)的成績
-      - 我想查[作業三](score_query_target)的成績
-      - 我想查[作業四](score_query_target)的成績
-      - 我想查[作業五](score_query_target)的成績
-      - 我想查[作業六](score_query_target)的成績
-      - 我想查[作業七](score_query_target)的成績
-      - 我想查[作業八](score_query_target)的成績
-      - 我想查[作業九](score_query_target)的成績
-      - 我想查[作業十](score_query_target)的成績
-      - 我想查[期中考](score_query_target)的成績
-      - 我想查[期末考](score_query_target)的成績
-      - 我想查[小考一](score_query_target)的成績
-      - 我想查[小考二](score_query_target)的成績
-      - 我想查[小考三](score_query_target)的成績
-      - 我想查[小考四](score_query_target)的成績
-      - 我想查[小考五](score_query_target)的成績
-      - 我想查[小考六](score_query_target)的成績
-      - 我想查[小考七](score_query_target)的成績
-      - 我想查[小考八](score_query_target)的成績
-      - 我想查[小考九](score_query_target)的成績
-      - 我想查[小考十](score_query_target)的成績
-      - 我想查[專案互評](score_query_target)的成績
-      - [作業一](score_query_target)
-      - [作業二](score_query_target)
-      - [作業三](score_query_target)
-      - [作業四](score_query_target)
-      - [作業五](score_query_target)
-      - [作業六](score_query_target)
-      - [作業七](score_query_target)
-      - [作業八](score_query_target)
-      - [作業九](score_query_target)
-      - [作業十](score_query_target)
-      - [期中考](score_query_target)
-      - [期末考](score_query_target)
-      - [小考一](score_query_target)
-      - [小考二](score_query_target)
-      - [小考三](score_query_target)
-      - [小考四](score_query_target)
-      - [小考五](score_query_target)
-      - [小考六](score_query_target)
-      - [小考七](score_query_target)
-      - [小考八](score_query_target)
-      - [小考九](score_query_target)
-      - [小考十](score_query_target)
-      - [專案互評](score_query_target)
+  # - intent: personal_textbook_query
+  #   examples: |
+  #     - 查詢個人教材
+  #     - 個人教材
+  #     - 看個人教材
+  #     - 推薦個人化教材
+  #     - 練習個人化教材
+  #     - 個人化教材複習
+  #     - 練習個人化教材
+  #     - 練習教材
+  #     - 教材複習
 
-  - intent: personal_quiz_query
-    examples: |
-      - 個人考題查詢
-      - 查詢個人考題
-      - 個人考題
-      - 推薦個人化考題
-      - 練習個人化考題
-      - 個人化考題複習
-      - 練習個人化題目
-      - 練習題目
-      - 練習考題
-      - 考題複習
+  # - synonym: homework_1
+  #   examples: |
+  #     - 作業一
+  #     - 第一次作業
+  #     - 作業1
+  #     - homework1
+  #     - homework 1
 
-  - intent: personal_textbook_query
-    examples: |
-      - 查詢個人教材
-      - 個人教材
-      - 看個人教材
-      - 推薦個人化教材
-      - 練習個人化教材
-      - 個人化教材複習
-      - 練習個人化教材
-      - 練習教材
-      - 教材複習
+  # - synonym: homework_2
+  #   examples: |
+  #     - 作業二
+  #     - 第二次作業
+  #     - 作業2
+  #     - homework 2
+  #     - homework2
 
-  # - faq
-  # - classmap_ask
-  # - classmap_ask_content
-  # - classmap_ppt
-  # - classmap_ppt_content
-  # - classmap_search
-  # - classmap_search_content
-  # - classmap_map
-  # - classmap_map_content
-  # - classmap_suggest
-  # - classmap_suggest_content
-  # - personal_score_query
-  # - personal_score_object
-  # - personal_quiz_query
-  # - personal_textbook_query
-  # - suggest_review
+  # - synonym: homework_3
+  #   examples: |
+  #     - 作業三
+  #     - 第三次作業
+  #     - 作業3
+  #     - homework3
+  #     - homework 3
 
-  - synonym: homework_1
-    examples: |
-      - 作業一
-      - 第一次作業
-      - 作業1
-      - homework1
-      - homework 1
+  # - synonym: homework_4
+  #   examples: |
+  #     - 作業四
+  #     - 第四次作業
+  #     - 作業4
+  #     - homework4
+  #     - homework 4
 
-  - synonym: homework_2
-    examples: |
-      - 作業二
-      - 第二次作業
-      - 作業2
-      - homework 2
-      - homework2
+  # - synonym: homework_5
+  #   examples: |
+  #     - 作業五
+  #     - 第五次作業
+  #     - 作業5
+  #     - homework5
+  #     - homework 5
 
-  - synonym: homework_3
-    examples: |
-      - 作業三
-      - 第三次作業
-      - 作業3
-      - homework3
-      - homework 3
+  # - synonym: homework_6
+  #   examples: |
+  #     - 作業六
+  #     - 第六次作業
+  #     - 作業6
+  #     - homework6
+  #     - homework 6
 
-  - synonym: homework_4
-    examples: |
-      - 作業四
-      - 第四次作業
-      - 作業4
-      - homework4
-      - homework 4
+  # - synonym: homework_7
+  #   examples: |
+  #     - 作業七
+  #     - 第七次作業
+  #     - 作業7
+  #     - homework7
+  #     - homework 7
 
-  - synonym: homework_5
-    examples: |
-      - 作業五
-      - 第五次作業
-      - 作業5
-      - homework5
-      - homework 5
+  # - synonym: homework_8
+  #   examples: |
+  #     - 作業八
+  #     - 第八次作業
+  #     - 作業8
+  #     - homework8
+  #     - homework 8
 
-  - synonym: homework_6
-    examples: |
-      - 作業六
-      - 第六次作業
-      - 作業6
-      - homework6
-      - homework 6
+  # - synonym: homework_9
+  #   examples: |
+  #     - 作業九
+  #     - 第九次作業
+  #     - 作業9
+  #     - homework9
+  #     - homework 9
 
-  - synonym: homework_7
-    examples: |
-      - 作業七
-      - 第七次作業
-      - 作業7
-      - homework7
-      - homework 7
+  # - synonym: homework_10
+  #   examples: |
+  #     - 作業十
+  #     - 第十次作業
+  #     - 作業10
+  #     - homework10
+  #     - homework 10
 
-  - synonym: homework_8
-    examples: |
-      - 作業八
-      - 第八次作業
-      - 作業8
-      - homework8
-      - homework 8
+  # - synonym: midterm_exam
+  #   examples: |
+  #     - 期中考
+  #     - 期中
+  #     - midterm exam
+  #     - midterm
 
-  - synonym: homework_9
-    examples: |
-      - 作業九
-      - 第九次作業
-      - 作業9
-      - homework9
-      - homework 9
+  # - synonym: final_exam
+  #   examples: |
+  #     - 期末考
+  #     - 期末
+  #     - final exam
+  #     - final
 
-  - synonym: homework_10
-    examples: |
-      - 作業十
-      - 第十次作業
-      - 作業10
-      - homework10
-      - homework 10
+  # - synonym: quiz_1
+  #   examples: |
+  #     - 小考一
+  #     - 第一次小考
+  #     - 小考1
+  #     - quiz 1
+  #     - quiz1
 
-  - synonym: midterm_exam
-    examples: |
-      - 期中考
-      - 期中
-      - midterm exam
-      - midterm
+  # - synonym: quiz_2
+  #   examples: |
+  #     - 小考二
+  #     - 第二次小考
+  #     - 小考2
+  #     - quiz 2
+  #     - quiz2
 
-  - synonym: final_exam
-    examples: |
-      - 期末考
-      - 期末
-      - final exam
-      - final
+  # - synonym: quiz_3
+  #   examples: |
+  #     - 小考三
+  #     - 第三次小考
+  #     - 小考3
+  #     - quiz 3
+  #     - quiz3
 
-  - synonym: quiz_1
-    examples: |
-      - 小考一
-      - 第一次小考
-      - 小考1
-      - quiz 1
-      - quiz1
+  # - synonym: quiz_4
+  #   examples: |
+  #     - 小考四
+  #     - 第四次小考
+  #     - 小考4
+  #     - quiz 4
+  #     - quiz4
 
-  - synonym: quiz_2
-    examples: |
-      - 小考二
-      - 第二次小考
-      - 小考2
-      - quiz 2
-      - quiz2
+  # - synonym: quiz_5
+  #   examples: |
+  #     - 小考五
+  #     - 第五次小考
+  #     - 小考5
+  #     - quiz 5
+  #     - quiz5
 
-  - synonym: quiz_3
-    examples: |
-      - 小考三
-      - 第三次小考
-      - 小考3
-      - quiz 3
-      - quiz3
+  # - synonym: quiz_6
+  #   examples: |
+  #     - 小考六
+  #     - 第六次小考
+  #     - 小考6
+  #     - quiz 6
+  #     - quiz6
 
-  - synonym: quiz_4
-    examples: |
-      - 小考四
-      - 第四次小考
-      - 小考4
-      - quiz 4
-      - quiz4
+  # - synonym: quiz_7
+  #   examples: |
+  #     - 小考七
+  #     - 第七次小考
+  #     - 小考7
+  #     - quiz 7
+  #     - quiz7
 
-  - synonym: quiz_5
-    examples: |
-      - 小考五
-      - 第五次小考
-      - 小考5
-      - quiz 5
-      - quiz5
+  # - synonym: quiz_8
+  #   examples: |
+  #     - 小考八
+  #     - 第八次小考
+  #     - 小考8
+  #     - quiz 8
+  #     - quiz8
 
-  - synonym: quiz_6
-    examples: |
-      - 小考六
-      - 第六次小考
-      - 小考6
-      - quiz 6
-      - quiz6
+  # - synonym: quiz_9
+  #   examples: |
+  #     - 小考九
+  #     - 第九次小考
+  #     - 小考9
+  #     - quiz 9
+  #     - quiz9
 
-  - synonym: quiz_7
-    examples: |
-      - 小考七
-      - 第七次小考
-      - 小考7
-      - quiz 7
-      - quiz7
+  # - synonym: quiz_10
+  #   examples: |
+  #     - 小考十
+  #     - 第十次小考
+  #     - 小考10
+  #     - quiz 10
+  #     - quiz10
 
-  - synonym: quiz_8
-    examples: |
-      - 小考八
-      - 第八次小考
-      - 小考8
-      - quiz 8
-      - quiz8
+  # - synonym: chapter_1
+  #   examples: |
+  #     - chapter1
+  #     - chapter 1
+  #     - 第一章
+  #     - 第1章
 
-  - synonym: quiz_9
-    examples: |
-      - 小考九
-      - 第九次小考
-      - 小考9
-      - quiz 9
-      - quiz9
+  # - synonym: chapter_2
+  #   examples: |
+  #     - chapter2
+  #     - chapter 2
+  #     - 第二章
+  #     - 第2章
 
-  - synonym: quiz_10
-    examples: |
-      - 小考十
-      - 第十次小考
-      - 小考10
-      - quiz 10
-      - quiz10
+  # - synonym: chapter_3
+  #   examples: |
+  #     - chapter3
+  #     - chapter 3
+  #     - 第三章
+  #     - 第3章
 
-  - synonym: chapter_1
-    examples: |
-      - chapter1
-      - chapter 1
-      - 第一章
-      - 第1章
+  # - synonym: chapter_4
+  #   examples: |
+  #     - chapter4
+  #     - chapter 4
+  #     - 第四章
+  #     - 第4章
 
-  - synonym: chapter_2
-    examples: |
-      - chapter2
-      - chapter 2
-      - 第二章
-      - 第2章
+  # - synonym: chapter_5
+  #   examples: |
+  #     - chapter5
+  #     - chapter 5
+  #     - 第五章
+  #     - 第5章
 
-  - synonym: chapter_3
-    examples: |
-      - chapter3
-      - chapter 3
-      - 第三章
-      - 第3章
+  # - synonym: chapter_6
+  #   examples: |
+  #     - chapter6
+  #     - chapter 6
+  #     - 第六章
+  #     - 第6章
 
-  - synonym: chapter_4
-    examples: |
-      - chapter4
-      - chapter 4
-      - 第四章
-      - 第4章
+  # - synonym: chapter_7
+  #   examples: |
+  #     - chapter7
+  #     - chapter 7
+  #     - 第七章
+  #     - 第7章
 
-  - synonym: chapter_5
-    examples: |
-      - chapter5
-      - chapter 5
-      - 第五章
-      - 第5章
+  # - synonym: chapter_8
+  #   examples: |
+  #     - chapter8
+  #     - chapter 8
+  #     - 第八章
+  #     - 第8章
 
-  - synonym: chapter_6
-    examples: |
-      - chapter6
-      - chapter 6
-      - 第六章
-      - 第6章
+  # - synonym: chapter_9
+  #   examples: |
+  #     - chapter9
+  #     - chapter 9
+  #     - 第九章
+  #     - 第9章
 
-  - synonym: chapter_7
-    examples: |
-      - chapter7
-      - chapter 7
-      - 第七章
-      - 第7章
+  # - synonym: chapter_10
+  #   examples: |
+  #     - chapter10
+  #     - chapter 10
+  #     - 第十章
+  #     - 第10章
 
-  - synonym: chapter_8
-    examples: |
-      - chapter8
-      - chapter 8
-      - 第八章
-      - 第8章
+  # - synonym: chapter_11
+  #   examples: |
+  #     - chapter11
+  #     - chapter 11
+  #     - 第十一章
+  #     - 第11章
 
-  - synonym: chapter_9
-    examples: |
-      - chapter9
-      - chapter 9
-      - 第九章
-      - 第9章
+  # - synonym: chapter_12
+  #   examples: |
+  #     - chapter12
+  #     - chapter 12
+  #     - 第十二章
+  #     - 第12章
 
-  - synonym: chapter_10
-    examples: |
-      - chapter10
-      - chapter 10
-      - 第十章
-      - 第10章
+  # - synonym: chapter_13
+  #   examples: |
+  #     - chapter13
+  #     - chapter 13
+  #     - 第十三章
+  #     - 第13章
 
-  - synonym: chapter_11
-    examples: |
-      - chapter11
-      - chapter 11
-      - 第十一章
-      - 第11章
+  # - synonym: chapter_14
+  #   examples: |
+  #     - chapter14
+  #     - chapter 14
+  #     - 第十四章
+  #     - 第14章
 
-  - synonym: chapter_12
-    examples: |
-      - chapter12
-      - chapter 12
-      - 第十二章
-      - 第12章
+  # - synonym: chapter_15
+  #   examples: |
+  #     - chapter15
+  #     - chapter 15
+  #     - 第十五章
+  #     - 第15章
 
-  - synonym: chapter_13
-    examples: |
-      - chapter13
-      - chapter 13
-      - 第十三章
-      - 第13章
-
-  - synonym: chapter_14
-    examples: |
-      - chapter14
-      - chapter 14
-      - 第十四章
-      - 第14章
-
-  - synonym: chapter_15
-    examples: |
-      - chapter15
-      - chapter 15
-      - 第十五章
-      - 第15章
-  
-  - synonym: project
-    examples: |
-      - 專案成績
-      - 專案互評
-      - 專案互評成績
-      - 互評成績
-      - 互評
-      - 專案
+  # - synonym: project
+  #   examples: |
+  #     - 專案成績
+  #     - 專案互評
+  #     - 專案互評成績
+  #     - 互評成績
+  #     - 互評
+  #     - 專案

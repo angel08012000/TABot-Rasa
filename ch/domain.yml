@@ -1,162 +1,383 @@
-version: "2.0"
+version: "3.0"
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 
 intents:
 - greet
-- help
+# - help
 - faq:
     use_entities: []
-- classmap_search
+# - classmap_search
 - classmap_search_content
-- classmap_ppt
-- classmap_ppt_content
-- personal_score_query
-- personal_score_object
-- classmap_suggest
-- suggest_review_pass
-- suggest_review_fail
-- personal_quiz_query
-- personal_textbook_query
-
-# - action_greet
-# - action_suggest_review_pass
-# - action_suggest_review_fail
-# - action_personal_score_query
-# - action_classmap_search
-# - action_classmap_ppt
+# - classmap_ppt
+# - classmap_ppt_content
+# - personal_score_query
+# - personal_score_object
+# - classmap_suggest
+- read_user_requirements
+# - suggest_review_pass
+# - suggest_review_fail
+# - personal_quiz_query
+# - personal_textbook_query
+# - supplement_search_all
+# - supplement_search_single
+# - supplement_search_single_content
 
 entities:
-- score_query_target
-- ppt_query_target
+# - score_query_target
+# - ppt_query_target
 - search_target
+# - supplement_target
 
 responses:
   utter_greet:
   - custom:
       intent: greet
       endOfChat: True
-  utter_temp_help:
-  - custom:
-      intent: help
-      endOfChat: True
+#   utter_temp_help:
+#   - custom:
+#       intent: help
+#       endOfChat: True
 
-  utter_confirm_personal_score_query:
+#   utter_confirm_personal_score_query:
+#   - custom:
+#       intent: confirm_personal_score_query
+#       responseMessage: "好喔, 那麼你想查的是哪個成績呢"
+#       endOfChat: False
+#   utter_confirm_classmap_ppt_query:
+#   - custom:
+#       intent: confirm_classmap_ppt_query
+#       responseMessage: "好的, 你想查詢哪個章節的投影片"
+#       endOfChat: False
+#   utter_confirm_classmap_search:
+#   - custom:
+#       intent: confirm_classmap_search
+#       responseMessage: "ok, 你想查詢什麼"
+#       endOfChat: False
+#   utter_classmap_suggest:
+#   - custom:
+#       intent: classmap_suggest
+#       responseMessage: "ok, 你想推薦什麼"
+#       endOfChat: True
+  utter_read_user_requirements:
   - custom:
-      intent: confirm_personal_score_query
-      responseMessage: "好喔, 那麼你想查的是哪個成績呢"
-      endOfChat: False
-  utter_confirm_classmap_ppt_query:
-  - custom:
-      intent: confirm_classmap_ppt_query
-      responseMessage: "好的, 你想查詢哪個章節的投影片"
-      endOfChat: False
-  utter_confirm_classmap_search:
-  - custom:
-      intent: confirm_classmap_search
-      responseMessage: "ok, 你想查詢什麼"
-      endOfChat: False
-  utter_classmap_suggest:
-  - custom:
-      intent: classmap_suggest
-      responseMessage: "ok, 你想推薦什麼"
+      intent: read_user_requirements
       endOfChat: True
-  utter_personal_quiz_query:
+#   utter_personal_quiz_query:
+#   - custom:
+#       intent: personal_quiz_query
+#       endOfChat: True
+#   utter_personal_textbook_query:
+#   - custom:
+#       intent: personal_textbook_query
+#       endOfChat: True
+#   utter_supplement_search_all:
+#   - custom:
+#       intent: supplement_search_all
+#       endOfChat: True
+#   utter_supplement_search_single:
+#   - custom:
+#       intent: supplement_search_single
+#       responseMessage: "ok, 你想查詢什麼補充資料"
+#       endOfChat: False
+  
+# faq response
+  utter_faq/software_engineering:
   - custom:
-      intent: personal_quiz_query
-      endOfChat: True
-  utter_personal_textbook_query:
-  - custom:
-      intent: personal_textbook_query
+      intent: faq/software_engineering
       endOfChat: True
   
-# add chinese_garbled
-  utter_faq/java_garbled_code:
+  utter_faq/user_requirement:
   - custom:
-      intent: faq/java_garbled_code
+      intent: faq/user_requirement
       endOfChat: True
-  utter_faq/chinese_annotation_compile:
+
+  utter_faq/system_requirement:
   - custom:
-      intent: faq/chinese_annotation_compile
+      intent: faq/system_requirement
       endOfChat: True
-  utter_faq/chinese_garbled:
+
+  utter_faq/functional_requirement:
   - custom:
-      intent: faq/chinese_garbled
+      intent: faq/functional_requirement
       endOfChat: True
-  utter_faq/vector_arraylist_difference:
+
+  utter_faq/functional_requirement_2:
   - custom:
-      intent: faq/vector_arraylist_difference
+      intent: faq/functional_requirement_2
       endOfChat: True
-  utter_faq/java_bean:
+
+  utter_faq/non_functional_requirement:
   - custom:
-      intent: faq/java_bean
+      intent: faq/non_functional_requirement
       endOfChat: True
-  utter_faq/package_import_path_classpath_difference:
+
+  utter_faq/non_functional_requirement_2:
   - custom:
-      intent: faq/package_import_path_classpath_difference
+      intent: faq/non_functional_requirement_2
       endOfChat: True
-  utter_faq/garbage_collection:
+
+  utter_faq/concept_of_operation:
   - custom:
-      intent: faq/garbage_collection
+      intent: faq/concept_of_operation
       endOfChat: True
-  utter_faq/arraylist_to_array:
+
+  utter_faq/MVP:
   - custom:
-      intent: faq/arraylist_to_array
+      intent: faq/MVP
       endOfChat: True
-  utter_faq/layout:
+
+  utter_faq/wireframe:
   - custom:
-      intent: faq/layout
+      intent: faq/wireframe
       endOfChat: True
-  utter_faq/icon_transparency:
+
+  utter_faq/wireframe_1:
   - custom:
-      intent: faq/icon_transparency
+      intent: faq/wireframe_1
       endOfChat: True
-  utter_faq/source_usage:
+
+  utter_faq/requirement_analyze:
   - custom:
-      intent: faq/source_usage
+      intent: faq/requirement_analyze
       endOfChat: True
-  utter_faq/jdk1.5_feature:
+
+  utter_faq/uml:
   - custom:
-      intent: faq/jdk1.5_feature
+      intent: faq/uml
       endOfChat: True
-  utter_faq/jdk1.6_feature:
+
+  utter_faq/use_case:
   - custom:
-      intent: faq/jdk1.6_feature
+      intent: faq/use_case
       endOfChat: True
-  utter_faq/jdk1.7_feature:
+
+  utter_faq/PM:
   - custom:
-      intent: faq/jdk1.7_feature
+      intent: faq/PM
       endOfChat: True
-  utter_faq/jdk1.8_feature:
+
+  utter_faq/WBS:
   - custom:
-      intent: faq/jdk1.8_feature
+      intent: faq/WBS
+      endOfChat: True
+
+  utter_faq/project_forecast:
+  - custom:
+      intent: faq/project_forecast
+      endOfChat: True
+
+  utter_faq/risk:
+  - custom:
+      intent: faq/risk
+      endOfChat: True
+
+  utter_faq/board:
+  - custom:
+      intent: faq/board
+      endOfChat: True
+
+  utter_faq/dependency_and_association:
+  - custom:
+      intent: faq/dependency_and_association
+      endOfChat: True
+
+  utter_faq/aggregation_and_composition:
+  - custom:
+      intent: faq/aggregation_and_composition
+      endOfChat: True
+
+  utter_faq/abstraction:
+  - custom:
+      intent: faq/abstraction
+      endOfChat: True
+
+  utter_faq/modularity:
+  - custom:
+      intent: faq/modularity
+      endOfChat: True
+
+  utter_faq/cohesion:
+  - custom:
+      intent: faq/cohesion
+      endOfChat: True
+
+  utter_faq/coupling:
+  - custom:
+      intent: faq/coupling
+      endOfChat: True
+
+  utter_faq/cohesion_and_coupling_rate:
+  - custom:
+      intent: faq/cohesion_and_coupling_rate
+      endOfChat: True
+
+  utter_faq/system_design:
+  - custom:
+      intent: faq/system_design
+      endOfChat: True
+
+  utter_faq/architecture_design:
+  - custom:
+      intent: faq/architecture_design
+      endOfChat: True
+
+  utter_faq/architecture_design_2:
+  - custom:
+      intent: faq/architecture_design_2
+      endOfChat: True
+
+  utter_faq/architecture_design_3:
+  - custom:
+      intent: faq/architecture_design_3
+      endOfChat: True
+
+  utter_faq/interface:
+  - custom:
+      intent: faq/interface
+      endOfChat: True
+
+  utter_faq/interface_2:
+  - custom:
+      intent: faq/interface_2
+      endOfChat: True
+
+  utter_faq/interface_3:
+  - custom:
+      intent: faq/interface_3
+      endOfChat: True
+
+  utter_faq/interface_4:
+  - custom:
+      intent: faq/interface_4
+      endOfChat: True
+
+  utter_faq/design_issue:
+  - custom:
+      intent: faq/design_issue
+      endOfChat: True
+
+  utter_faq/user_story:
+  - custom:
+      intent: faq/user_story
+      endOfChat: True
+      
+  utter_faq/user_stroy_example:
+  - custom:
+      intent: faq/user_stroy_example
+      endOfChat: True
+      
+  utter_faq/user_stroy_feature:
+  - custom:
+      intent: faq/user_stroy_feature
+      endOfChat: True
+      
+  utter_faq/story_point:
+  - custom:
+      intent: faq/story_point
+      endOfChat: True
+      
+  utter_faq/user_story_mapping:
+  - custom:
+      intent: faq/user_story_mapping
+      endOfChat: True
+      
+  utter_faq/narative_flow:
+  - custom:
+      intent: faq/narative_flow
+      endOfChat: True
+      
+  utter_faq/version:
+  - custom:
+      intent: faq/version
+      endOfChat: True
+      
+  utter_faq/staging_area&repository:
+  - custom:
+      intent: faq/staging_area&repository
+      endOfChat: True
+      
+  utter_faq/wbs:
+  - custom:
+      intent: faq/wbs
+      endOfChat: True
+      
+  utter_faq/kanban:
+  - custom:
+      intent: faq/kanban
+      endOfChat: True
+      
+  utter_faq/scrum_event:
+  - custom:
+      intent: faq/scrum_event
+      endOfChat: True
+      
+  utter_faq/scrum_pillar:
+  - custom:
+      intent: faq/scrum_pillar
+      endOfChat: True
+      
+  utter_faq/scrum_value:
+  - custom:
+      intent: faq/scrum_value
+      endOfChat: True
+      
+  utter_faq/scrum_accountability:
+  - custom:
+      intent: faq/scrum_accountability
+      endOfChat: True
+      
+  utter_faq/blackbox_test:
+  - custom:
+      intent: faq/blackbox_test
+      endOfChat: True
+      
+  utter_faq/whitebox_test:
+  - custom:
+      intent: faq/whitebox_test
+      endOfChat: True
+      
+  utter_faq/unit_test:
+  - custom:
+      intent: faq/unit_test
+      endOfChat: True
+      
+  utter_faq/test_double:
+  - custom:
+      intent: faq/test_double
+      endOfChat: True
+      
+  utter_faq/integration_testing:
+  - custom:
+      intent: faq/integration_testing
+      endOfChat: True
+      
+  utter_faq/system_integration:
+  - custom:
+      intent: faq/system_integration
+      endOfChat: True
+      
+  utter_faq/acceptance_testing:
+  - custom:
+      intent: faq/acceptance_testing
+      endOfChat: True
+
+  utter_faq/test_case:
+  - custom:
+      intent: faq/test_case
+      endOfChat: True
+
+  utter_faq/regression_testing:
+  - custom:
+      intent: faq/regression_testing
       endOfChat: True
 
 actions:
-- action_greet
-- action_suggest_review_pass
-- action_suggest_review_fail
-- action_personal_score_query
+# - action_greet
+# - action_suggest_review_pass
+# - action_suggest_review_fail
+# - action_personal_score_query
 - action_classmap_search
-- action_classmap_ppt
-# - utter_faq/java_garbled_code
-# - utter_faq/chinese_annotation_compile
-# - utter_faq/vector_arraylist_difference
-# - utter_faq/java_bean
-
-
-# - classmap_ask
-# - classmap_ask_content
-# - classmap_ppt
-# - classmap_ppt_content
-# - classmap_search
-# - classmap_search_content
-# - classmap_map
-# - classmap_map_content
-# - classmap_suggest
-# - classmap_suggest_content
-# - personal_score_query
-# - personal_score_object
-# - personal_quiz_query
-# - personal_textbook_query
+# - action_classmap_ppt
+# - action_supplement_single

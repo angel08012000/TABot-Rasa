@@ -46,50 +46,50 @@ class ActionGreet(Action):
             dispatcher.utter_custom_json(format(msg))
             return []
 
-class ActionSuggestionPass(Action):
-    def name(self) -> Text:
-        return "action_suggest_review_pass"
+# class ActionSuggestionPass(Action):
+#     def name(self) -> Text:
+#         return "action_suggest_review_pass"
     
-    def run(self, dispatcher: "CollectingDispatcher", 
-            tracker: Tracker, 
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-            msg = {
-                "intent": "suggest_review_pass",
-                "reviewResult": True,
-                "endOfChat": True
-            }
-            # dispatcher.utter_message(format(msg))
-            dispatcher.utter_custom_json(format(msg))
-            return []
+#     def run(self, dispatcher: "CollectingDispatcher", 
+#             tracker: Tracker, 
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+#             msg = {
+#                 "intent": "suggest_review_pass",
+#                 "reviewResult": True,
+#                 "endOfChat": True
+#             }
+#             # dispatcher.utter_message(format(msg))
+#             dispatcher.utter_custom_json(format(msg))
+#             return []
 
-class ActionSuggestionFail(Action):
-    def name(self) -> Text:
-        return "action_suggest_review_fail"
-    def run(self, dispatcher: "CollectingDispatcher", 
-        tracker: Tracker, 
-        domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        msg = {
-            "intent": "suggest_review_fail",
-            "reviewResult": False,
-            "endOfChat": True
-        }
-        # dispatcher.utter_message(format(msg))
-        dispatcher.utter_custom_json(format(msg))
-        return []
+# class ActionSuggestionFail(Action):
+#     def name(self) -> Text:
+#         return "action_suggest_review_fail"
+#     def run(self, dispatcher: "CollectingDispatcher", 
+#         tracker: Tracker, 
+#         domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+#         msg = {
+#             "intent": "suggest_review_fail",
+#             "reviewResult": False,
+#             "endOfChat": True
+#         }
+#         # dispatcher.utter_message(format(msg))
+#         dispatcher.utter_custom_json(format(msg))
+#         return []
 
-class ActionPersonalScoreQuery(Action):
-    def name(self) -> Text:
-        return "action_personal_score_query"
-    def run(self, dispatcher: "CollectingDispatcher", tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        entity = next(tracker.get_latest_entity_values("score_query_target"), "None")
-        msg = {
-            "intent": "personal_score_query",
-            "entity": entity,
-            "endOfChat": True
-        }
-        # dispatcher.utter_message(format(msg))
-        dispatcher.utter_custom_json(format(msg))
-        return []
+# class ActionPersonalScoreQuery(Action):
+#     def name(self) -> Text:
+#         return "action_personal_score_query"
+#     def run(self, dispatcher: "CollectingDispatcher", tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+#         entity = next(tracker.get_latest_entity_values("score_query_target"), "None")
+#         msg = {
+#             "intent": "personal_score_query",
+#             "entity": entity,
+#             "endOfChat": True
+#         }
+#         # dispatcher.utter_message(format(msg))
+#         dispatcher.utter_custom_json(format(msg))
+#         return []
 
 class ActionClassmapSearch(Action):
     def name(self) -> Text:
@@ -105,16 +105,29 @@ class ActionClassmapSearch(Action):
         dispatcher.utter_custom_json(format(msg))
         return []
 
-class ActionClassmapPpt(Action):
-    def name(self) -> Text:
-        return "action_classmap_ppt"
-    def run(self, dispatcher: "CollectingDispatcher", tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        entity = next(tracker.get_latest_entity_values("ppt_query_target"), "None")
-        msg = {
-            "intent": "classmap_ppt",
-            "entity": entity,
-            "endOfChat": True
-        }
-        # dispatcher.utter_message(format(msg))
-        dispatcher.utter_custom_json(format(msg))
-        return []
+# class ActionClassmapPpt(Action):
+#     def name(self) -> Text:
+#         return "action_classmap_ppt"
+#     def run(self, dispatcher: "CollectingDispatcher", tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+#         entity = next(tracker.get_latest_entity_values("ppt_query_target"), "None")
+#         msg = {
+#             "intent": "classmap_ppt",
+#             "entity": entity,
+#             "endOfChat": True
+#         }
+#         # dispatcher.utter_message(format(msg))
+#         dispatcher.utter_custom_json(format(msg))
+#         return []
+
+# class ActionSupplementSingle(Action):
+#     def name(self) -> Text:
+#         return "action_supplement_single"
+#     def run(self, dispatcher: "CollectingDispatcher", tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+#         entity = next(tracker.get_latest_entity_values("supplement_target"), "None")
+#         msg = {
+#             "intent": "supplement_single",
+#             "entity": entity,
+#             "endOfChat": True
+#         }
+#         dispatcher.utter_custom_json(format(msg))
+#         return []
