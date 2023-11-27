@@ -24,8 +24,10 @@ services:
       - --enable-api
   
   tabot-rasa-en:
-    image: rasa/rasa:3.2.6-full
-    container_name: tabot-rasa-en
+    # image: rasa/rasa:3.2.6-full
+    # container_name: tabot-rasa-en
+    image: tabot/rasa-en:v0.1
+    container_name: tabot-rasa-en-demo
     restart: always
     networks: ['tabot']
     user: root
