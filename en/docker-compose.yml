@@ -2,9 +2,10 @@ version: '3.0'
 
 services:
   tabot-rasa-en:
-    image: rasa/rasa:3.2.6-full
+    # image: rasa/rasa:3.2.6-full
     # image: tabot/ch-rasa:v0.1
-    container_name: tabot-rasa-en
+    image: tabot/rasa-en:v0.1
+    container_name: tabot-rasa-en-demo
   #  restart: always
     networks: ['tabot']
     user: root
