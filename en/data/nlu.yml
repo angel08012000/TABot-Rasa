@@ -289,6 +289,11 @@ nlu:
     examples: |
       - Is there a case for interface design?
       - The case for interface design
+  
+  - intent: faq/interface_5
+    examples: |
+      - How to conduct interface design in software engineering course?
+      - How to conduct interface design?
 
   - intent: faq/design_issue
     examples: |
@@ -466,6 +471,14 @@ nlu:
       - When is regression testing required?
       - When to do regression testing?
       - Regression Testing
+  
+  - intent: faq/APSEC_2023
+    examples: |
+      - What is the venue in APSEC 2023?
+      - Where is the venue in APSEC 2023?
+      - Where is the APSEC 2023?
+      - What is the location in APSEC 2023?
+      - Where is the location in APSEC 2023?
 
 # - intent: classmap_ppt
 #   examples: |

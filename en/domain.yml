@@ -257,6 +257,11 @@ responses:
       intent: faq/interface_4
       endOfChat: True
 
+  utter_faq/interface_5:
+  - custom:
+      intent: faq/interface_5
+      endOfChat: True
+
   utter_faq/design_issue:
   - custom:
       intent: faq/design_issue
@@ -375,6 +380,11 @@ responses:
   utter_faq/regression_testing:
   - custom:
       intent: faq/regression_testing
+      endOfChat: True
+  
+  utter_faq/APSEC_2023:
+  - custom:
+      intent: faq/APSEC_2023
       endOfChat: True
 
 actions:
